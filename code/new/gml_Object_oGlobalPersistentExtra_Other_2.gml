@@ -1,0 +1,10 @@
+ini_open("file0.ini");
+global.money = ini_read_real("PlayerData", "money", 302);
+global.space = ini_read_real("PlayerData", "space", 6);
+global.krispykreid = ini_read_real("PlayerData", "krispykreid", 0);
+global.shadowdonut = ini_read_real("PlayerData", "shadowdonut", 0);
+global.adultsoda = ini_read_real("PlayerData", "adultsoda", 0);
+global.shotglass = ini_read_real("PlayerData", "shotglass", 0);
+global.midnightcrewoption = ini_read_real("PlayerData", "midnightcrewoption", false);
+global.shopbought = ini_read_real("PlayerData", "shopbought", false);
+ini_close();

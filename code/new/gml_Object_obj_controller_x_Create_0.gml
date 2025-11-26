@@ -1,0 +1,13 @@
+depth = -6666;
+var cx = camera_get_view_x(view_camera[0]);
+var cy = camera_get_view_y(view_camera[0]);
+xx = 498;
+yy = 354;
+x = xx;
+y = yy;
+image_alpha = 0;
+image_xscale = 2;
+image_yscale = 2;
+touchtimer = -1;
+releasetimer = -1;
+x_touch_id = -1;

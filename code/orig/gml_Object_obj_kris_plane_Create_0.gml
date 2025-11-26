@@ -1,0 +1,12 @@
+image_speed = 0;
+yy = y;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = -0.05;
+walkup2 = false;
+percent2 = -0.1;
+flyup = false;
+percent3 = 0;
+endtimer = -1;

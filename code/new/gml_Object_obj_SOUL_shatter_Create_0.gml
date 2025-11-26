@@ -1,0 +1,13 @@
+image_index = 0;
+image_speed = 0;
+window_set_caption(lang("obj_SOUL_shatter_Create_0_0"));
+timer = 0;
+skip = 0;
+global.dialogue = 1;
+global.ralseitalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+global.kreidtalk = false;
+global.chairieltalk = false;
+global.target = rChapter3Room3;

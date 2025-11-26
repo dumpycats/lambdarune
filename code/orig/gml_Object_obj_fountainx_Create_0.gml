@@ -1,0 +1,14 @@
+image_xscale = 1.1;
+image_yscale = 1.1;
+scale = 1.1;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+audio_stop_sound(THE_HOLY);
+audio_play_sound(snd_glassbreak, 1, false);
+audio_play_sound(snd_explosion_mmx3, 1, false);
+uniTime = shader_get_uniform(shader_Distort, "time");
+uniTexel = shader_get_uniform(shader_Distort, "texel");
+window_set_caption("");

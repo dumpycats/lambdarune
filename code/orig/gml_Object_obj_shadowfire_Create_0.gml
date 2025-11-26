@@ -1,0 +1,12 @@
+image_xscale = 2;
+image_yscale = 2;
+depth = -y * 10;
+audio_stop_sound(mus_wind);
+flyup = false;
+initialy = y;
+yy = obj_kris_plane.y;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;

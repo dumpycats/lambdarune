@@ -1,0 +1,15 @@
+imagerange = irandom_range(0, 4);
+image_index = imagerange;
+purplecolor = 14235093;
+scaleoffset = 1;
+randommultiplier = random_range(1, 1.3);
+image_xscale = 1.2;
+image_yscale = 1.2;
+up = false;
+pull = irandom_range(1, 1);
+hit = false;
+tptimer = 0;
+randomize();
+TP = obj_SOUL_TP_sof;
+SOUL = obj_SOUL_battle_sof;
+BULLETBOARD = obj_bulletboard_sof_end;

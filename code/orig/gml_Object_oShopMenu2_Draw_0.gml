@@ -1,0 +1,43 @@
+draw_self();
+draw_set_font(fDeterminationMW);
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+var text;
+
+if (global.buyitems == 1)
+    text = "ITEM\nKreid-shaped\nDonut that\nheals 140 HP";
+
+if (global.buyitems == 2)
+    text = "ITEM\nBootleg\nKrispy Kreid\nthat heals 70\nHP";
+
+if (global.buyitems == 3)
+    text = "ITEM\nNot for kids.\nHeals ??? HP";
+
+if (global.buyitems == 4)
+    text = "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP";
+
+if (global.buyitems == 5)
+    text = "";
+
+var text_x = x - 82;
+var text_y = y - 90;
+var shadow_color = 8192771;
+var tracking = -2;
+var leading = 6;
+
+for (var i = 1; i <= string_length(text); i++)
+{
+    var current_char = string_char_at(text, i);
+    
+    if (current_char == "\n")
+    {
+        text_x = x - 82;
+        text_y += (string_height(current_char) + leading);
+    }
+    else
+    {
+        draw_set_color(c_white);
+        draw_text(text_x, text_y, current_char);
+        text_x += (string_width(current_char) + tracking);
+    }
+}

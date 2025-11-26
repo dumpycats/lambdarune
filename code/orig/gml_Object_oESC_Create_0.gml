@@ -1,0 +1,12 @@
+timer = -30;
+triggered = false;
+triggertimer = -1;
+crttimer = -1;
+cpress = false;
+rpress = false;
+tpress = false;
+crttrigger = false;
+debugfps = false;
+debugroom = false;
+createmod = 2;
+spacepressedtimer = -1;

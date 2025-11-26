@@ -1,0 +1,10 @@
+image_xscale = 2;
+image_yscale = 2;
+trigger = false;
+triggertimer = -1;
+image_alpha = 0;
+timer = -1;
+hit = false;
+tptimer = 0;
+spinstatic = true;
+angle2 = 0;

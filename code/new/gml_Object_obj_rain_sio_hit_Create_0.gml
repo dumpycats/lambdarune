@@ -1,0 +1,13 @@
+image_xscale = 2;
+image_yscale = 2;
+timer = -1;
+direction = -90;
+speed = 5;
+hit = false;
+tptimer = 0;
+collided = false;
+collisiontimer = -1;
+flashalpha = 0;
+flashcolor = 16777215;
+flashpercent = 0;
+flashtrigger = false;

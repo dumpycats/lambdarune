@@ -1,0 +1,14 @@
+pull = 1;
+purplecolor = 14235093;
+image_xscale = 2;
+image_yscale = 2;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+TP = obj_SOUL_TP_sof;
+SOUL = obj_SOUL_battle_sof;
+BULLETBOARD = obj_bulletboard_sof;
+hit = false;
+tptimer = 0;

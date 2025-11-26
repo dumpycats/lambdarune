@@ -1,0 +1,15 @@
+window_set_caption("LAMBDARUNE Chapter 3");
+sprite_prefetch(sDialogueBox);
+sprite_prefetch(spr_planegate_door);
+audio_play_sound(snd_plane_ambience, 1, false);
+timer = -1;
+global.playermove = false;
+global.yoffset = 50;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+global.krismaxhp = 160;
+global.krishp = 160;
+global.alldown = false;

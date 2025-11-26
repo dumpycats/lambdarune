@@ -1,0 +1,10 @@
+image_alpha = 0;
+timer = 0;
+cam_x = camera_get_view_x(view_camera[0]);
+cam_y = camera_get_view_y(view_camera[0]);
+curve1 = animcurve_get_channel(Bezier, "acBezier");
+percent1 = 0;
+chapter3playdonotmenu = false;
+waittimer = 0;
+menuinaccessible = false;
+menuoutrotimer = 0;

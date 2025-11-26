@@ -1,0 +1,13 @@
+timer = -2;
+dialoguesend = "";
+dialoguesend2 = "";
+dialoguesend3 = "";
+dialoguesend4 = "";
+dialoguesend5 = "";
+dialoguesend6 = "";
+dialoguesend7 = "";
+dialoguesend8 = "";
+dialoguesend9 = "";
+dialoguesend10 = "";
+destroyvalue = 0;
+value = 0;

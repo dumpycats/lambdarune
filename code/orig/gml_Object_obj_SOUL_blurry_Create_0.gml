@@ -1,0 +1,14 @@
+image_alpha = 0;
+timer = 0;
+image_xscale = 2;
+image_yscale = 2;
+choice = 0;
+chosen = false;
+savior = false;
+failure = false;
+saviortimer = 0;
+failuretimer = 0;
+curve1 = animcurve_get_channel(Linear, "acLinear");
+percent1 = 0;
+curve2 = animcurve_get_channel(Linear, "acLinear");
+percent2 = 0;

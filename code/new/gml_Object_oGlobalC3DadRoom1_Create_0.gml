@@ -1,0 +1,11 @@
+window_set_caption(lang("oGlobalC3DadRoom1_Create_0_0"));
+timer = 0;
+spawntimer = 0;
+whiteouttimer = 0;
+global.daddialogue = 1;
+global.shoptalkmenu = false;
+global.ralseitalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+instance_create_depth(320, -30, 10, oPerseveranceLine);

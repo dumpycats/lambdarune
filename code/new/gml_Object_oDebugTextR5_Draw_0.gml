@@ -1,0 +1,12 @@
+draw_set_font(fDeterminationMW);
+draw_set_color(c_green);
+draw_set_halign(fa_left);
+var textt = string(oSusieC3.x) + string(oSusieC3.y);
+var text_xt = 20;
+var text_yt = 20;
+draw_text(text_xt, text_yt, textt);
+timer++;
+var textt2 = string(timer);
+var text_xt2 = 560;
+var text_yt2 = 40;
+draw_text(text_xt2, text_yt2, textt2);

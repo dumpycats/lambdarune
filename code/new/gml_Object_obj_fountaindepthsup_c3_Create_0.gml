@@ -1,0 +1,13 @@
+var cx = camera_get_view_x(view_camera[0]);
+var cy = camera_get_view_y(view_camera[0]);
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+image_alpha = 0;
+startx = cx + 465;
+endx = cx + 225;
+starty = cy + 225;
+endy = cy - 15;
+hue = 0;

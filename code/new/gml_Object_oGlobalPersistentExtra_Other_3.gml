@@ -1,0 +1,10 @@
+ini_open("file0.ini");
+ini_write_real("PlayerData", "money", global.money);
+ini_write_real("PlayerData", "space", global.space);
+ini_write_real("PlayerData", "krispykreid", global.krispykreid);
+ini_write_real("PlayerData", "shadowdonut", global.shadowdonut);
+ini_write_real("PlayerData", "adultsoda", global.adultsoda);
+ini_write_real("PlayerData", "shotglass", global.shotglass);
+ini_write_real("PlayerData", "midnightcrewoption", global.midnightcrewoption);
+ini_write_real("PlayerData", "shopbought", global.shopbought);
+ini_close();

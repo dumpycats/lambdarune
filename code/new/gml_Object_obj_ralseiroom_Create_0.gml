@@ -1,0 +1,13 @@
+hue = 50;
+maxalpha = 1/3;
+lowalpha = 0.06;
+timer = 0;
+cake = 5;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+trigger = false;
+alpha = 0;
+subimg = 0;

@@ -1,0 +1,221 @@
+var cam_x = camera_get_view_x(view_camera[0]);
+var cam_y = camera_get_view_y(view_camera[0]);
+var cam_x2 = camera_get_view_x(view_camera[1]);
+var cam_y2 = camera_get_view_y(view_camera[1]);
+var advance_pressed = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"));
+var skip_pressed = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"));
+
+switch (dialogue)
+{
+    case 1:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* it's been so long, but her\n  words still echo in my head...";
+        global.typing_speed = 1;
+        audio_sound_pitch(snd_foane, 1);
+        break;
+    case 2:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* Loomi Neus.";
+        global.typing_speed = 1;
+        break;
+    case 3:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* to think it all started with\n  herherherherherher";
+        global.typing_speed = 1;
+        break;
+    case 4:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* she could pull strings better\n  than anyone.";
+        global.typing_speed = 1;
+        audio_sound_pitch(snd_foane, 1);
+        break;
+    case 5:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* if she wasn't trapped in my\n  brother's fake body, she could\n  have figured it all out...";
+        global.typing_speed = 1;
+        break;
+    case 6:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* i wish i could see her again...\n  just once.";
+        global.typing_speed = 1;
+        break;
+    case 7:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* if there was even a slim\n  chance she had the answer...";
+        global.typing_speed = 1;
+        break;
+    case 8:
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* ...";
+        global.typing_speed = 1;
+        audio_sound_pitch(snd_foane, 1);
+        window_set_caption("");
+        break;
+    case 9:
+        oDialogueBox.image_alpha = 0;
+        global.foanetalk = true;
+        global.texttalk = false;
+        global.charactertalking = false;
+        global.current_dialogue = "* i would do\n  anythingthingthingthingthingthing";
+        global.typing_speed = 1;
+        break;
+    case 10:
+        global.emptytalk = true;
+        global.charactertalking = false;
+        global.current_dialogue = "";
+        global.typing_speed = 1;
+        blockprogress = true;
+        instance_destroy(oDialogueSprite);
+        instance_destroy(oDialogueBox);
+        d10timer++;
+        
+        if (d10timer == 66)
+        {
+            oPersistent.androidsavetimer = -1;
+            
+            if (!global.c3foanecompleted)
+            {
+                instance_create_depth(0, 0, -59, obj_memorandum_notice_c3);
+                obj_memorandum_notice_c3.image_index = 3;
+                global.c3foanecompleted = true;
+            }
+            
+            audio_sound_gain(mus_revolution, 1, 0);
+            room_goto(rm_ch3credits_installment1);
+        }
+        
+        break;
+    default:
+        global.current_dialogue = "";
+        break;
+}
+
+if (!global.text_complete && !global.pause_for_punctuation)
+{
+    global.typing_timer += global.typing_speed;
+    
+    while (global.typing_timer >= 1)
+    {
+        global.typing_timer -= 1;
+        
+        if (global.letter_index < string_length(global.current_dialogue))
+        {
+            var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : "";
+            
+            if (next_char == " " && following_char == " ")
+            {
+                global.displayed_text += "  ";
+                global.letter_index += 2;
+            }
+            else
+            {
+                global.displayed_text += next_char;
+                
+                if ((next_char == "," || next_char == ":") || next_char == ".")
+                {
+                    alarm[0] = 4;
+                    global.pause_for_punctuation = true;
+                    global.letter_index += 1;
+                    break;
+                }
+                else if (next_char == "}" || next_char == "@" || next_char == "{")
+                {
+                    alarm[0] = 10;
+                    global.pause_for_punctuation = true;
+                    global.letter_index += 1;
+                    break;
+                }
+                else if (next_char != " " && next_char != "*" && next_char != "?" && global.displayed_text != "*")
+                {
+                    if (global.susietalk)
+                    {
+                        audio_play_sound(snd_foane, 1, false, 0.7, false);
+                        audio_play_sound(snd_mike, 1, false, 0.7);
+                    }
+                    else if (global.ralseitalk)
+                    {
+                        audio_play_sound(snd_ralsei, 1, false);
+                    }
+                    else if (global.texttalk)
+                    {
+                        audio_play_sound(snd_mike, 1, false);
+                    }
+                    else if (global.foanetalk)
+                    {
+                        audio_play_sound(snd_foane, 1, false, 1, false);
+                    }
+                    else if (global.feighlinetalk)
+                    {
+                        audio_play_sound(snd_feighline, 1, false);
+                    }
+                    else if (global.emptytalk)
+                    {
+                        audio_play_sound(snd_empty, 1, false);
+                    }
+                }
+                
+                global.letter_index += 1;
+            }
+        }
+        else
+        {
+            global.text_complete = true;
+            break;
+        }
+    }
+}
+
+if (!global.pause_for_punctuation && advance_pressed && !blockprogress)
+{
+    if (global.text_complete)
+    {
+        dialogue += 1;
+        reset_dialogue();
+    }
+}
+else if (skiptimer == 2 && !blockprogress)
+{
+    dialogue += 1;
+    reset_dialogue();
+    skiptimer = 0;
+}
+else if (!global.pause_for_punctuation && skip_pressed && !advance_pressed && !blockprogress)
+{
+    global.displayed_text = global.current_dialogue;
+    global.text_complete = true;
+    audio_stop_sound(snd_ralsei);
+    audio_stop_sound(snd_susie);
+    audio_stop_sound(snd_foane);
+    audio_stop_sound(snd_feighline);
+    audio_stop_sound(snd_text);
+    audio_stop_sound(snd_empty);
+}
+
+if (keyboard_check(ord("C")) && !blockprogress)
+    skiptext = true;
+
+if (keyboard_check_released(ord("C")) || blockprogress)
+{
+    skiptext = false;
+    skiptimer = 0;
+}
+
+if (skiptext)
+    skiptimer++;

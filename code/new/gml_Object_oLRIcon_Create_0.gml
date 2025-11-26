@@ -1,0 +1,10 @@
+fadetimer = 0;
+gameenter = false;
+curve1 = animcurve_get_channel(Linear, "acLinear");
+percent1 = 0;
+percent2 = 0;
+roomtimer = 0;
+image_alpha = 0;
+curveslide = animcurve_get_channel(Bezier, "acBezier");
+percentslide = 0;
+slidetimer = 0;

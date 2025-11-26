@@ -1,0 +1,13 @@
+image_alpha = 1;
+image_speed = 0;
+triggerup = false;
+triggerright = false;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+percent2 = 0;
+percent3 = 0;
+yy = y;
+xx = x;

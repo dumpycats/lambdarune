@@ -1,0 +1,15 @@
+image_index = 0;
+image_speed = 0;
+window_set_caption("");
+timer = 0;
+skip = 0;
+global.dialogue = 3;
+global.ralseitalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+global.kreidtalk = false;
+global.chairieltalk = false;
+global.shatter = 0;
+global.target = 0;
+sprite_prefetch(spr_SOUL_shards);

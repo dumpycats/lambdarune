@@ -1,0 +1,17 @@
+window_set_caption(lang("oGlobalC3Room1_Create_0_0"));
+audio_play_sound(mus_wind, 1, true, 0.1, false, 0.5);
+timer = 0;
+dialogue2timer = 0;
+dialogue4timer = 0;
+dialogue6timer = 0;
+dialogue12timer = 0;
+dialogue19timer = 0;
+global.geartime = false;
+global.dialogue = 1;
+global.ralseitalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+global.playermove = false;
+global.dialoguetop = true;
+global.dialoguebottom = false;

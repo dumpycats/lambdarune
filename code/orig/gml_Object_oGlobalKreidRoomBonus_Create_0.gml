@@ -1,0 +1,10 @@
+global.dialogue = 1;
+global.ralseitalk = false;
+global.kreidtalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+global.chairieltalk = false;
+global.dialoguebottom = true;
+timer = 0;
+window_set_caption("Private Chat");

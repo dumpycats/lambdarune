@@ -1,0 +1,10 @@
+hittimer = 10;
+fade = false;
+xoffset = 0;
+yoffset = 0;
+yy = y;
+altered = false;
+timer = -1;
+scale = 2;
+flashalpha = 0;
+flashcolor = 16777215;

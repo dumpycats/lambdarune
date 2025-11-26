@@ -1,0 +1,11 @@
+timer = 0;
+curve = animcurve_get_channel(Linear, "acLinear");
+percentleft = 0;
+percentright = 0;
+percentdown = 0;
+percentup = 0;
+options = 0;
+depth = -40;
+global.accessible = true;
+blackfadein = 1;
+blackfadeout = 0;

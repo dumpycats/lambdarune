@@ -1,0 +1,10 @@
+x = obj_SOUL_sof_prebattle.x - 2;
+y = obj_SOUL_sof_prebattle.y + 10;
+speed = 8;
+direction = 90;
+image_alpha = obj_SOUL_sof_prebattle.krisalpha / 2;
+image_blend = make_color_rgb(obj_SOUL_sof_prebattle.blendvalue, obj_SOUL_sof_prebattle.blendvalue, obj_SOUL_sof_prebattle.blendvalue);
+image_xscale = 2;
+image_yscale = 2;
+image_speed = 0;
+image_index = obj_SOUL_sof_prebattle.subimg;

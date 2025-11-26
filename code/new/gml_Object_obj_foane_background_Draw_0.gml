@@ -1,0 +1,34 @@
+var cx = camera_get_view_x(view_camera[0]);
+var cy = camera_get_view_y(view_camera[0]);
+draw_sprite_ext(sprite_index, 0, cx + percent0, cy + 240, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 0, cx + percent0 + 640, cy + 240, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 1, cx + percent0, cy + 240, image_xscale, image_yscale, 0, c_white, 0.4);
+draw_sprite_ext(sprite_index, 1, cx + percent0 + 640, cy + 240, image_xscale, image_yscale, 0, c_white, 0.4);
+draw_sprite_ext(sprite_index, 2, cx + percent2, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 2, (cx + percent2) - 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 3, cx + percent3, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 3, cx + percent3 + 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 4, cx + percent4, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 4, (cx + percent4) - 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 5, cx + percent5, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 5, cx + percent5 + 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 6, cx + percent6, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 6, (cx + percent6) - 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 7, cx + percent7, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1/3);
+draw_sprite_ext(sprite_index, 7, cx + percent7 + 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1/3);
+draw_sprite_ext(sprite_index, 8, cx + percent8, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 8, cx + percent8 + 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 9, cx + percent9, cy + 240, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 9, cx + percent9 + 640, cy + 240, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 10, cx + percent10, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 10, (cx + percent10) - 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 11, cx + percent11, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 11, cx + percent11 + 640, cy + 240 + yoffset, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, 13, cx + percent13, cy + 240, image_xscale, image_yscale, 0, c_white, 0.4);
+draw_sprite_ext(sprite_index, 13, cx + percent13 + 640, cy + 240, image_xscale, image_yscale, 0, c_white, 0.4);
+draw_sprite_ext(sprite_index, 14, cx + percent14, cy + 240, image_xscale, image_yscale, 0, c_white, 0.4);
+draw_sprite_ext(sprite_index, 14, (cx + percent14) - 640, cy + 240, image_xscale, image_yscale, 0, c_white, 0.4);
+draw_set_color(c_white);
+
+if (room == rm_ch3_foaneend)
+    draw_sprite_ext(sBlackScreen, 0, 320, 240, 2, 2, 0, c_white, 0.5);

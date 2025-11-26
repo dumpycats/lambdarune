@@ -1,0 +1,11 @@
+window_set_caption("LAMBDARUNE");
+global.timer = 0;
+global.cinematicdialogue = 1;
+global.shoptalkmenu = false;
+global.ralseitalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+fadeout = false;
+blackalpha = 0;
+timer = 0;

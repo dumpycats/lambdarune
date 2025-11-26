@@ -1,0 +1,15 @@
+timer = -1;
+image_index = 1;
+hit = false;
+tptimer = 0;
+speed = -6;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+collision = false;
+yoffset = 0;
+yy = y;
+image_xscale = 2;
+image_yscale = 2;

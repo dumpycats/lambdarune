@@ -1,0 +1,10 @@
+image_xscale = 2;
+image_yscale = 2;
+randomize();
+leftright = 1;
+exception = false;
+timer = -1;
+surf2 = -2;
+hit = false;
+tptimer = 0;
+speedmultiplier = 1;

@@ -1,0 +1,15 @@
+global.current_dialogue = "";
+global.displayed_text = "";
+global.letter_index = 0;
+global.sound_playing = false;
+global.text_complete = false;
+global.pause_for_punctuation = false;
+global.pause_for_ellipsis = false;
+global.typing_speed = 1;
+global.typing_timer = 0;
+blockprogress = false;
+font = fDeterminationMW;
+skiptext = false;
+skiptimer = 0;
+dialogue4timer = 0;
+asknighttexttimer = 0;

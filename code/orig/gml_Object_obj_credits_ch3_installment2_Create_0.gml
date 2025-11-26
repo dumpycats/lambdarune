@@ -1,0 +1,15 @@
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+yy = y;
+whitealpha = 0;
+boost = 1;
+boostpitch = (boost - 1) + 1;
+audio_play_sound(mus_ch3_credits, 2, false, 1.2);
+audio_sound_gain(mus_ch3_credits, 1, 0);
+audio_sound_pitch(mus_ch3_credits, 1);
+sprite_prefetch(spr_credits_ch3_installment2_1);
+sprite_prefetch(spr_credits_ch3_installment2_2);
+sprite_prefetch(spr_credits_ch3_installment2_1_logo);

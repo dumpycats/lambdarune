@@ -1,0 +1,11 @@
+window_set_caption("guilt");
+timer = 0;
+spawntimer = 0;
+whiteouttimer = 0;
+global.daddialogue = 1;
+global.shoptalkmenu = false;
+global.ralseitalk = false;
+global.susietalk = false;
+global.texttalk = false;
+global.emptytalk = false;
+instance_create_depth(320, -30, 10, oPerseveranceLine);

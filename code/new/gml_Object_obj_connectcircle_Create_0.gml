@@ -1,0 +1,10 @@
+scale = 0.125;
+image_xscale = scale;
+image_yscale = scale;
+curvelinear = animcurve_get_channel(Curve, "acLinear");
+curveease = animcurve_get_channel(Curve, "acEase");
+curveslower = animcurve_get_channel(Curve, "acSlower");
+curvefaster = animcurve_get_channel(Curve, "acFaster");
+percent1 = 0;
+percent2 = 0;
+paused = false;

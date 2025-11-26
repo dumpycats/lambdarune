@@ -1,0 +1,50 @@
+if (pull == 2)
+{
+    var time = current_time / 1000;
+    scaleoffset = 1.4 + (sin(time * 6) * 0.05);
+    image_xscale = 0.83;
+    image_yscale = 0.83;
+    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, purplecolor, image_alpha);
+}
+
+if (!global.alldown)
+{
+    if (up)
+        y -= (7 * randommultiplier);
+    else
+        y += (7 * randommultiplier);
+    
+    if (pull == 1)
+        depth = SOUL.depth - 2;
+    else
+        depth = SOUL.depth - 1;
+    
+    if (instance_exists(BULLETBOARD))
+    {
+        if (place_meeting(x, y, SOUL) && image_alpha > 0.6)
+        {
+            if (pull == 1 && SOUL.pullpercent <= 0.5)
+            {
+                SOUL.hurt = true;
+                instance_destroy();
+            }
+            
+            if (pull == 2 && SOUL.pullpercent > 0.5)
+            {
+                SOUL.hurt = true;
+                instance_destroy();
+            }
+        }
+    }
+    
+    if (place_meeting(x, y, TP) && !SOUL.hurt && image_alpha > 0.6 && ((pull == 2 && SOUL.pullpercent > 0.2) || (pull == 1 && SOUL.pullpercent <= 0.8)))
+    {
+        tptimer++;
+        
+        if (tptimer == 1)
+            TP.add = true;
+        
+        if (tptimer == 6)
+            tptimer = 0;
+    }
+}
