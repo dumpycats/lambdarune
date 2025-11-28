@@ -1,0 +1,12 @@
+column = 0;
+selectoption = 1;
+yellow = 65535;
+timer = 0;
+menuaccessible = true;
+leave = false;
+leavetimer = 0;
+memoview = false;
+memotimer = 0;
+memoleave = false;
+memoleavetimer = 0;
+translation_switch = translation_get_sptite("spr_translation_switch");

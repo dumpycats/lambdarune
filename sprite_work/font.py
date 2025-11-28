@@ -2,7 +2,7 @@
 
 
 
-TEXT = """Switch to Russian"""
+TEXT = """Выбор главы"""
 
 
 
