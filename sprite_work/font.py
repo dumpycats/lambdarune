@@ -2,8 +2,12 @@
 
 
 
-TEXT = """Крейд Страшащий -
-- действующий лидер Полуночного Союза (в прошлом - Союз Анодов). Вооружён мощной мантией, пропитанной фрагментом редкого кристалла. Крейд является самым грозным членом ПС. Его сила - главная причина, по которой Союз Катодов изо всех сил пытается взять верх и остановить войны союзов."""
+TEXT = """Switch to Russian"""
+
+
+
+
+
 
 
 
@@ -23,8 +27,10 @@ from PIL import Image
 import csv, subprocess, os, sys
 import io
 
-CSV_FILE = "/home/yartom/Downloads/lambdarune/fonts_align_background/glyphs_fDeterminationMW_2.csv"
-FONT_IMAGE_FILE = "/home/yartom/Downloads/lambdarune/fonts_align_background/fDeterminationMW_2.png"
+path = "/home/yartom/Загрузки/lambdarune-tests/"
+
+CSV_FILE = path + "/fonts_align_background/glyphs_fDeterminationMW_2.csv"
+FONT_IMAGE_FILE = path + "fonts_align_background/fDeterminationMW_2.png"
 
 LINE_SPACING = 0
 CHAR_SPACING = 0
@@ -61,7 +67,7 @@ def copy_to_clipboard(img: Image.Image):
     img_bytes = io.BytesIO()
     img.save(img_bytes, format="PNG")
     print("❌ Не найдено xclip или wl-copy — сохранено в out.png")
-    img.save("/home/yartom/Downloads/lambdarune/sprite_work/a.png")
+    img.save(path + "sprite_work/a.png")
 
 def render_line(text, glyphs, font_img):
     width = 0

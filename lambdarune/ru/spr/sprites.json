@@ -1,7 +1,7 @@
 {
-    "example": {
-        "xoffset": 0,
-        "yoffset": 0,
+    "spr_translation_switch": {
+        "xoffset": 25,
+        "yoffset": 14,
         "frames": 1
     }
 }
