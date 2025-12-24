@@ -73,7 +73,7 @@ draw_set_halign(fa_left);
 if (global.tp < 100)
 {
     draw_text_with_tracking(pos_x - 28, pos_y - 24, string(global.tp), 16777215, 0, 0);
-    draw_text_with_tracking(pos_x - 23, pos_y + 1, lang("obj_tpbar_Draw_0_0"), 16777215, 0, 0);
+    draw_text_with_tracking(pos_x - 23, pos_y + 1, translation_get_string("gml_Object_obj_tpbar_Draw_0_0"), 16777215, 0, 0);
 }
 
 global.tp = clamp(global.tp, 0, 100);

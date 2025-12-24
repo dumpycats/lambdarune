@@ -3,65 +3,65 @@ switch (global.cinematicdialogue)
     case 1:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_0");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_0");
         global.typing_speed = 0.5;
         break;
     case 2:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_1");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_1");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 3:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_2");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_2");
         global.typing_speed = 1;
         global.shoptalkmenu = false;
         break;
     case 4:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_3");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_3");
         global.typing_speed = 1;
         global.shoptalkmenu = false;
         break;
     case 5:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_4");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_4");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 6:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_5");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_5");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 7:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_6");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_6");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 8:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_7");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_7");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 9:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_8");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_8");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 10:
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextCinematic_Step_0_9");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_9");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     default:
-        global.current_dialogue = lang("oTextCinematic_Step_0_10");
+        global.current_dialogue = translation_get_string("gml_Object_oTextCinematic_Step_0_10");
         break;
 }
 
@@ -76,7 +76,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextCinematic_Step_0_11");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : translation_get_string("gml_Object_oTextCinematic_Step_0_11");
             
             if (next_char == " " && following_char == " ")
             {

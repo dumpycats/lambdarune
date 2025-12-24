@@ -49,10 +49,10 @@ if (talking)
     switch (dialogue)
     {
         case 1:
-            current_dialogue = format_text(lang("obj_ch3_tree_Draw_73_0"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_tree_Draw_73_0"), 31);
             break;
         default:
-            current_dialogue = lang("obj_ch3_tree_Draw_73_1");
+            current_dialogue = translation_get_string("gml_Object_obj_ch3_tree_Draw_73_1");
             break;
     }
     
@@ -73,7 +73,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_ch3_tree_Draw_73_2");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_ch3_tree_Draw_73_2");
                 
                 if (next_char == " " && following_char == " ")
                 {

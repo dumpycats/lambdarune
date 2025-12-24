@@ -73,7 +73,7 @@ if (talking)
             charactertalking = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_0"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
@@ -82,7 +82,7 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 8;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_1"), 25);
             typing_speed = 1;
             break;
         case 3:
@@ -90,7 +90,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_2"), 25);
             typing_speed = 1;
             break;
         case 4:
@@ -98,7 +98,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_3"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_3"), 25);
             typing_speed = 1;
             break;
         case 5:
@@ -106,28 +106,28 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_4"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_4"), 25);
             break;
         case 6:
             tennatalk = true;
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_5"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_5"), 25);
             break;
         case 7:
             tennatalk = true;
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_6"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_6"), 25);
             break;
         case 8:
             tennatalk = false;
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 8;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_7"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_7"), 25);
             obj_mike_sio.image_index = 2;
             break;
         case 9:
@@ -135,7 +135,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 7;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_8"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_8"), 25);
             obj_mike_sio.image_index = 0;
             break;
         case 10:
@@ -143,7 +143,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 6;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_9"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_9"), 25);
             obj_mike_sio.image_index = 1;
             break;
         case 11:
@@ -151,14 +151,14 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 6;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_10"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_10"), 25);
             break;
         case 12:
             tennatalk = true;
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_11"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_11"), 25);
             obj_mike_sio.image_index = 7;
             break;
         case 13:
@@ -166,14 +166,14 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_12"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_12"), 25);
             break;
         case 14:
             tennatalk = false;
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_13"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_13"), 25);
             obj_mike_sio.image_index = 7;
             obj_tenna_sio.sprite_index = spr_tenna_wary;
             obj_tenna_sio.image_index = 0;
@@ -183,7 +183,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_14"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_14"), 25);
             obj_tenna_sio.image_index = 2;
             break;
         case 16:
@@ -191,7 +191,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_15"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_15"), 25);
             obj_tenna_sio.image_index = 0;
             break;
         case 17:
@@ -199,7 +199,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_16"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_16"), 25);
             obj_mike_sio.image_index = 4;
             obj_tenna_sio.sprite_index = spr_tenna_down;
             break;
@@ -208,7 +208,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 8;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_17"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_17"), 25);
             obj_mike_sio.image_index = 8;
             break;
         case 19:
@@ -216,7 +216,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 9;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_18"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_18"), 25);
             obj_mike_sio.image_index = 9;
             break;
         case 20:
@@ -224,7 +224,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_19"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_19"), 25);
             obj_mike_sio.image_index = 6;
             break;
         case 21:
@@ -232,7 +232,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_20"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_20"), 25);
             obj_mike_sio.image_index = 7;
             break;
         case 22:
@@ -240,7 +240,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_21"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_21"), 25);
             obj_tenna_sio.sprite_index = spr_tenna_neutral;
             obj_tenna_sio.image_index = 2;
             break;
@@ -249,7 +249,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 7;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_22"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_22"), 25);
             obj_mike_sio.image_index = 0;
             break;
         case 24:
@@ -257,35 +257,35 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_23"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_23"), 25);
             break;
         case 25:
             ralseitalk = false;
             susietalk = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_24"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_24"), 25);
             break;
         case 26:
             ralseitalk = true;
             susietalk = false;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_25"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_25"), 25);
             break;
         case 27:
             ralseitalk = true;
             miketalk = false;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 26;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_26"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_26"), 25);
             break;
         case 28:
             tennatalk = true;
             ralseitalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_27"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_27"), 25);
             obj_tenna_sio.sprite_index = spr_tenna_wary;
             obj_tenna_sio.image_index = 1;
             obj_mike_sio.image_index = 6;
@@ -295,21 +295,21 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_28"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_28"), 25);
             break;
         case 30:
             tennatalk = false;
             susietalk = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 20;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_29"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_29"), 25);
             break;
         case 31:
             tennatalk = true;
             susietalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_30"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_30"), 25);
             obj_tenna_sio.sprite_index = spr_tenna_down;
             obj_tenna_sio.image_index = 1;
             break;
@@ -318,7 +318,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_31"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_31"), 25);
             obj_mike_sio.image_index = 7;
             break;
         case 33:
@@ -326,14 +326,14 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_32"), 26);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_32"), 26);
             break;
         case 34:
             tennatalk = true;
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_33"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_33"), 25);
             obj_tenna_sio.sprite_index = spr_tenna_wary;
             obj_tenna_sio.image_index = 1;
             break;
@@ -342,7 +342,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_34"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_34"), 25);
             obj_tenna_sio.sprite_index = spr_tenna_neutral;
             obj_tenna_sio.image_index = 2;
             obj_mike_sio.image_index = 5;
@@ -352,7 +352,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 6;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_35"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_35"), 25);
             obj_tenna_sio.sprite_index = spr_tenna_down;
             obj_tenna_sio.image_index = 0;
             endcase36 = dialogue;
@@ -362,7 +362,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 8;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_36"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_36"), 25);
             obj_mike_sio.image_index = 7;
             break;
         case 38:
@@ -370,7 +370,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_37"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_37"), 25);
             obj_mike_sio.image_index = 6;
             during38timer++;
             
@@ -402,14 +402,14 @@ if (talking)
             susietalk = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 19;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_38"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_38"), 25);
             break;
         case 40:
             tennatalk = true;
             susietalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_39"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_39"), 25);
             obj_tenna_sio.image_index = 1;
             break;
         case 41:
@@ -417,28 +417,28 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_40"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_40"), 25);
             break;
         case 42:
             tennatalk = true;
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_41"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_41"), 25);
             break;
         case 43:
             tennatalk = true;
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_42"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_42"), 25);
             break;
         case 44:
             tennatalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 12;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_43"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_43"), 31);
             break;
         case 45:
             tennatalk = true;
@@ -446,42 +446,42 @@ if (talking)
             charactertalking = false;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_44"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_44"), 31);
             break;
         case 46:
             tennatalk = true;
             ralseitalk = false;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_45"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_45"), 31);
             break;
         case 47:
             tennatalk = true;
             ralseitalk = false;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_46"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_46"), 31);
             break;
         case 48:
             tennatalk = true;
             ralseitalk = false;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_47"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_47"), 31);
             break;
         case 49:
             tennatalk = true;
             ralseitalk = false;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_48"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_48"), 31);
             break;
         case 50:
             tennatalk = true;
             ralseitalk = false;
             dialogueiconchoice = sMikeDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_49"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_49"), 31);
             break;
         case 51:
             tennatalk = true;
@@ -489,14 +489,14 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(lang("obj_sio_text_prelude_Draw_73_50"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_50"), 25);
             audio_sound_pitch(mus_GALLERY, gallerypitch);
             audio_sound_gain(mus_GALLERY, 0, 1500);
             gallerypitch -= 0.011111111111111112;
             gallerypitch = clamp(gallerypitch, 0, 1);
             break;
         default:
-            current_dialogue = lang("obj_sio_text_prelude_Draw_73_51");
+            current_dialogue = translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_51");
             break;
     }
     
@@ -517,7 +517,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_sio_text_prelude_Draw_73_52");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_52");
                 
                 if (next_char == " " && following_char == " ")
                 {
@@ -726,7 +726,7 @@ if (e36trigger)
     {
         obj_tenna_sio.sprite_index = spr_tenna_remote;
         obj_tenna_sio.image_speed = 1;
-        window_set_caption(lang("obj_sio_text_prelude_Draw_73_53"));
+        window_set_caption(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_53"));
     }
     
     if (e36timer == 52)
@@ -763,7 +763,7 @@ if (d38trigger)
     {
         case 0:
             camera_set_view_pos(view_camera[0], 26, 20);
-            window_set_caption(lang("obj_sio_text_prelude_Draw_73_54"));
+            window_set_caption(translation_get_string("gml_Object_obj_sio_text_prelude_Draw_73_54"));
             break;
         case 2:
             camera_set_view_pos(view_camera[0], 14, 20);

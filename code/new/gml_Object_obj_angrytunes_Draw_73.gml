@@ -38,55 +38,55 @@ if (talking)
     {
         case 1:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_0");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_0");
             typing_speed = 1;
             break;
         case 2:
-            current_dialogue = lang("obj_angrytunes_Draw_73_1");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_1");
             typing_speed = 1;
             break;
         case 3:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_2");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_2");
             typing_speed = 1;
             break;
         case 4:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_3");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_3");
             typing_speed = 1;
             break;
         case 5:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_4");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_4");
             typing_speed = 1;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_5");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_5");
             typing_speed = 1;
             break;
         case 7:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_6");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_6");
             typing_speed = 1;
             break;
         case 8:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_7");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_7");
             typing_speed = 1;
             break;
         case 9:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_8");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_8");
             typing_speed = 1;
             break;
         case 10:
             texttalk = true;
-            current_dialogue = lang("obj_angrytunes_Draw_73_9");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_9");
             typing_speed = 1;
             break;
         default:
-            current_dialogue = lang("obj_angrytunes_Draw_73_10");
+            current_dialogue = translation_get_string("gml_Object_obj_angrytunes_Draw_73_10");
             break;
     }
     
@@ -104,7 +104,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_angrytunes_Draw_73_11");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_angrytunes_Draw_73_11");
                 
                 if (next_char == " " && following_char == " ")
                 {

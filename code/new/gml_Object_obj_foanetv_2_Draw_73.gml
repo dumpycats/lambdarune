@@ -40,12 +40,12 @@ if (talking)
     {
         case 1:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_0"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_0"), 32);
             typing_speed = 0.5;
             break;
         case 2:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_1"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_1"), 32);
             typing_speed = 0.5;
             
             if (displayed_text >= format_text("...g", 32))
@@ -55,68 +55,68 @@ if (talking)
         case 3:
             foanetalk = false;
             feighlinetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_2"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_2"), 32);
             typing_speed = 0.5;
             foanegain = 1.5;
             break;
         case 4:
             foanetalk = false;
             feighlinetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_3"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_3"), 32);
             typing_speed = 0.5;
             foanegain = 1.5;
             break;
         case 5:
             foanetalk = true;
             feighlinetalk = false;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_4"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_4"), 32);
             typing_speed = 0.5;
             break;
         case 6:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_5"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_5"), 32);
             typing_speed = 0.5;
             break;
         case 7:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_6"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_6"), 32);
             typing_speed = 0.5;
             break;
         case 8:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_7"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_7"), 32);
             typing_speed = 0.5;
             break;
         case 9:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_8"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_8"), 32);
             typing_speed = 0.5;
             break;
         case 10:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_9"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_9"), 32);
             typing_speed = 0.6;
             break;
         case 11:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_10"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_10"), 32);
             typing_speed = 0.7;
             break;
         case 12:
             foanetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_11"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_11"), 32);
             typing_speed = 0.8;
             break;
         case 13:
             foanetalk = false;
             feighlinetalk = true;
-            current_dialogue = format_text(lang("obj_foanetv_2_Draw_73_12"), 32);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_12"), 32);
             typing_speed = 1;
             audio_stop_sound(mus_revolution);
-            window_set_caption(lang("obj_foanetv_2_Draw_73_13"));
+            window_set_caption(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_13"));
             break;
         default:
-            current_dialogue = lang("obj_foanetv_2_Draw_73_14");
+            current_dialogue = translation_get_string("gml_Object_obj_foanetv_2_Draw_73_14");
             break;
     }
     
@@ -137,7 +137,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_foanetv_2_Draw_73_15");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_foanetv_2_Draw_73_15");
                 
                 if (next_char == " " && following_char == " ")
                 {
@@ -201,7 +201,7 @@ if (talking)
                 {
                     audio_sound_gain(mus_revolution, 1, 0);
                     audio_play_sound(mus_revolution, 1, true);
-                    window_set_caption(lang("obj_foanetv_2_Draw_73_16"));
+                    window_set_caption(translation_get_string("gml_Object_obj_foanetv_2_Draw_73_16"));
                     d2trigger = true;
                 }
                 

@@ -1,1 +1,1 @@
-window_set_caption(lang("rm_ch3_knight_Create_0"));
+window_set_caption(translation_get_string("gml_Room_rm_ch3_knight_Create_0"));

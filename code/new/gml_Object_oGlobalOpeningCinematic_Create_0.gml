@@ -1,4 +1,4 @@
-window_set_caption(lang("oGlobalOpeningCinematic_Create_0_0"));
+window_set_caption(translation_get_string("gml_Object_oGlobalOpeningCinematic_Create_0_0"));
 global.timer = 0;
 global.cinematicdialogue = 1;
 global.shoptalkmenu = false;

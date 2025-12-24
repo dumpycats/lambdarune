@@ -53,7 +53,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_0"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
@@ -61,7 +61,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_1"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         case 3:
@@ -69,7 +69,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_2"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
@@ -77,7 +77,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_3"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
@@ -85,7 +85,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_4"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_4"), 31);
             typing_speed = 1;
             break;
         case 6:
@@ -93,7 +93,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_5"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_5"), 31);
             typing_speed = 1;
             endcase1 = dialogue;
             break;
@@ -102,7 +102,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_6"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_6"), 31);
             typing_speed = 1;
             break;
         case 8:
@@ -110,7 +110,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_7"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_7"), 31);
             typing_speed = 1;
             break;
         case 9:
@@ -118,7 +118,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_8"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_8"), 31);
             typing_speed = 1;
             break;
         case 10:
@@ -126,7 +126,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_9"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_9"), 31);
             typing_speed = 1;
             endcase3 = dialogue;
             break;
@@ -135,7 +135,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_10"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_10"), 31);
             typing_speed = 1;
             endcase15 = dialogue;
             break;
@@ -144,7 +144,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_11"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_11"), 31);
             typing_speed = 1;
             break;
         case 13:
@@ -152,7 +152,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_12"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_12"), 31);
             typing_speed = 1;
             break;
         case 14:
@@ -160,13 +160,13 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_13"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_13"), 31);
             typing_speed = 1;
             foanes1 = dialogue;
             
             if (displayed_text >= format_text("Only I can pull them, and only I can break themthemthemthemthemthem", 31))
             {
-                var extradialogue = lang("obj_ch3_foaneend_text_Draw_73_14");
+                var extradialogue = translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_14");
                 draw_text_color(text_x + 1, text_y + 1, extradialogue, #320032, #320032, #320032, #320032, 1);
                 draw_text_color(text_x, text_y, extradialogue, c_white, c_white, color6, color6, 1);
             }
@@ -177,7 +177,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_15"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_15"), 31);
             typing_speed = 1;
             break;
         case 16:
@@ -185,7 +185,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_16"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_16"), 31);
             typing_speed = 1;
             break;
         case 17:
@@ -193,7 +193,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_17"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_17"), 31);
             typing_speed = 1;
             endcase2 = dialogue;
             
@@ -206,7 +206,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_18"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_18"), 31);
             typing_speed = 1;
             break;
         case 19:
@@ -214,14 +214,14 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_19"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_19"), 31);
             typing_speed = 1;
             endcase4 = dialogue;
             foanes2 = dialogue;
             
             if (displayed_text >= format_text("My body's... giving upupupupupup?", 31))
             {
-                var extradialogue = lang("obj_ch3_foaneend_text_Draw_73_20");
+                var extradialogue = translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_20");
                 draw_text_color(text_x + 1, text_y + 1, extradialogue, #320032, #320032, #320032, #320032, 1);
                 draw_text_color(text_x, text_y, extradialogue, c_white, c_white, color6, color6, 1);
             }
@@ -232,7 +232,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_21"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_21"), 31);
             typing_speed = 1;
             break;
         case 21:
@@ -240,7 +240,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_22"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_22"), 31);
             typing_speed = 1;
             break;
         case 22:
@@ -248,7 +248,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_23"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_23"), 31);
             typing_speed = 1;
             endcase15 = dialogue;
             break;
@@ -257,7 +257,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_24"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_24"), 31);
             typing_speed = 1;
             d23timer++;
             
@@ -276,7 +276,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_25"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_25"), 31);
             typing_speed = 1;
             break;
         case 25:
@@ -284,13 +284,13 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_26"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_26"), 31);
             typing_speed = 1;
             foanes3 = dialogue;
             
             if (displayed_text >= format_text("Were any of them... truetruetruetruetruetrue?", 31))
             {
-                var extradialogue = lang("obj_ch3_foaneend_text_Draw_73_27");
+                var extradialogue = translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_27");
                 draw_text_color(text_x + 1, text_y + 1, extradialogue, #320032, #320032, #320032, #320032, 1);
                 draw_text_color(text_x, text_y, extradialogue, c_white, c_white, color6, color6, 1);
             }
@@ -301,7 +301,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_28"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_28"), 31);
             typing_speed = 1;
             break;
         case 27:
@@ -309,7 +309,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_29"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_29"), 31);
             typing_speed = 1;
             break;
         case 28:
@@ -317,7 +317,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_30"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_30"), 31);
             typing_speed = 1;
             endcase6 = dialogue;
             break;
@@ -326,7 +326,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_31"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_31"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 1;
             break;
@@ -335,7 +335,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_32"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_32"), 31);
             typing_speed = 1;
             break;
         case 31:
@@ -343,7 +343,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_33"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_33"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 0;
             break;
@@ -352,7 +352,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_34"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_34"), 31);
             obj_foane_ex_aftermath.image_index = 3;
             typing_speed = 1;
             break;
@@ -361,7 +361,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_35"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_35"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 2;
             break;
@@ -370,7 +370,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_36"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_36"), 31);
             typing_speed = 1;
             break;
         case 35:
@@ -378,7 +378,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_37"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_37"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 0;
             break;
@@ -387,7 +387,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_38"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_38"), 31);
             typing_speed = 1;
             break;
         case 37:
@@ -395,7 +395,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_39"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_39"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 2;
             break;
@@ -404,7 +404,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_40"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_40"), 31);
             typing_speed = 1;
             break;
         case 39:
@@ -412,7 +412,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_41"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_41"), 31);
             typing_speed = 1;
             foanes4 = dialogue;
             break;
@@ -421,7 +421,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_42"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_42"), 31);
             typing_speed = 1;
             break;
         case 41:
@@ -429,7 +429,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_43"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_43"), 31);
             typing_speed = 1;
             endcase8 = dialogue;
             break;
@@ -438,7 +438,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_44"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_44"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 1;
             break;
@@ -447,7 +447,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_45"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_45"), 31);
             typing_speed = 1;
             break;
         case 44:
@@ -455,7 +455,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_46"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_46"), 31);
             typing_speed = 1;
             break;
         case 45:
@@ -463,7 +463,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_47"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_47"), 31);
             typing_speed = 1;
             break;
         case 46:
@@ -471,7 +471,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_48"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_48"), 31);
             typing_speed = 1;
             obj_foane_ex_aftermath.image_index = 2;
             break;
@@ -480,7 +480,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_49"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_49"), 31);
             typing_speed = 1;
             break;
         case 48:
@@ -488,7 +488,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_50"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_50"), 31);
             typing_speed = 1;
             endcase8 = dialogue;
             foanes4 = dialogue;
@@ -498,7 +498,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_51"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_51"), 31);
             typing_speed = 1;
             endcase9 = dialogue;
             break;
@@ -509,9 +509,9 @@ if (talking)
             dialogueicon = 2;
             
             if (!instance_exists(obj_foane_attackcheck))
-                current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_52"), 31);
+                current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_52"), 31);
             else
-                current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_53"), 31);
+                current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_53"), 31);
             
             typing_speed = 1;
             break;
@@ -520,7 +520,7 @@ if (talking)
             texttalk = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_54"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_54"), 31);
             typing_speed = 1;
             break;
         case 52:
@@ -528,7 +528,7 @@ if (talking)
             texttalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_55"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_55"), 31);
             typing_speed = 1;
             endcase10 = dialogue;
             obj_foane_ex_aftermath.image_index = 0;
@@ -545,7 +545,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_56"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_56"), 25);
             dialogueicon = 27;
             typing_speed = 1;
             obj_susie_sof_end.sprite_index = sSusieWalkDownUpset;
@@ -557,7 +557,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_57"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_57"), 25);
             dialogueicon = 4;
             typing_speed = 1;
             break;
@@ -568,7 +568,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_58"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_58"), 25);
             dialogueicon = 4;
             typing_speed = 1;
             obj_kris_sof_end.sprite_index = sKrisWalkLeft;
@@ -580,7 +580,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_59"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_59"), 25);
             dialogueicon = 37;
             typing_speed = 1;
             break;
@@ -591,7 +591,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_60"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_60"), 25);
             dialogueicon = 0;
             typing_speed = 1;
             obj_susie_sof_end.sprite_index = sSusieWalkRightUpset;
@@ -604,7 +604,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_61"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_61"), 25);
             dialogueicon = 26;
             typing_speed = 1;
             obj_ralsei_sof_end.sprite_index = sRalseiWalkRight;
@@ -620,7 +620,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_62"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_62"), 25);
             dialogueicon = 19;
             typing_speed = 1;
             obj_ralsei_sof_end.sprite_index = sRalseiWalkRightUpset;
@@ -639,7 +639,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_63"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_63"), 25);
             dialogueicon = 4;
             typing_speed = 1;
             break;
@@ -650,7 +650,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_64"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_64"), 25);
             dialogueicon = 35;
             typing_speed = 1;
             break;
@@ -661,7 +661,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_65"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_65"), 25);
             dialogueicon = 13;
             typing_speed = 1;
             obj_susie_sof_end.sprite_index = sSusieWalkDownUpset;
@@ -673,7 +673,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_66"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_66"), 25);
             dialogueicon = 30;
             typing_speed = 1;
             obj_susie_sof_end.sprite_index = sSusieWalkUp;
@@ -686,7 +686,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_67"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_67"), 31);
             dialogueicon = 0;
             typing_speed = 1;
             obj_ralsei_sof_end.sprite_index = sRalseiWalkUp;
@@ -698,7 +698,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_68"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_68"), 31);
             dialogueicon = 0;
             typing_speed = 1;
             break;
@@ -709,13 +709,13 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_ch3_foaneend_text_Draw_73_69"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_69"), 25);
             dialogueicon = 41;
             typing_speed = 1;
             endcase13 = dialogue;
             break;
         default:
-            current_dialogue = lang("obj_ch3_foaneend_text_Draw_73_70");
+            current_dialogue = translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_70");
             break;
     }
     
@@ -736,7 +736,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_ch3_foaneend_text_Draw_73_71");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_71");
                 
                 if (next_char == " " && following_char == " ")
                 {
@@ -796,7 +796,7 @@ if (talking)
     
     if (dialogue == foanes1)
     {
-        var text_parts = string_split(current_dialogue, lang("obj_ch3_foaneend_text_Draw_73_72"));
+        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_72"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -808,7 +808,7 @@ if (talking)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, lang("obj_ch3_foaneend_text_Draw_73_73"));
+            var lines = string_split(part, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_73"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -868,7 +868,7 @@ if (talking)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(lang("obj_ch3_foaneend_text_Draw_73_74"), remaining) > 0)
+                if (string_pos(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_74"), remaining) > 0)
                 {
                     x_offset = text_x;
                     y_offset += string_height(remaining);
@@ -881,7 +881,7 @@ if (talking)
     
     if (dialogue == foanes2)
     {
-        var text_parts = string_split(current_dialogue, lang("obj_ch3_foaneend_text_Draw_73_75"));
+        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_75"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -893,7 +893,7 @@ if (talking)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, lang("obj_ch3_foaneend_text_Draw_73_76"));
+            var lines = string_split(part, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_76"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -949,7 +949,7 @@ if (talking)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(lang("obj_ch3_foaneend_text_Draw_73_77"), remaining) > 0)
+                if (string_pos(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_77"), remaining) > 0)
                 {
                     x_offset = text_x;
                     y_offset += string_height(remaining);
@@ -962,7 +962,7 @@ if (talking)
     
     if (dialogue == foanes3)
     {
-        var text_parts = string_split(current_dialogue, lang("obj_ch3_foaneend_text_Draw_73_78"));
+        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_78"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -974,7 +974,7 @@ if (talking)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, lang("obj_ch3_foaneend_text_Draw_73_79"));
+            var lines = string_split(part, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_79"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -1030,7 +1030,7 @@ if (talking)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(lang("obj_ch3_foaneend_text_Draw_73_80"), remaining) > 0)
+                if (string_pos(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_80"), remaining) > 0)
                 {
                     x_offset = text_x;
                     y_offset += string_height(remaining);
@@ -1043,7 +1043,7 @@ if (talking)
     
     if (dialogue == foanes4)
     {
-        var text_parts = string_split(current_dialogue, lang("obj_ch3_foaneend_text_Draw_73_81"));
+        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_81"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -1055,7 +1055,7 @@ if (talking)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, lang("obj_ch3_foaneend_text_Draw_73_82"));
+            var lines = string_split(part, translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_82"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -1111,7 +1111,7 @@ if (talking)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(lang("obj_ch3_foaneend_text_Draw_73_83"), remaining) > 0)
+                if (string_pos(translation_get_string("gml_Object_obj_ch3_foaneend_text_Draw_73_83"), remaining) > 0)
                 {
                     x_offset = text_x;
                     y_offset += string_height(remaining);

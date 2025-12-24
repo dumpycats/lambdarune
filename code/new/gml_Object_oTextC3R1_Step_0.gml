@@ -10,13 +10,13 @@ switch (global.dialogue)
     case 1:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_0");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_0");
         global.typing_speed = 1;
         break;
     case 2:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_1");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_1");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -26,14 +26,14 @@ switch (global.dialogue)
     case 3:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_2");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_2");
         global.typing_speed = 1;
         blockprogress = false;
         break;
     case 4:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_3");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_3");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -43,14 +43,14 @@ switch (global.dialogue)
     case 5:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_4");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_4");
         global.typing_speed = 1;
         blockprogress = false;
         break;
     case 6:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_5");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_5");
         global.typing_speed = 1;
         blockprogress = true;
         oKrisPlayerC3.sprite_index = sKrisWalkLeft;
@@ -61,14 +61,14 @@ switch (global.dialogue)
     case 7:
         global.susietalk = false;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_6");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_6");
         global.typing_speed = 1;
         blockprogress = false;
         break;
     case 8:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_7");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_7");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -76,7 +76,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 17;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_8");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_8");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -86,7 +86,7 @@ switch (global.dialogue)
         oSusieC3.sprite_index = sSusieTiltForward;
         oSusieC3.x = 320;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_9");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_9");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -95,14 +95,14 @@ switch (global.dialogue)
         oDialogueSprite.image_index = 20;
         oSusieC3.sprite_index = sSusieTiltRight;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_10");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_10");
         global.typing_speed = 1;
         blockprogress = false;
         break;
     case 12:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_11");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_11");
         global.typing_speed = 1;
         blockprogress = true;
         oKrisPlayerC3.sprite_index = sKrisWalkRight;
@@ -114,7 +114,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 34;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_12");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_12");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -122,7 +122,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 4;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_13");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_13");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -130,7 +130,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 3;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_14");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_14");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -138,7 +138,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 26;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_15");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_15");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -146,7 +146,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 12;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_16");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_16");
         global.typing_speed = 1;
         blockprogress = false;
         knighttexttimer++;
@@ -165,7 +165,7 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 4;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_17");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_17");
         global.typing_speed = 1;
         blockprogress = false;
         
@@ -176,7 +176,7 @@ switch (global.dialogue)
     case 19:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_18");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_18");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -188,7 +188,7 @@ switch (global.dialogue)
         oDialogueSprite.image_index = 1;
         global.dialoguebottom = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_19");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_19");
         global.typing_speed = 1;
         blockprogress = false;
         break;
@@ -196,10 +196,10 @@ switch (global.dialogue)
         global.susietalk = true;
         oDialogueSprite.image_index = 17;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_20");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_20");
         global.typing_speed = 1;
         blockprogress = false;
-        window_set_caption(lang("oTextC3R1_Step_0_21"));
+        window_set_caption(translation_get_string("gml_Object_oTextC3R1_Step_0_21"));
         knightastexttimer++;
         
         if (knightastexttimer == 1)
@@ -215,11 +215,11 @@ switch (global.dialogue)
     case 22:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R1_Step_0_22");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_22");
         global.typing_speed = 1;
         global.playermove = true;
         blockprogress = true;
-        window_set_caption(lang("oTextC3R1_Step_0_23"));
+        window_set_caption(translation_get_string("gml_Object_oTextC3R1_Step_0_23"));
         
         if (instance_exists(oKnightText))
             instance_destroy(oKnightText);
@@ -232,7 +232,7 @@ switch (global.dialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = lang("oTextC3R1_Step_0_24");
+        global.current_dialogue = translation_get_string("gml_Object_oTextC3R1_Step_0_24");
         break;
 }
 
@@ -247,7 +247,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextC3R1_Step_0_25");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : translation_get_string("gml_Object_oTextC3R1_Step_0_25");
             
             if (next_char == " " && following_char == " ")
             {

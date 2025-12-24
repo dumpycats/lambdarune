@@ -11,7 +11,7 @@ for (var i = 1; i <= string_length(global.displayed_text); i++)
 {
     var current_char = string_char_at(global.displayed_text, i);
     
-    if (current_char == lang("oTextCinematic_Draw_0_0"))
+    if (current_char == translation_get_string("gml_Object_oTextCinematic_Draw_0_0"))
     {
         text_x = 448;
         text_y += (string_height(current_char) + leading);
