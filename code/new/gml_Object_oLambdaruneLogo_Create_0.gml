@@ -1,4 +1,4 @@
 timer = 0;
 fadeout = false;
 fadetimer = 0;
-window_set_caption(translation_get_string("gml_Object_oLambdaruneLogo_Create_0_0"));
+window_set_caption(lang("oLambdaruneLogo_Create_0_0"));

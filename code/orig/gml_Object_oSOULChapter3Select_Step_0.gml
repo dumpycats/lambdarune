@@ -1,4 +1,3 @@
- 
 timer++;
 
 if (timer == 1)
@@ -78,7 +77,7 @@ if (menuaccessible)
 if (selectoption < 1)
     selectoption = 7;
 
-if (selectoption > 8)
+if (selectoption > 7)
     selectoption = 1;
 
 if (selectoption == 1)
@@ -168,39 +167,7 @@ else
     oChapter3_V.image_blend = c_white;
 }
 
-
-//
-translation_switch_color = c_white;
-
 if (selectoption == 6)
-{
-    x = 25;
-    y = 389;
-    translation_switch_color = c_yellow;
-
-    if ((keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && menuaccessible)
-    {
-        ini_open("lang.ini");
-
-        if (global.lang == "ru")
-        {
-            ini_write_string("Lang", "lang", "en");
-        }
-        else if (global.lang == "en")
-        {
-            ini_write_string("Lang", "lang", "ru");
-        }
-        
-        ini_close();
-
-        translation_load_all();
-        translation_switch_sprite = translation_get_sprite("spr_translation_switch");
-    }
-}
-
-
-
-if (selectoption == 7)
 {
     x = 25;
     y = 419;
@@ -211,7 +178,7 @@ else
     oChapter3Extras.image_blend = c_white;
 }
 
-if (selectoption == 8)
+if (selectoption == 7)
 {
     x = 25;
     y = 451;
@@ -222,7 +189,7 @@ else
     oChapter3ChapterSelect.image_blend = c_white;
 }
 
-if (selectoption == 8)
+if (selectoption == 7)
 {
     if ((keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && menuaccessible)
     {
@@ -247,7 +214,7 @@ if (selectoption == 8)
     }
 }
 
-if (selectoption == 7)
+if (selectoption == 6)
 {
     if ((keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))) && menuaccessible && !memoleave)
     {

@@ -19,7 +19,7 @@ draw_text_color(text_x + 1, text_y + 1, global.displayed_text, shadow_color1, sh
 
 if (dialogue == 3)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_0"));
+    var text_parts = string_split(global.current_dialogue, lang("oTextC3_spacechannel6_Draw_0_0"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -31,7 +31,7 @@ if (dialogue == 3)
         if (string_length(current_displayed) < string_length(part))
             part = string_copy(part, 1, string_length(current_displayed));
         
-        var lines = string_split(part, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_1"));
+        var lines = string_split(part, lang("oTextC3_spacechannel6_Draw_0_1"));
         
         for (var j = 0; j < array_length(lines); j++)
         {
@@ -92,7 +92,7 @@ if (dialogue == 3)
             draw_text(x_offset, y_offset, remaining);
             x_offset += string_width(remaining);
             
-            if (string_pos(translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_2"), remaining) > 0)
+            if (string_pos(lang("oTextC3_spacechannel6_Draw_0_2"), remaining) > 0)
             {
                 x_offset = text_x;
                 y_offset += string_height(remaining);
@@ -106,12 +106,12 @@ if (dialogue == 3)
     {
         var last_char = string_char_at(global.displayed_text, string_length(global.displayed_text));
         
-        if (last_char == translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_3"))
+        if (last_char == lang("oTextC3_spacechannel6_Draw_0_3"))
         {
             draw_set_color(#320032);
-            draw_text((x_offset + 1) - 16, y_offset + 1, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_4"));
+            draw_text((x_offset + 1) - 16, y_offset + 1, lang("oTextC3_spacechannel6_Draw_0_4"));
             draw_set_color(color6);
-            draw_text(x_offset - 16, y_offset, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_5"));
+            draw_text(x_offset - 16, y_offset, lang("oTextC3_spacechannel6_Draw_0_5"));
         }
     }
     
@@ -120,7 +120,7 @@ if (dialogue == 3)
 
 if (dialogue == 9)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_6"));
+    var text_parts = string_split(global.current_dialogue, lang("oTextC3_spacechannel6_Draw_0_6"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -132,7 +132,7 @@ if (dialogue == 9)
         if (string_length(current_displayed) < string_length(part))
             part = string_copy(part, 1, string_length(current_displayed));
         
-        var lines = string_split(part, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_7"));
+        var lines = string_split(part, lang("oTextC3_spacechannel6_Draw_0_7"));
         
         for (var j = 0; j < array_length(lines); j++)
         {
@@ -193,7 +193,7 @@ if (dialogue == 9)
             draw_text(x_offset, y_offset, remaining);
             x_offset += string_width(remaining);
             
-            if (string_pos(translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_8"), remaining) > 0)
+            if (string_pos(lang("oTextC3_spacechannel6_Draw_0_8"), remaining) > 0)
             {
                 x_offset = text_x;
                 y_offset += string_height(remaining);
@@ -207,10 +207,10 @@ if (dialogue == 9)
     {
         var last_char = string_char_at(global.displayed_text, string_length(global.displayed_text));
         
-        if (last_char == translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_9"))
+        if (last_char == lang("oTextC3_spacechannel6_Draw_0_9"))
         {
             draw_set_color(color6);
-            draw_text(x_offset - 16, y_offset, translation_get_string("gml_Object_oTextC3_spacechannel6_Draw_0_10"));
+            draw_text(x_offset - 16, y_offset, lang("oTextC3_spacechannel6_Draw_0_10"));
         }
     }
     

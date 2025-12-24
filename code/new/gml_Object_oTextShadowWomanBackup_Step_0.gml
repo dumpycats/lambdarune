@@ -3,13 +3,13 @@ switch (global.shopdialogue)
     case 1:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_0");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_0");
         global.typing_speed = 1;
         break;
     case 2:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_1");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_1");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -17,7 +17,7 @@ switch (global.shopdialogue)
     case 3:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_2");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_2");
         global.typing_speed = 1;
         global.fadeout = true;
         instance_create_depth(320, 240, -80, oBlackScreen);
@@ -29,7 +29,7 @@ switch (global.shopdialogue)
     case 4:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_3");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_3");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -37,7 +37,7 @@ switch (global.shopdialogue)
     case 5:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_4");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_4");
         global.typing_speed = 1;
         global.fadeout = true;
         instance_create_depth(320, 240, -80, oBlackScreen);
@@ -49,7 +49,7 @@ switch (global.shopdialogue)
     case 6:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_5");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_5");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = false;
@@ -57,7 +57,7 @@ switch (global.shopdialogue)
     case 7:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_6");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_6");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -65,7 +65,7 @@ switch (global.shopdialogue)
     case 8:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_7");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_7");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = false;
@@ -73,14 +73,14 @@ switch (global.shopdialogue)
     case 9:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_8");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_8");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = false;
         break;
     case 10:
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_9");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_9");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -88,7 +88,7 @@ switch (global.shopdialogue)
     case 11:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_10");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_10");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = false;
@@ -96,7 +96,7 @@ switch (global.shopdialogue)
     case 12:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_11");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_11");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -104,7 +104,7 @@ switch (global.shopdialogue)
     case 13:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_12");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_12");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -112,7 +112,7 @@ switch (global.shopdialogue)
     case 14:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_13");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_13");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -120,7 +120,7 @@ switch (global.shopdialogue)
     case 15:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_14");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_14");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -128,7 +128,7 @@ switch (global.shopdialogue)
     case 16:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_15");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_15");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -136,7 +136,7 @@ switch (global.shopdialogue)
     case 17:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_16");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_16");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -144,7 +144,7 @@ switch (global.shopdialogue)
     case 18:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_17");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_17");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -152,7 +152,7 @@ switch (global.shopdialogue)
     case 19:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_18");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_18");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -160,7 +160,7 @@ switch (global.shopdialogue)
     case 20:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_19");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_19");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -168,7 +168,7 @@ switch (global.shopdialogue)
     case 21:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_20");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_20");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -176,7 +176,7 @@ switch (global.shopdialogue)
     case 22:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_21");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_21");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -184,7 +184,7 @@ switch (global.shopdialogue)
     case 23:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_22");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_22");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -199,7 +199,7 @@ switch (global.shopdialogue)
     case 24:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_23");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_23");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -207,7 +207,7 @@ switch (global.shopdialogue)
     case 25:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_24");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_24");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -215,7 +215,7 @@ switch (global.shopdialogue)
     case 26:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_25");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_25");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -223,7 +223,7 @@ switch (global.shopdialogue)
     case 27:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_26");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_26");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -231,7 +231,7 @@ switch (global.shopdialogue)
     case 28:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_27");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_27");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -239,7 +239,7 @@ switch (global.shopdialogue)
     case 29:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_28");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_28");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -247,7 +247,7 @@ switch (global.shopdialogue)
     case 30:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_29");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_29");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -255,7 +255,7 @@ switch (global.shopdialogue)
     case 31:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_30");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_30");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -263,7 +263,7 @@ switch (global.shopdialogue)
     case 32:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_31");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_31");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -278,7 +278,7 @@ switch (global.shopdialogue)
     case 33:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_32");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_32");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -286,7 +286,7 @@ switch (global.shopdialogue)
     case 34:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_33");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_33");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -294,7 +294,7 @@ switch (global.shopdialogue)
     case 35:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_34");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_34");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -302,7 +302,7 @@ switch (global.shopdialogue)
     case 36:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_35");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_35");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -310,7 +310,7 @@ switch (global.shopdialogue)
     case 37:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_36");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_36");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -318,7 +318,7 @@ switch (global.shopdialogue)
     case 38:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_37");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_37");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -326,7 +326,7 @@ switch (global.shopdialogue)
     case 39:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_38");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_38");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -334,7 +334,7 @@ switch (global.shopdialogue)
     case 40:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_39");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_39");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -342,7 +342,7 @@ switch (global.shopdialogue)
     case 41:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_40");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_40");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -350,7 +350,7 @@ switch (global.shopdialogue)
     case 42:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_41");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_41");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -358,7 +358,7 @@ switch (global.shopdialogue)
     case 43:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_42");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_42");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -366,7 +366,7 @@ switch (global.shopdialogue)
     case 44:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_43");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_43");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -374,7 +374,7 @@ switch (global.shopdialogue)
     case 45:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_44");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_44");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -382,7 +382,7 @@ switch (global.shopdialogue)
     case 46:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_45");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_45");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -390,7 +390,7 @@ switch (global.shopdialogue)
     case 47:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_46");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_46");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -398,7 +398,7 @@ switch (global.shopdialogue)
     case 48:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_47");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_47");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -406,7 +406,7 @@ switch (global.shopdialogue)
     case 49:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_48");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_48");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -414,7 +414,7 @@ switch (global.shopdialogue)
     case 50:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_49");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_49");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -429,7 +429,7 @@ switch (global.shopdialogue)
     case 51:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_50");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_50");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -437,7 +437,7 @@ switch (global.shopdialogue)
     case 52:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_51");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_51");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -445,7 +445,7 @@ switch (global.shopdialogue)
     case 53:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_52");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_52");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -453,7 +453,7 @@ switch (global.shopdialogue)
     case 54:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_53");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_53");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -461,7 +461,7 @@ switch (global.shopdialogue)
     case 55:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_54");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_54");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -469,7 +469,7 @@ switch (global.shopdialogue)
     case 56:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_55");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_55");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -477,7 +477,7 @@ switch (global.shopdialogue)
     case 57:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_56");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_56");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -485,7 +485,7 @@ switch (global.shopdialogue)
     case 58:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_57");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_57");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -493,7 +493,7 @@ switch (global.shopdialogue)
     case 59:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_58");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_58");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -501,7 +501,7 @@ switch (global.shopdialogue)
     case 60:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_59");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_59");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -509,7 +509,7 @@ switch (global.shopdialogue)
     case 61:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_60");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_60");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -517,7 +517,7 @@ switch (global.shopdialogue)
     case 62:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_61");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_61");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -525,7 +525,7 @@ switch (global.shopdialogue)
     case 63:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_62");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_62");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -533,7 +533,7 @@ switch (global.shopdialogue)
     case 64:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_63");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_63");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -541,7 +541,7 @@ switch (global.shopdialogue)
     case 65:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_64");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_64");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -556,7 +556,7 @@ switch (global.shopdialogue)
     case 66:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_65");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_65");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -564,7 +564,7 @@ switch (global.shopdialogue)
     case 70:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_66");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_66");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -572,7 +572,7 @@ switch (global.shopdialogue)
     case 71:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_67");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_67");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -580,7 +580,7 @@ switch (global.shopdialogue)
     case 72:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_68");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_68");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -588,7 +588,7 @@ switch (global.shopdialogue)
     case 73:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_69");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_69");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -596,7 +596,7 @@ switch (global.shopdialogue)
     case 74:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_70");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_70");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -604,7 +604,7 @@ switch (global.shopdialogue)
     case 75:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_71");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_71");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -612,7 +612,7 @@ switch (global.shopdialogue)
     case 76:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_72");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_72");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -620,7 +620,7 @@ switch (global.shopdialogue)
     case 77:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_73");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_73");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -628,7 +628,7 @@ switch (global.shopdialogue)
     case 78:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_74");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_74");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -636,7 +636,7 @@ switch (global.shopdialogue)
     case 79:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_75");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_75");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -644,7 +644,7 @@ switch (global.shopdialogue)
     case 80:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_76");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_76");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -652,7 +652,7 @@ switch (global.shopdialogue)
     case 81:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_77");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_77");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -660,7 +660,7 @@ switch (global.shopdialogue)
     case 82:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_78");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_78");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -668,7 +668,7 @@ switch (global.shopdialogue)
     case 83:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_79");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_79");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -676,7 +676,7 @@ switch (global.shopdialogue)
     case 84:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_80");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_80");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -684,7 +684,7 @@ switch (global.shopdialogue)
     case 85:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_81");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_81");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -692,7 +692,7 @@ switch (global.shopdialogue)
     case 86:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_82");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_82");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -700,7 +700,7 @@ switch (global.shopdialogue)
     case 87:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_83");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_83");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -708,7 +708,7 @@ switch (global.shopdialogue)
     case 88:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_84");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_84");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -723,7 +723,7 @@ switch (global.shopdialogue)
     case 89:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_85");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_85");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -738,7 +738,7 @@ switch (global.shopdialogue)
     case 90:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_86");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_86");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -746,7 +746,7 @@ switch (global.shopdialogue)
     case 91:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_87");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_87");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -754,7 +754,7 @@ switch (global.shopdialogue)
     case 92:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_88");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_88");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -762,7 +762,7 @@ switch (global.shopdialogue)
     case 93:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_89");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_89");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -770,7 +770,7 @@ switch (global.shopdialogue)
     case 94:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_90");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_90");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -778,7 +778,7 @@ switch (global.shopdialogue)
     case 95:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_91");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_91");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -786,7 +786,7 @@ switch (global.shopdialogue)
     case 96:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_92");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_92");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -794,7 +794,7 @@ switch (global.shopdialogue)
     case 97:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_93");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_93");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -802,7 +802,7 @@ switch (global.shopdialogue)
     case 98:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_94");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_94");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -810,7 +810,7 @@ switch (global.shopdialogue)
     case 99:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_95");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_95");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -818,7 +818,7 @@ switch (global.shopdialogue)
     case 100:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_96");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_96");
         audio_sound_gain(mus_shadowshop, 0.33, 150);
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
@@ -839,7 +839,7 @@ switch (global.shopdialogue)
     case 101:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_97");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_97");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         thirdrulertimer = 0;
@@ -848,7 +848,7 @@ switch (global.shopdialogue)
     case 102:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_98");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_98");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -856,7 +856,7 @@ switch (global.shopdialogue)
     case 103:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_99");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_99");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -864,7 +864,7 @@ switch (global.shopdialogue)
     case 104:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_100");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_100");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -880,14 +880,14 @@ switch (global.shopdialogue)
     case 105:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_101");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_101");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         break;
     case 106:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_102");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_102");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -895,7 +895,7 @@ switch (global.shopdialogue)
     case 107:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_103");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_103");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -903,7 +903,7 @@ switch (global.shopdialogue)
     case 108:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_104");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_104");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -911,7 +911,7 @@ switch (global.shopdialogue)
     case 109:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_105");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_105");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -919,7 +919,7 @@ switch (global.shopdialogue)
     case 110:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_106");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_106");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -927,7 +927,7 @@ switch (global.shopdialogue)
     case 111:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_107");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_107");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -935,7 +935,7 @@ switch (global.shopdialogue)
     case 112:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_108");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_108");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -943,7 +943,7 @@ switch (global.shopdialogue)
     case 113:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_109");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_109");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -951,7 +951,7 @@ switch (global.shopdialogue)
     case 114:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_110");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_110");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -959,7 +959,7 @@ switch (global.shopdialogue)
     case 115:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_111");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_111");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -967,7 +967,7 @@ switch (global.shopdialogue)
     case 116:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_112");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_112");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -975,7 +975,7 @@ switch (global.shopdialogue)
     case 117:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_113");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_113");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -983,7 +983,7 @@ switch (global.shopdialogue)
     case 118:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_114");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_114");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -991,7 +991,7 @@ switch (global.shopdialogue)
     case 119:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_115");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_115");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -999,7 +999,7 @@ switch (global.shopdialogue)
     case 120:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_116");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_116");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -1007,7 +1007,7 @@ switch (global.shopdialogue)
     case 121:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_117");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_117");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -1015,7 +1015,7 @@ switch (global.shopdialogue)
     case 122:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_118");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_118");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -1023,7 +1023,7 @@ switch (global.shopdialogue)
     case 123:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_119");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_119");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -1031,7 +1031,7 @@ switch (global.shopdialogue)
     case 124:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_120");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_120");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -1039,7 +1039,7 @@ switch (global.shopdialogue)
     case 125:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_121");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_121");
         global.typing_speed = 1;
         global.shadowwomanmonologue = true;
         global.shoptalkmenu = false;
@@ -1047,7 +1047,7 @@ switch (global.shopdialogue)
     case 126:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_122");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_122");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = true;
@@ -1062,13 +1062,13 @@ switch (global.shopdialogue)
     case 127:
         global.texttalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_123");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_123");
         global.typing_speed = 1;
         global.shadowwomanmonologue = false;
         global.shoptalkmenu = false;
         break;
     default:
-        global.current_dialogue = translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_124");
+        global.current_dialogue = lang("oTextShadowWomanBackup_Step_0_124");
         break;
 }
 
@@ -1083,7 +1083,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : translation_get_string("gml_Object_oTextShadowWomanBackup_Step_0_125");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextShadowWomanBackup_Step_0_125");
             
             if (next_char == " " && following_char == " ")
             {

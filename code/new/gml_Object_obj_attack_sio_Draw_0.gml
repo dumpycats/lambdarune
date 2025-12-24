@@ -142,13 +142,13 @@ if (timer == 1)
     target_instances = [];
     
     if (kris)
-        array_push(active_members, translation_get_string("gml_Object_obj_attack_sio_Draw_0_0"));
+        array_push(active_members, lang("obj_attack_sio_Draw_0_0"));
     
     if (susie)
-        array_push(active_members, translation_get_string("gml_Object_obj_attack_sio_Draw_0_1"));
+        array_push(active_members, lang("obj_attack_sio_Draw_0_1"));
     
     if (ralsei)
-        array_push(active_members, translation_get_string("gml_Object_obj_attack_sio_Draw_0_2"));
+        array_push(active_members, lang("obj_attack_sio_Draw_0_2"));
     
     var used_indices = [];
     

@@ -73,7 +73,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_falsefountainend_text_Draw_73_0"), 25);
+            current_dialogue = format_text(lang("obj_falsefountainend_text_Draw_73_0"), 25);
             dialogueicon = 34;
             typing_speed = 1;
             break;
@@ -81,12 +81,12 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_falsefountainend_text_Draw_73_1"), 25);
+            current_dialogue = format_text(lang("obj_falsefountainend_text_Draw_73_1"), 25);
             dialogueicon = 28;
             typing_speed = 1;
             break;
         default:
-            current_dialogue = translation_get_string("gml_Object_obj_falsefountainend_text_Draw_73_2");
+            current_dialogue = lang("obj_falsefountainend_text_Draw_73_2");
             break;
     }
     
@@ -107,7 +107,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_falsefountainend_text_Draw_73_3");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_falsefountainend_text_Draw_73_3");
                 
                 if (next_char == " " && following_char == " ")
                 {

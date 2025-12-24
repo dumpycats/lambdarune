@@ -1,4 +1,4 @@
-global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel1_backup_Create_0_0");
+global.current_dialogue = lang("oTextC3_spacechannel1_backup_Create_0_0");
 global.displayed_text = "";
 global.letter_index = 0;
 global.sound_playing = false;

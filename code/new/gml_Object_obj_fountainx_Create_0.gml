@@ -11,4 +11,4 @@ audio_play_sound(snd_glassbreak, 1, false);
 audio_play_sound(snd_explosion_mmx3, 1, false);
 uniTime = shader_get_uniform(shader_Distort, "time");
 uniTexel = shader_get_uniform(shader_Distort, "texel");
-window_set_caption(translation_get_string("gml_Object_obj_fountainx_Create_0_0"));
+window_set_caption(lang("obj_fountainx_Create_0_0"));

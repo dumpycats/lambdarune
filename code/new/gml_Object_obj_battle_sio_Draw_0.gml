@@ -8,13 +8,13 @@ if (debug)
     
     if (generator1)
     {
-        draw_text_ext_transformed(cx + 320, cy + 20, translation_get_string("gml_Object_obj_battle_sio_Draw_0_0"), 0, 640, 1, 1, 0);
+        draw_text_ext_transformed(cx + 320, cy + 20, lang("obj_battle_sio_Draw_0_0"), 0, 640, 1, 1, 0);
         draw_text_ext_transformed(cx + 320, cy + 60, string(jamphase), 0, 640, 1, 1, 0);
     }
     
     if (generator2)
     {
-        draw_text_ext_transformed(cx + 320, cy + 40, translation_get_string("gml_Object_obj_battle_sio_Draw_0_1"), 0, 640, 1, 1, 0);
+        draw_text_ext_transformed(cx + 320, cy + 40, lang("obj_battle_sio_Draw_0_1"), 0, 640, 1, 1, 0);
         draw_text_ext_transformed(cx + 320, cy + 60, string(jamphase), 0, 640, 1, 1, 0);
     }
     
@@ -619,7 +619,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_2");
+        ACTNAME = lang("obj_battle_sio_Draw_0_2");
         actdialogue = 1;
         PARTYMEMBER1.image_speed = 1;
         reset_dialogue_normal();
@@ -633,7 +633,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_3");
+        ACTNAME = lang("obj_battle_sio_Draw_0_3");
         actdialogue = 1;
         PARTYMEMBER2.image_speed = 1;
         PARTYMEMBER2.sprite_index = spr_susie_act;
@@ -642,13 +642,13 @@ if (progressfinal)
         var ms = instance_create_depth(ENEMY1.x - 50, ENEMY1.y - 30, ENEMY1.depth - 3, obj_mercynumber);
         ENEMY1.shake = true;
         ENEMY1.shaketimer = -1;
-        ms.value = translation_get_string("gml_Object_obj_battle_sio_Draw_0_4") + string(mercyactionadd) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_5");
+        ms.value = lang("obj_battle_sio_Draw_0_4") + string(mercyactionadd) + lang("obj_battle_sio_Draw_0_5");
         global.mercy += mercyactionadd;
         audio_play_sound(snd_screenglitch, 1, false);
     }
     else if (ralseiacting)
     {
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_6");
+        ACTNAME = lang("obj_battle_sio_Draw_0_6");
         textmenu = false;
         textact = true;
         PARTYMEMBER3.image_speed = 1;
@@ -659,7 +659,7 @@ if (progressfinal)
         var mr = instance_create_depth(ENEMY1.x - 50, ENEMY1.y - 30, ENEMY1.depth - 3, obj_mercynumber);
         ENEMY1.shake = true;
         ENEMY1.shaketimer = -1;
-        mr.value = translation_get_string("gml_Object_obj_battle_sio_Draw_0_7") + string(mercyactionadd) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_8");
+        mr.value = lang("obj_battle_sio_Draw_0_7") + string(mercyactionadd) + lang("obj_battle_sio_Draw_0_8");
         global.mercy += mercyactionadd;
         audio_play_sound(snd_screenglitch, 1, false);
     }
@@ -667,7 +667,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_9");
+        ACTNAME = lang("obj_battle_sio_Draw_0_9");
         PARTYMEMBER1.sprite_index = spr_kris_act;
         PARTYMEMBER1.image_index = 0;
         PARTYMEMBER1.image_speed = 1;
@@ -677,7 +677,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_10");
+        ACTNAME = lang("obj_battle_sio_Draw_0_10");
         PARTYMEMBER2.sprite_index = spr_susie_act;
         PARTYMEMBER2.image_index = 0;
         PARTYMEMBER2.image_speed = 1;
@@ -687,7 +687,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_11");
+        ACTNAME = lang("obj_battle_sio_Draw_0_11");
         PARTYMEMBER3.sprite_index = spr_ralsei_act;
         PARTYMEMBER3.image_index = 0;
         PARTYMEMBER3.image_speed = 1;
@@ -698,7 +698,7 @@ if (progressfinal)
         PARTYMEMBER1.image_speed = 1;
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_12");
+        ACTNAME = lang("obj_battle_sio_Draw_0_12");
         reset_dialogue_normal();
     }
     else if (susieitem)
@@ -707,7 +707,7 @@ if (progressfinal)
         PARTYMEMBER2.sprite_index = spr_susie_item;
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_13");
+        ACTNAME = lang("obj_battle_sio_Draw_0_13");
         reset_dialogue_normal();
     }
     else if (ralseiitem)
@@ -716,12 +716,12 @@ if (progressfinal)
         PARTYMEMBER3.sprite_index = spr_ralsei_item;
         textmenu = false;
         textact = true;
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_14");
+        ACTNAME = lang("obj_battle_sio_Draw_0_14");
         reset_dialogue_normal();
     }
     else if (susiemagic && !(susieactoptions == 1 && jammed))
     {
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_15");
+        ACTNAME = lang("obj_battle_sio_Draw_0_15");
         textmenu = false;
         textact = true;
         PARTYMEMBER2.image_index = 0;
@@ -734,7 +734,7 @@ if (progressfinal)
     }
     else if (ralseimagic)
     {
-        ACTNAME = translation_get_string("gml_Object_obj_battle_sio_Draw_0_16");
+        ACTNAME = lang("obj_battle_sio_Draw_0_16");
         textmenu = false;
         textact = true;
         PARTYMEMBER3.image_index = 0;
@@ -782,35 +782,35 @@ if (progressfinal)
         switch (randomenemydialogue)
         {
             case 0:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_17");
+                tennatext = lang("obj_battle_sio_Draw_0_17");
                 break;
             case 1:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_18");
+                tennatext = lang("obj_battle_sio_Draw_0_18");
                 break;
             case 2:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_19");
+                tennatext = lang("obj_battle_sio_Draw_0_19");
                 break;
             case 3:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_20");
+                tennatext = lang("obj_battle_sio_Draw_0_20");
                 break;
             case 4:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_21");
+                tennatext = lang("obj_battle_sio_Draw_0_21");
                 break;
             case 5:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_22");
+                tennatext = lang("obj_battle_sio_Draw_0_22");
                 break;
             case 6:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_23");
+                tennatext = lang("obj_battle_sio_Draw_0_23");
                 break;
             case 7:
-                tennatext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_24");
+                tennatext = lang("obj_battle_sio_Draw_0_24");
                 break;
         }
     }
     
     if (jammed)
     {
-        jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_25");
+        jamtext = lang("obj_battle_sio_Draw_0_25");
         
         if (!generator1 && !generator2)
         {
@@ -821,15 +821,15 @@ if (progressfinal)
     }
     else if (global.turn == 3)
     {
-        jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_26");
+        jamtext = lang("obj_battle_sio_Draw_0_26");
     }
     else if (global.turn == 10)
     {
-        jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_27");
+        jamtext = lang("obj_battle_sio_Draw_0_27");
     }
     else if (global.turn == 11)
     {
-        jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_28");
+        jamtext = lang("obj_battle_sio_Draw_0_28");
     }
     else if (jamphase == 0)
     {
@@ -839,13 +839,13 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_29");
+                jamtext = lang("obj_battle_sio_Draw_0_29");
                 break;
             case 1:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_30");
+                jamtext = lang("obj_battle_sio_Draw_0_30");
                 break;
             case 2:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_31");
+                jamtext = lang("obj_battle_sio_Draw_0_31");
                 break;
         }
     }
@@ -857,13 +857,13 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_32");
+                jamtext = lang("obj_battle_sio_Draw_0_32");
                 break;
             case 1:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_33");
+                jamtext = lang("obj_battle_sio_Draw_0_33");
                 break;
             case 2:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_34");
+                jamtext = lang("obj_battle_sio_Draw_0_34");
                 break;
         }
     }
@@ -875,13 +875,13 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_35");
+                jamtext = lang("obj_battle_sio_Draw_0_35");
                 break;
             case 1:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_36");
+                jamtext = lang("obj_battle_sio_Draw_0_36");
                 break;
             case 2:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_37");
+                jamtext = lang("obj_battle_sio_Draw_0_37");
                 break;
         }
     }
@@ -893,16 +893,16 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_38");
+                jamtext = lang("obj_battle_sio_Draw_0_38");
                 break;
             case 1:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_39");
+                jamtext = lang("obj_battle_sio_Draw_0_39");
                 break;
             case 2:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_40");
+                jamtext = lang("obj_battle_sio_Draw_0_40");
                 break;
             case 3:
-                jamtext = translation_get_string("gml_Object_obj_battle_sio_Draw_0_41");
+                jamtext = lang("obj_battle_sio_Draw_0_41");
                 break;
         }
     }
@@ -1039,8 +1039,8 @@ if (krismenuaccessible)
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
                 draw_text(cx + 80, cy + 379, ENEMYNAME);
-                draw_text_transformed(cx + 424, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_42"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_43"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, lang("obj_battle_sio_Draw_0_42"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, lang("obj_battle_sio_Draw_0_43"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -1055,9 +1055,9 @@ if (krismenuaccessible)
                 else
                     roundedhp = round((global.enemyhp / global.enemymaxhp) * 100);
                 
-                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_44"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + lang("obj_battle_sio_Draw_0_44"), 1, 0.5, 0);
                 draw_set_color(darkred);
-                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_45"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + lang("obj_battle_sio_Draw_0_45"), 1, 0.5, 0);
                 draw_set_color(c_white);
             }
             
@@ -1144,7 +1144,7 @@ if (krismenuaccessible)
                             instance_create_depth(ENEMY1.x - 50, ENEMY1.y - 30, ENEMY1.depth - 3, obj_mercynumber);
                             ENEMY1.shake = true;
                             ENEMY1.shaketimer = -1;
-                            obj_mercynumber.value = translation_get_string("gml_Object_obj_battle_sio_Draw_0_46") + string(mercyall) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_47");
+                            obj_mercynumber.value = lang("obj_battle_sio_Draw_0_46") + string(mercyall) + lang("obj_battle_sio_Draw_0_47");
                             global.mercy += mercyall;
                             audio_play_sound(snd_screenglitch, 1, false);
                         }
@@ -1155,18 +1155,18 @@ if (krismenuaccessible)
                     }
                     
                     draw_sprite_ext(spr_susieralsei_icon, 0, cx + 320, cx + 240, 1, 1, 0, c_white, 1);
-                    draw_text(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_48"));
+                    draw_text(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_48"));
                     
                     if (!jammed)
                     {
                         if (!krisdown && !susiedown && !ralseidown)
-                            draw_text(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_49"));
+                            draw_text(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_49"));
                         else
-                            draw_text_color(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_50"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_50"), c_gray, c_gray, c_gray, c_gray, 1);
                     }
                     else
                     {
-                        draw_text_color(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_51"), c_red, c_red, c_red, c_red, 1);
+                        draw_text_color(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_51"), c_red, c_red, c_red, c_red, 1);
                     }
                     
                     if (left)
@@ -1222,7 +1222,7 @@ if (krismenuaccessible)
                 
                 if (item_val == empty)
                 {
-                    draw_text(pos[0], pos[1], translation_get_string("gml_Object_obj_battle_sio_Draw_0_52"));
+                    draw_text(pos[0], pos[1], lang("obj_battle_sio_Draw_0_52"));
                 }
                 else
                 {
@@ -1346,7 +1346,7 @@ if (krismenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_53"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, lang("obj_battle_sio_Draw_0_53"), 16777215, 0, -2);
                 
                 if (revert)
                 {
@@ -1639,33 +1639,33 @@ if (susiemenuaccessible)
             if (!susieactselected)
             {
                 if (global.tp < 50)
-                    draw_text_color(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_54"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_54"), c_gray, c_gray, c_gray, c_gray, 1);
                 else
-                    draw_text(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_55"));
+                    draw_text(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_55"));
                 
                 if (global.tp < 84)
-                    draw_text_color(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_56"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_56"), c_gray, c_gray, c_gray, c_gray, 1);
                 else
-                    draw_text(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_57"));
+                    draw_text(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_57"));
                 
                 var saction = 16744703;
                 
                 if (!jammed)
-                    draw_text_color(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_58"), saction, saction, saction, saction, 1);
+                    draw_text_color(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_58"), saction, saction, saction, saction, 1);
                 else
-                    draw_text_color(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_59"), c_red, c_red, c_red, c_red, 1);
+                    draw_text_color(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_59"), c_red, c_red, c_red, c_red, 1);
                 
                 if (susieactoptions == 1)
                 {
                     draw_sprite_ext(spr_SOUL_battle, 0, cx + 238, cy + 393, 1, 1, 0, c_red, 1);
-                    draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_60"), c_gray, c_gray, c_gray, c_gray, 1);
-                    draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_61"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                    draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_60"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_61"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                 }
                 else if (susieactoptions == 0 && susieactoptionsvertical == 1)
                 {
                     draw_sprite_ext(spr_SOUL_battle, 0, cx + 18, cy + 423, 1, 1, 0, c_red, 1);
-                    draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_62"), c_gray, c_gray, c_gray, c_gray, 1);
-                    draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_63"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                    draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_62"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_63"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                 }
                 else if (susieactoptions == 0)
                 {
@@ -1730,7 +1730,7 @@ if (susiemenuaccessible)
                 
                 if (susieactoptions == 1 && susieactoptionsvertical == 0 && jammed)
                 {
-                    draw_text(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_64"));
+                    draw_text(cx + 80, cy + 379, lang("obj_battle_sio_Draw_0_64"));
                 }
                 else
                 {
@@ -1744,8 +1744,8 @@ if (susiemenuaccessible)
                     ENEMY1.flashalpha = clamp(ENEMY1.flashalpha, 0.25, 1);
                 }
                 
-                draw_text_transformed(cx + 424, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_65"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_66"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, lang("obj_battle_sio_Draw_0_65"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, lang("obj_battle_sio_Draw_0_66"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -1760,9 +1760,9 @@ if (susiemenuaccessible)
                 else
                     roundedhp = round((global.enemyhp / global.enemymaxhp) * 100);
                 
-                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_67"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + lang("obj_battle_sio_Draw_0_67"), 1, 0.5, 0);
                 draw_set_color(darkred);
-                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_68"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + lang("obj_battle_sio_Draw_0_68"), 1, 0.5, 0);
                 draw_set_color(c_white);
                 flashpercent += (1/30);
                 
@@ -1872,7 +1872,7 @@ if (susiemenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_69"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, lang("obj_battle_sio_Draw_0_69"), 16777215, 0, -2);
                 
                 if (up)
                 {
@@ -1936,8 +1936,8 @@ if (susiemenuaccessible)
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
                 draw_text(cx + 80, cy + 379, ENEMYNAME);
-                draw_text_transformed(cx + 424, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_70"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_71"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, lang("obj_battle_sio_Draw_0_70"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, lang("obj_battle_sio_Draw_0_71"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -1952,9 +1952,9 @@ if (susiemenuaccessible)
                 else
                     roundedhp = round((global.enemyhp / global.enemymaxhp) * 100);
                 
-                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_72"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + lang("obj_battle_sio_Draw_0_72"), 1, 0.5, 0);
                 draw_set_color(darkred);
-                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_73"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + lang("obj_battle_sio_Draw_0_73"), 1, 0.5, 0);
                 draw_set_color(c_white);
             }
             
@@ -2016,7 +2016,7 @@ if (susiemenuaccessible)
                 
                 if (item_val == empty)
                 {
-                    draw_text(pos[0], pos[1], translation_get_string("gml_Object_obj_battle_sio_Draw_0_74"));
+                    draw_text(pos[0], pos[1], lang("obj_battle_sio_Draw_0_74"));
                 }
                 else
                 {
@@ -2140,7 +2140,7 @@ if (susiemenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_75"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, lang("obj_battle_sio_Draw_0_75"), 16777215, 0, -2);
                 
                 if (revert)
                 {
@@ -2435,8 +2435,8 @@ if (ralseimenuaccessible)
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
                 draw_text(cx + 80, cy + 379, ENEMYNAME);
-                draw_text_transformed(cx + 424, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_76"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_77"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, lang("obj_battle_sio_Draw_0_76"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, lang("obj_battle_sio_Draw_0_77"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -2451,9 +2451,9 @@ if (ralseimenuaccessible)
                 else
                     roundedhp = round((global.enemyhp / global.enemymaxhp) * 100);
                 
-                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_78"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + lang("obj_battle_sio_Draw_0_78"), 1, 0.5, 0);
                 draw_set_color(darkred);
-                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_79"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + lang("obj_battle_sio_Draw_0_79"), 1, 0.5, 0);
                 draw_set_color(c_white);
             }
             
@@ -2509,8 +2509,8 @@ if (ralseimenuaccessible)
                             draw_set_font(fDeterminationSans);
                             draw_set_halign(fa_left);
                             draw_text(cx + 80, cy + 379, ENEMYNAME);
-                            draw_text_transformed(cx + 424, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_80"), 1, 0.5, 0);
-                            draw_text_transformed(cx + 524, cy + 366, translation_get_string("gml_Object_obj_battle_sio_Draw_0_81"), 1, 0.5, 0);
+                            draw_text_transformed(cx + 424, cy + 366, lang("obj_battle_sio_Draw_0_80"), 1, 0.5, 0);
+                            draw_text_transformed(cx + 524, cy + 366, lang("obj_battle_sio_Draw_0_81"), 1, 0.5, 0);
                             draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                             draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                             draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -2525,9 +2525,9 @@ if (ralseimenuaccessible)
                             else
                                 roundedhp = round((global.enemyhp / global.enemymaxhp) * 100);
                             
-                            draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_82"), 1, 0.5, 0);
+                            draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + lang("obj_battle_sio_Draw_0_82"), 1, 0.5, 0);
                             draw_set_color(darkred);
-                            draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + translation_get_string("gml_Object_obj_battle_sio_Draw_0_83"), 1, 0.5, 0);
+                            draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + lang("obj_battle_sio_Draw_0_83"), 1, 0.5, 0);
                             draw_set_color(c_white);
                             
                             if (revert)
@@ -2642,7 +2642,7 @@ if (ralseimenuaccessible)
                             var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                             draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                             draw_set_font(fDeterminationSans);
-                            draw_text_with_tracking(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_84"), 16777215, 0, -2);
+                            draw_text_with_tracking(cx + 80, cy + 379, lang("obj_battle_sio_Draw_0_84"), 16777215, 0, -2);
                             
                             if (revert)
                             {
@@ -2706,32 +2706,32 @@ if (ralseimenuaccessible)
                         var raction = 8454016;
                         
                         if (!jammed)
-                            draw_text_color(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_85"), raction, raction, raction, raction, 1);
+                            draw_text_color(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_85"), raction, raction, raction, raction, 1);
                         else
-                            draw_text_color(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_86"), c_red, c_red, c_red, c_red, 1);
+                            draw_text_color(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_86"), c_red, c_red, c_red, c_red, 1);
                         
                         if (global.tp < 16)
-                            draw_text_color(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_87"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_87"), c_gray, c_gray, c_gray, c_gray, 1);
                         else
-                            draw_text(cx + 260, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_88"));
+                            draw_text(cx + 260, cy + 379, lang("obj_battle_sio_Draw_0_88"));
                         
                         if (global.tp < 32)
-                            draw_text_color(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_89"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_89"), c_gray, c_gray, c_gray, c_gray, 1);
                         else
-                            draw_text(cx + 30, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_90"));
+                            draw_text(cx + 30, cy + 379, lang("obj_battle_sio_Draw_0_90"));
                         
                         if (ralseiactoptions == 0 && ralseiactoptionsvertical == 0)
                         {
                         }
                         else if (ralseiactoptions == 1)
                         {
-                            draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_91"), c_gray, c_gray, c_gray, c_gray, 1);
-                            draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_92"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                            draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_91"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_92"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                         }
                         else if (ralseiactoptions == 0 && ralseiactoptionsvertical == 1)
                         {
-                            draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_93"), c_gray, c_gray, c_gray, c_gray, 1);
-                            draw_text_color(cx + 500, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_94"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                            draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_93"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 500, cy + 379, lang("obj_battle_sio_Draw_0_94"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                         }
                         
                         if (left)
@@ -2811,7 +2811,7 @@ if (ralseimenuaccessible)
                 
                 if (item_val == empty)
                 {
-                    draw_text(pos[0], pos[1], translation_get_string("gml_Object_obj_battle_sio_Draw_0_95"));
+                    draw_text(pos[0], pos[1], lang("obj_battle_sio_Draw_0_95"));
                 }
                 else
                 {
@@ -2935,7 +2935,7 @@ if (ralseimenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_sio_Draw_0_96"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, lang("obj_battle_sio_Draw_0_96"), 16777215, 0, -2);
                 
                 if (revert)
                 {

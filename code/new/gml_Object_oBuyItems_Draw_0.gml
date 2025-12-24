@@ -7,16 +7,16 @@ if (global.itemhover)
     var text;
     
     if (global.buyitems == 1)
-        text = translation_get_string("gml_Object_oBuyItems_Draw_0_0");
+        text = lang("oBuyItems_Draw_0_0");
     
     if (global.buyitems == 2)
-        text = translation_get_string("gml_Object_oBuyItems_Draw_0_1");
+        text = lang("oBuyItems_Draw_0_1");
     
     if (global.buyitems == 3)
-        text = translation_get_string("gml_Object_oBuyItems_Draw_0_2");
+        text = lang("oBuyItems_Draw_0_2");
     
     if (global.buyitems == 4)
-        text = translation_get_string("gml_Object_oBuyItems_Draw_0_3");
+        text = lang("oBuyItems_Draw_0_3");
     
     var text_x = 448;
     var text_y = 260;
@@ -28,7 +28,7 @@ if (global.itemhover)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == translation_get_string("gml_Object_oBuyItems_Draw_0_4"))
+        if (current_char == lang("oBuyItems_Draw_0_4"))
         {
             text_x = 448;
             text_y += (string_height(current_char) + leading);
@@ -44,7 +44,7 @@ if (global.itemhover)
 
 if (global.itemhover)
 {
-    var text2 = translation_get_string("gml_Object_oBuyItems_Draw_0_5");
+    var text2 = lang("oBuyItems_Draw_0_5");
     var text_x2 = 480;
     var text_y2 = 344;
     var shadow_color2 = 8192771;
@@ -55,7 +55,7 @@ if (global.itemhover)
     {
         var current_char2 = string_char_at(text2, i);
         
-        if (current_char2 == translation_get_string("gml_Object_oBuyItems_Draw_0_6"))
+        if (current_char2 == lang("oBuyItems_Draw_0_6"))
         {
             text_x2 = 480;
             text_y2 += (string_height(current_char2) + leading2);

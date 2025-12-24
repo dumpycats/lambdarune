@@ -78,7 +78,7 @@ switch (percent1)
         x = 320;
         obj_SOUL_sof_prebattle.shake = true;
         audio_play_sound(snd_soulstab, 1, false, 1.8);
-        window_set_caption(translation_get_string("gml_Object_obj_stringenter_Step_0_0"));
+        window_set_caption(lang("obj_stringenter_Step_0_0"));
         break;
     case 25:
         x = 265;

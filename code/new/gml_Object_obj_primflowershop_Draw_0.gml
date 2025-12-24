@@ -24,20 +24,20 @@ if (buymenu)
     draw_set_font(fDeterminationSans);
     
     if (buyoptions == 0)
-        draw_text(440, 231 + yoffset, translation_get_string("gml_Object_obj_primflowershop_Draw_0_0"));
+        draw_text(440, 231 + yoffset, lang("obj_primflowershop_Draw_0_0"));
     
     if (buyoptions == 1)
     {
-        draw_text(440, 231 + yoffset, translation_get_string("gml_Object_obj_primflowershop_Draw_0_1"));
+        draw_text(440, 231 + yoffset, lang("obj_primflowershop_Draw_0_1"));
         draw_sprite_ext(spr_primshop_armor, 0, 320, 240 + yoffset + 180, 1, 1, 0, c_white, 1);
     }
     
     if (buyoptions == 2)
-        draw_text(440, 231 + yoffset, translation_get_string("gml_Object_obj_primflowershop_Draw_0_2"));
+        draw_text(440, 231 + yoffset, lang("obj_primflowershop_Draw_0_2"));
     
     if (buyoptions == 3)
     {
-        draw_text(440, 231 + yoffset, translation_get_string("gml_Object_obj_primflowershop_Draw_0_3"));
+        draw_text(440, 231 + yoffset, lang("obj_primflowershop_Draw_0_3"));
         draw_sprite_ext(spr_primshop_armor, 1, 320, 240 + yoffset + 180, 1, 1, 0, c_white, 1);
     }
 }
@@ -50,21 +50,21 @@ if (buymenu)
     
     if (!teabought)
     {
-        draw_text(60, 264, translation_get_string("gml_Object_obj_primflowershop_Draw_0_4"));
-        draw_text(300, 264, translation_get_string("gml_Object_obj_primflowershop_Draw_0_5"));
+        draw_text(60, 264, lang("obj_primflowershop_Draw_0_4"));
+        draw_text(300, 264, lang("obj_primflowershop_Draw_0_5"));
     }
     else
     {
-        draw_text_color(60, 264, translation_get_string("gml_Object_obj_primflowershop_Draw_0_6"), c_gray, c_gray, c_gray, c_gray, 1);
+        draw_text_color(60, 264, lang("obj_primflowershop_Draw_0_6"), c_gray, c_gray, c_gray, c_gray, 1);
     }
     
-    draw_text(60, 304, translation_get_string("gml_Object_obj_primflowershop_Draw_0_7"));
-    draw_text(300, 304, translation_get_string("gml_Object_obj_primflowershop_Draw_0_8"));
-    draw_text(60, 344, translation_get_string("gml_Object_obj_primflowershop_Draw_0_9"));
-    draw_text(300, 344, translation_get_string("gml_Object_obj_primflowershop_Draw_0_10"));
-    draw_text(60, 384, translation_get_string("gml_Object_obj_primflowershop_Draw_0_11"));
-    draw_text(300, 384, translation_get_string("gml_Object_obj_primflowershop_Draw_0_12"));
-    draw_text(60, 424, translation_get_string("gml_Object_obj_primflowershop_Draw_0_13"));
+    draw_text(60, 304, lang("obj_primflowershop_Draw_0_7"));
+    draw_text(300, 304, lang("obj_primflowershop_Draw_0_8"));
+    draw_text(60, 344, lang("obj_primflowershop_Draw_0_9"));
+    draw_text(300, 344, lang("obj_primflowershop_Draw_0_10"));
+    draw_text(60, 384, lang("obj_primflowershop_Draw_0_11"));
+    draw_text(300, 384, lang("obj_primflowershop_Draw_0_12"));
+    draw_text(60, 424, lang("obj_primflowershop_Draw_0_13"));
     
     if (selectedbuy)
     {
@@ -74,7 +74,7 @@ if (buymenu)
             selectedoptions--;
         
         selectedoptions = clamp(selectedoptions, 0, 1);
-        draw_text(480, 343, translation_get_string("gml_Object_obj_primflowershop_Draw_0_14"));
+        draw_text(480, 343, lang("obj_primflowershop_Draw_0_14"));
         
         if (selectedoptions == 0)
             draw_sprite_ext(spr_SOUL, 0, 458, 358, 1, 1, 0, c_white, 1);
@@ -82,13 +82,13 @@ if (buymenu)
             draw_sprite_ext(spr_SOUL, 0, 458, 388, 1, 1, 0, c_white, 1);
         
         if (buyoptions == 0)
-            draw_text(460, 263, translation_get_string("gml_Object_obj_primflowershop_Draw_0_15"));
+            draw_text(460, 263, lang("obj_primflowershop_Draw_0_15"));
         else if (buyoptions == 1)
-            draw_text(460, 263, translation_get_string("gml_Object_obj_primflowershop_Draw_0_16"));
+            draw_text(460, 263, lang("obj_primflowershop_Draw_0_16"));
         else if (buyoptions == 2)
-            draw_text(460, 263, translation_get_string("gml_Object_obj_primflowershop_Draw_0_17"));
+            draw_text(460, 263, lang("obj_primflowershop_Draw_0_17"));
         else if (buyoptions == 3)
-            draw_text(460, 263, translation_get_string("gml_Object_obj_primflowershop_Draw_0_18"));
+            draw_text(460, 263, lang("obj_primflowershop_Draw_0_18"));
     }
     
     if (selectedbuy && advance_pressed && selectedoptions == 0)
@@ -269,9 +269,9 @@ if (buymenu)
     var text;
     
     if (space > 0)
-        text = translation_get_string("gml_Object_obj_primflowershop_Draw_0_19") + string(space);
+        text = lang("obj_primflowershop_Draw_0_19") + string(space);
     else
-        text = translation_get_string("gml_Object_obj_primflowershop_Draw_0_20");
+        text = lang("obj_primflowershop_Draw_0_20");
     
     var text_x = 521;
     var text_y = 430;
@@ -283,7 +283,7 @@ if (buymenu)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == translation_get_string("gml_Object_obj_primflowershop_Draw_0_21"))
+        if (current_char == lang("obj_primflowershop_Draw_0_21"))
         {
             text_x = 521;
             text_y += (string_height(current_char) + leading);
@@ -303,7 +303,7 @@ if (mainmenu)
     draw_set_font(fDeterminationSans);
     draw_set_color(c_white);
     draw_set_halign(fa_left);
-    draw_text_with_tracking(480, 264, translation_get_string("gml_Object_obj_primflowershop_Draw_0_22"), 16777215, 0, 8);
+    draw_text_with_tracking(480, 264, lang("obj_primflowershop_Draw_0_22"), 16777215, 0, 8);
     yoffset = 0;
     percentbuy = 0;
     
@@ -402,7 +402,7 @@ if (mainmenu)
 if (showmoney)
 {
     draw_set_font(fDeterminationSans);
-    draw_text_with_tracking(440, 424, translation_get_string("gml_Object_obj_primflowershop_Draw_0_23") + string(global.money), 16777215, 0, 7);
+    draw_text_with_tracking(440, 424, lang("obj_primflowershop_Draw_0_23") + string(global.money), 16777215, 0, 7);
 }
 
 if (talkmenu)
@@ -416,19 +416,19 @@ if (talkmenu)
     draw_set_font(fDeterminationSans);
     
     if (!yourselftalked)
-        draw_text(80, 264, translation_get_string("gml_Object_obj_primflowershop_Draw_0_24"));
+        draw_text(80, 264, lang("obj_primflowershop_Draw_0_24"));
     else
-        draw_text_color(80, 264, translation_get_string("gml_Object_obj_primflowershop_Draw_0_25"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        draw_text_color(80, 264, lang("obj_primflowershop_Draw_0_25"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
     
-    draw_text(80, 304, translation_get_string("gml_Object_obj_primflowershop_Draw_0_26"));
-    draw_text(80, 344, translation_get_string("gml_Object_obj_primflowershop_Draw_0_27"));
+    draw_text(80, 304, lang("obj_primflowershop_Draw_0_26"));
+    draw_text(80, 344, lang("obj_primflowershop_Draw_0_27"));
     
     if (!freedomtalked)
-        draw_text(80, 384, translation_get_string("gml_Object_obj_primflowershop_Draw_0_28"));
+        draw_text(80, 384, lang("obj_primflowershop_Draw_0_28"));
     else
-        draw_text_color(80, 384, translation_get_string("gml_Object_obj_primflowershop_Draw_0_29"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        draw_text_color(80, 384, lang("obj_primflowershop_Draw_0_29"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
     
-    draw_text(80, 424, translation_get_string("gml_Object_obj_primflowershop_Draw_0_30"));
+    draw_text(80, 424, lang("obj_primflowershop_Draw_0_30"));
     
     if (revert_pressed)
     {

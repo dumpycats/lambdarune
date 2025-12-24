@@ -30,7 +30,7 @@ for (var i = 1; i <= string_length(global.displayed_text); i++)
     var current_char = string_char_at(global.displayed_text, i);
     var text_x;
     
-    if (current_char == translation_get_string("gml_Object_oTextShadowWomanBackup_Draw_0_0"))
+    if (current_char == lang("oTextShadowWomanBackup_Draw_0_0"))
     {
         if (global.shoptalkmenu == false)
             text_x = 30;

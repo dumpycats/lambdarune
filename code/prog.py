@@ -61,12 +61,12 @@ for root, _, files in os.walk(TARGET_DIR):
                 if ("next_char" in line) or ("case" in line) or "displayed_text" in line:
                     continue
 
-                key = f"{filename_without_ext}_{key_counter}"#.replace("gml_Object_", "").replace("gml_Script_", "").replace("gml_RoomCC_", "").replace("gml_GlobalScript_", "").replace("gml_Room_", "")
+                key = f"{filename_without_ext}_{key_counter}".replace("gml_Object_", "").replace("gml_Script_", "").replace("gml_RoomCC_", "").replace("gml_GlobalScript_", "").replace("gml_Room_", "")
                 key_counter += 1
 
                 localization[key] = original
 
-                replacement = f'translation_get_string("{key}")'
+                replacement = f'get_lang_string("{key}")'
                 new_line = (
                     new_line[:start + offset] +
                     replacement +

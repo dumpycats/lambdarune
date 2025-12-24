@@ -1,10 +1,8 @@
-TEXT = """руки тянутся к закладкам"""
 
-LINE_SPACING = 0
-CHAR_SPACING = 0
 
-MAX_LINE_LENGTH = 300
 
+
+TEXT = """Switch to Russian"""
 
 
 
@@ -14,14 +12,30 @@ MAX_LINE_LENGTH = 300
 
 
 
+
+
+
+
+
+
+
+
+
+
+ #!/usr/bin/env python3
 from PIL import Image
 import csv, subprocess, os, sys
 import io
 
-path = os.path.dirname(__file__)
-CSV_FILE = os.path.join(path, "glyphs_fDeterminationMW.csv")
-FONT_IMAGE_FILE = os.path.join(path, "fDeterminationMW.png")
-OUTPUT_FOLDER = os.path.join(path, "frames")
+path = "/home/yartom/Загрузки/lambdarune-tests/"
+
+CSV_FILE = path + "/fonts_align_background/glyphs_fDeterminationMW_2.csv"
+FONT_IMAGE_FILE = path + "fonts_align_background/fDeterminationMW_2.png"
+
+LINE_SPACING = 0
+CHAR_SPACING = 0
+
+MAX_LINE_LENGTH = 600
 
 class Glyph:
     def __init__(self, code, x, y, w, h, xoff, yoff):
@@ -48,7 +62,11 @@ def load_glyphs():
             glyphs[code] = g
     return glyphs
 
-def save(img: Image.Image):
+def copy_to_clipboard(img: Image.Image):
+    """Copy PNG to clipboard for Linux X11 / Wayland"""
+    img_bytes = io.BytesIO()
+    img.save(img_bytes, format="PNG")
+    print("❌ Не найдено xclip или wl-copy — сохранено в out.png")
     img.save(path + "sprite_work/a.png")
 
 def render_line(text, glyphs, font_img):
@@ -83,6 +101,7 @@ def render_line(text, glyphs, font_img):
 def render_text(text, glyphs, font_img):
     lines = text.splitlines()
 
+        # ---- Перенос строк по словам ----
     wrapped_lines = []
     for line in lines:
         words = line.split()
@@ -102,15 +121,10 @@ def render_text(text, glyphs, font_img):
         if cur_line:
             wrapped_lines.append(cur_line)
 
-    if not wrapped_lines and text:
-        wrapped_lines = [""]
-        
     lines = wrapped_lines
+    # ----------------------------------        
         
     rendered_lines = [render_line(line.strip(), glyphs, font_img) for line in lines]
-
-    if not rendered_lines:
-        return Image.new("RGBA", (1, 1), (0,0,0,0))
 
     total_height = sum(line.height for line in rendered_lines)
     max_width = max(line.width for line in rendered_lines)
@@ -119,62 +133,21 @@ def render_text(text, glyphs, font_img):
 
     cur_y = 0
     for line in rendered_lines:
-        x_offset = (max_width - line.width) // 2
-        out.paste(line, (x_offset, cur_y), line)
+        out.paste(line, ((max_width - line.width) // 2, cur_y), line)
         cur_y += line.height + LINE_SPACING
 
     return out
 
 
-def create_animation_frames(text, glyphs, font_img):
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    
-    for file in os.listdir(OUTPUT_FOLDER):
-        if file.endswith(".png"):
-            os.remove(os.path.join(OUTPUT_FOLDER, file))
-    
-    normalized_text = text.rstrip()
-    
-    all_chars = []
-    lines = normalized_text.splitlines()
-    
-    for line_idx, line in enumerate(lines):
-        if line.strip() == "":
-            all_chars.append("\n")
-        else:
-            words = line.split()
-            for word_idx, word in enumerate(words):
-                if word_idx > 0:
-                    all_chars.append(" ")
-                for char in word:
-                    all_chars.append(char)
-            if line_idx < len(lines) - 1:
-                all_chars.append("\n")
-    
-    frame_num = 0
-    current_text = ""
-    
-    empty_frame = render_text("", glyphs, font_img)
-    empty_frame_path = os.path.join(OUTPUT_FOLDER, f"{frame_num:04d}.png")
-    empty_frame.save(empty_frame_path)
-    frame_num += 1
-    
-    for char in all_chars:
-        current_text += char
-        
-        frame = render_text(current_text, glyphs, font_img)
-        
-        frame_path = os.path.join(OUTPUT_FOLDER, f"{frame_num:04d}.png")
-        frame.save(frame_path)
-        frame_num += 1
-    
-    print(f"Создано {frame_num} кадров в папке {OUTPUT_FOLDER}")
-
 if __name__ == "__main__":
     import shutil
-    
+
     glyphs = load_glyphs()
     font_img = Image.open(FONT_IMAGE_FILE).convert("RGBA")
-    
+
     result = render_text(TEXT, glyphs, font_img)
-    result.save(os.path.join(path, "out.png"))
+
+    result.save("out.png")
+    print("Создано out.png")
+
+    copy_to_clipboard(result)
