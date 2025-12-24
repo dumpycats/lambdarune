@@ -53,7 +53,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_0"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkLeft;
             break;
@@ -62,7 +62,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 17;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_1"), 25);
             typing_speed = 1;
             break;
         case 3:
@@ -70,7 +70,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 10;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_2"), 25);
             typing_speed = 1;
             break;
         case 4:
@@ -78,7 +78,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 1;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_3"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_3"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkDown;
             break;
@@ -87,7 +87,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_4"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_4"), 25);
             obj_ralsei_sio.sprite_index = sRalseiWalkRight;
             obj_susie_sio.sprite_index = sSusieWalkUp;
             typing_speed = 1;
@@ -97,7 +97,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_5"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_5"), 25);
             typing_speed = 1;
             obj_ralsei_sio.sprite_index = sRalseiWalkDown;
             break;
@@ -106,7 +106,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 12;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_6"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_6"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = spr_susie_lice;
             obj_susie_sio.image_speed = 1;
@@ -116,7 +116,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 26;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_7"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_7"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkUp;
             obj_susie_sio.image_speed = 0;
@@ -127,7 +127,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 11;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_8"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_8"), 25);
             typing_speed = 1;
             break;
         case 10:
@@ -135,7 +135,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 13;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_9"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_9"), 25);
             typing_speed = 1;
             break;
         case 11:
@@ -143,7 +143,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_10"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_10"), 25);
             typing_speed = 1;
             break;
         case 12:
@@ -151,7 +151,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 26;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_11"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_11"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkDownUpset;
             obj_susie_sio.image_speed = 0;
@@ -162,7 +162,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_12"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_12"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkDown;
             obj_susie_sio.image_speed = 0;
@@ -173,7 +173,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_13"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_13"), 25);
             typing_speed = 1;
             break;
         case 15:
@@ -181,7 +181,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 18;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_14"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_14"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkUp;
             obj_susie_sio.image_speed = 0;
@@ -192,7 +192,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 26;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_15"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_15"), 25);
             typing_speed = 1;
             break;
         case 17:
@@ -200,12 +200,12 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 10;
-            current_dialogue = format_text(lang("obj_sio_text_pathout_Draw_73_16"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_16"), 25);
             typing_speed = 1;
             endcase1 = dialogue;
             break;
         default:
-            current_dialogue = lang("obj_sio_text_pathout_Draw_73_17");
+            current_dialogue = translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_17");
             break;
     }
     
@@ -226,7 +226,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_sio_text_pathout_Draw_73_18");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_sio_text_pathout_Draw_73_18");
                 
                 if (next_char == " " && following_char == " ")
                 {

@@ -38,21 +38,21 @@ if (talking)
     {
         case 1:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_0"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
             break;
         case 2:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_1"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 6;
             break;
         case 3:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_2"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
@@ -60,7 +60,7 @@ if (talking)
         case 4:
             texttalk = false;
             susietalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_3"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_3"), 25);
             typing_speed = 1;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 4;
@@ -68,21 +68,21 @@ if (talking)
         case 5:
             susietalk = false;
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_4"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_4"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_5"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_5"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
             break;
         case 7:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_6"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_6"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
@@ -90,7 +90,7 @@ if (talking)
         case 8:
             texttalk = false;
             ralseitalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_7"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_7"), 25);
             typing_speed = 1;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 4;
@@ -98,28 +98,28 @@ if (talking)
         case 9:
             texttalk = true;
             ralseitalk = false;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_8"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_8"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
             break;
         case 10:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_9"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_9"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
             break;
         case 11:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_10"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_10"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
             break;
         case 12:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_11"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_11"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
@@ -133,14 +133,14 @@ if (talking)
             break;
         case 14:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_12"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_12"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 6;
             break;
         case 15:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_13"), 25);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_13"), 25);
             typing_speed = 1;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 13;
@@ -148,28 +148,28 @@ if (talking)
         case 16:
             charactertalking = false;
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_14"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_14"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
             break;
         case 17:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_15"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_15"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
             break;
         case 18:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_16"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_16"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
             break;
         case 19:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_17"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_17"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
@@ -178,7 +178,7 @@ if (talking)
         case 20:
             texttalk = false;
             emptytalk = true;
-            current_dialogue = format_text(lang("obj_tenna_sof_Draw_73_18"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_tenna_sof_Draw_73_18"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
@@ -186,7 +186,7 @@ if (talking)
             sleep = true;
             break;
         default:
-            current_dialogue = lang("obj_tenna_sof_Draw_73_19");
+            current_dialogue = translation_get_string("gml_Object_obj_tenna_sof_Draw_73_19");
             break;
     }
     
@@ -204,7 +204,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_tenna_sof_Draw_73_20");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_tenna_sof_Draw_73_20");
                 
                 if (next_char == " " && following_char == " ")
                 {

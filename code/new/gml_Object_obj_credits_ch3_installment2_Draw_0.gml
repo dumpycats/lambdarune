@@ -16,7 +16,7 @@ var hold;
 
 if (percent1 <= 2770)
 {
-    hold = (keyboard_check(ord("Z")) || keyboard_check(vk_enter)) || (keyboard_check(ord(lang("obj_credits_ch3_installment2_Draw_0_0"))) || keyboard_check(vk_shift));
+    hold = (keyboard_check(ord("Z")) || keyboard_check(vk_enter)) || (keyboard_check(ord(translation_get_string("gml_Object_obj_credits_ch3_installment2_Draw_0_0"))) || keyboard_check(vk_shift));
 }
 else
 {

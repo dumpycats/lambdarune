@@ -1,7 +1,7 @@
 if (room == rm_ch3_screenroom)
-    window_set_caption(lang("oGlobalC3RoomSOFPath_Create_0_0"));
+    window_set_caption(translation_get_string("gml_Object_oGlobalC3RoomSOFPath_Create_0_0"));
 else if (room == rm_ch3_foanepath)
-    window_set_caption(lang("oGlobalC3RoomSOFPath_Create_0_1"));
+    window_set_caption(translation_get_string("gml_Object_oGlobalC3RoomSOFPath_Create_0_1"));
 
 if (global.c3signalcompleted)
 {

@@ -26,7 +26,7 @@ if (e1trigger)
     
     if (e1timer == 40)
     {
-        window_set_caption(lang("obj_ch3_foaneend_text_Step_0_0"));
+        window_set_caption(translation_get_string("gml_Object_obj_ch3_foaneend_text_Step_0_0"));
         audio_stop_sound(snd_foane_laugh);
         audio_play_sound(mus_sfx_glitch, 1, false, 1, false, 1);
         obj_foane_ex_end.image_index = 0;
@@ -77,7 +77,7 @@ if (e2trigger)
         obj_foane_ex_end.floatmultiplier = 0.5;
         obj_foane_ex_end.image_index = 0;
         obj_foane_ex_end.sprite_index = spr_foane_ex_end;
-        window_set_caption(lang("obj_ch3_foaneend_text_Step_0_1"));
+        window_set_caption(translation_get_string("gml_Object_obj_ch3_foaneend_text_Step_0_1"));
         audio_play_sound(mus_sfx_glitch, 1, false, 1, false, 1);
         obj_foane_background_final.subimgspeed = 0;
         obj_foane_background_final.antialpha = -0.5;
@@ -389,7 +389,7 @@ if (e15trigger)
         if (instance_exists(obj_ralsei_sof))
             instance_destroy(obj_ralsei_sof);
         
-        window_set_caption(lang("obj_ch3_foaneend_text_Step_0_2"));
+        window_set_caption(translation_get_string("gml_Object_obj_ch3_foaneend_text_Step_0_2"));
         obj_kris_sof_end.image_alpha = 1;
         obj_susie_sof_end.image_alpha = 1;
         obj_ralsei_sof_end.image_alpha = 1;

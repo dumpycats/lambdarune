@@ -59,7 +59,7 @@ switch (dialogue)
         typing_speed = 1;
         break;
     default:
-        current_dialogue = lang("oTextC3_outskirts_interact1_Step_0_0");
+        current_dialogue = translation_get_string("gml_Object_oTextC3_outskirts_interact1_Step_0_0");
         break;
 }
 
@@ -86,7 +86,7 @@ if (!text_complete && !pause_for_punctuation)
         if (letter_index < string_length(current_dialogue))
         {
             var next_char = string_char_at(current_dialogue, letter_index + 1);
-            var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("oTextC3_outskirts_interact1_Step_0_1");
+            var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_oTextC3_outskirts_interact1_Step_0_1");
             
             if (next_char == " " && following_char == " ")
             {

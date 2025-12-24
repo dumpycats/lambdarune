@@ -52,61 +52,61 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_0"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_1"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         case 3:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_2"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_3"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_4"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_4"), 31);
             typing_speed = 1;
             break;
         case 6:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_5"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_5"), 31);
             typing_speed = 1;
             break;
         case 7:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(lang("obj_foane_ex_prebattle_Draw_73_6"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_6"), 31);
             typing_speed = 1;
             
             if (displayed_text >= format_text("It will be mine to taketaketaketaketaketake!", 31))
             {
-                var extradialogue = lang("obj_foane_ex_prebattle_Draw_73_7");
+                var extradialogue = translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_7");
                 draw_text_color(text_x + 1, text_y + 1, extradialogue, #320032, #320032, #320032, #320032, 1);
                 draw_text_color(text_x, text_y, extradialogue, c_white, c_white, color6, color6, 1);
             }
             
             break;
         default:
-            current_dialogue = lang("obj_foane_ex_prebattle_Draw_73_8");
+            current_dialogue = translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_8");
             break;
     }
     
@@ -127,7 +127,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_foane_ex_prebattle_Draw_73_9");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_9");
                 
                 if (next_char == " " && following_char == " ")
                 {
@@ -179,7 +179,7 @@ if (talking)
     
     if (dialogue == 7)
     {
-        var text_parts = string_split(current_dialogue, lang("obj_foane_ex_prebattle_Draw_73_10"));
+        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_10"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -191,7 +191,7 @@ if (talking)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, lang("obj_foane_ex_prebattle_Draw_73_11"));
+            var lines = string_split(part, translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_11"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -247,7 +247,7 @@ if (talking)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(lang("obj_foane_ex_prebattle_Draw_73_12"), remaining) > 0)
+                if (string_pos(translation_get_string("gml_Object_obj_foane_ex_prebattle_Draw_73_12"), remaining) > 0)
                 {
                     x_offset = text_x;
                     y_offset += string_height(remaining);

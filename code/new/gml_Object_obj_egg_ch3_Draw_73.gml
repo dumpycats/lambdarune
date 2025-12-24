@@ -50,16 +50,16 @@ if (talking)
     {
         case 1:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_egg_ch3_Draw_73_0"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_egg_ch3_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
             texttalk = true;
-            current_dialogue = format_text(lang("obj_egg_ch3_Draw_73_1"), 31);
+            current_dialogue = format_text(translation_get_string("gml_Object_obj_egg_ch3_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         default:
-            current_dialogue = lang("obj_egg_ch3_Draw_73_2");
+            current_dialogue = translation_get_string("gml_Object_obj_egg_ch3_Draw_73_2");
             break;
     }
     
@@ -80,7 +80,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_egg_ch3_Draw_73_3");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_egg_ch3_Draw_73_3");
                 
                 if (next_char == " " && following_char == " ")
                 {

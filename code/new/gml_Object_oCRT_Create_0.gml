@@ -20,7 +20,7 @@ else if (windowheight > 1048)
 else
     surface_resize(application_surface, 640, 480);
 
-var guide_layer_id = layer_get_id(lang("oCRT_Create_0_0"));
+var guide_layer_id = layer_get_id(translation_get_string("gml_Object_oCRT_Create_0_0"));
 
 if (guide_layer_id != -1)
     layer_set_visible(guide_layer_id, false);
@@ -28,7 +28,7 @@ if (guide_layer_id != -1)
 UCRTParams = shader_get_uniform(SHD_CRT, "params");
 
 if (UCRTParams == -1)
-    show_error(lang("oCRT_Create_0_1"), true);
+    show_error(translation_get_string("gml_Object_oCRT_Create_0_1"), true);
 
 CRT = GameState.CRT;
 application_surface_draw_enable(false);

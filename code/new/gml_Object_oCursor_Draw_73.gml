@@ -49,7 +49,7 @@ if (instance_exists(obj_battle_sof) || instance_exists(obj_battle_sio) || instan
     draw_set_font(fDeterminationMW);
     draw_set_color(c_black);
     draw_set_alpha(turnalpha);
-    var turn = lang("oCursor_Draw_73_0") + string(global.turn);
+    var turn = translation_get_string("gml_Object_oCursor_Draw_73_0") + string(global.turn);
     draw_text(cx + 320, cy + 48 + 2, turn);
     draw_text(cx + 320, (cy + 48) - 2, turn);
     draw_text(cx + 320 + 2, cy + 48, turn);
@@ -128,13 +128,13 @@ if (on && selecton)
     draw_set_valign(fa_top);
     draw_set_font(fDeterminationSans);
     draw_set_alpha(1);
-    draw_text(cx + 6, cy + 4, lang("oCursor_Draw_73_1") + string(selectedx - cx) + lang("oCursor_Draw_73_2") + string(selectedy - cy));
-    draw_text(cx + 6, cy + 8, lang("oCursor_Draw_73_3") + string(selectedx - cx) + lang("oCursor_Draw_73_4") + string(selectedy - cy));
-    draw_text(cx + 4, cy + 6, lang("oCursor_Draw_73_5") + string(selectedx - cx) + lang("oCursor_Draw_73_6") + string(selectedy - cy));
-    draw_text(cx + 8, cy + 6, lang("oCursor_Draw_73_7") + string(selectedx - cx) + lang("oCursor_Draw_73_8") + string(selectedy - cy));
+    draw_text(cx + 6, cy + 4, translation_get_string("gml_Object_oCursor_Draw_73_1") + string(selectedx - cx) + translation_get_string("gml_Object_oCursor_Draw_73_2") + string(selectedy - cy));
+    draw_text(cx + 6, cy + 8, translation_get_string("gml_Object_oCursor_Draw_73_3") + string(selectedx - cx) + translation_get_string("gml_Object_oCursor_Draw_73_4") + string(selectedy - cy));
+    draw_text(cx + 4, cy + 6, translation_get_string("gml_Object_oCursor_Draw_73_5") + string(selectedx - cx) + translation_get_string("gml_Object_oCursor_Draw_73_6") + string(selectedy - cy));
+    draw_text(cx + 8, cy + 6, translation_get_string("gml_Object_oCursor_Draw_73_7") + string(selectedx - cx) + translation_get_string("gml_Object_oCursor_Draw_73_8") + string(selectedy - cy));
     draw_set_alpha(0.8);
     draw_set_color(c_white);
-    draw_text(cx + 6, cy + 6, lang("oCursor_Draw_73_9") + string(selectedx - cx) + lang("oCursor_Draw_73_10") + string(selectedy - cy));
+    draw_text(cx + 6, cy + 6, translation_get_string("gml_Object_oCursor_Draw_73_9") + string(selectedx - cx) + translation_get_string("gml_Object_oCursor_Draw_73_10") + string(selectedy - cy));
     draw_set_alpha(1);
 }
 
@@ -175,13 +175,13 @@ if (on)
     draw_set_color(c_white);
     draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
     draw_set_color(c_black);
-    draw_text(cx + 6, cy + 4, lang("oCursor_Draw_73_11") + string(x - cx) + lang("oCursor_Draw_73_12") + string(y - cy));
-    draw_text(cx + 6, cy + 8, lang("oCursor_Draw_73_13") + string(x - cx) + lang("oCursor_Draw_73_14") + string(y - cy));
-    draw_text(cx + 4, cy + 6, lang("oCursor_Draw_73_15") + string(x - cx) + lang("oCursor_Draw_73_16") + string(y - cy));
-    draw_text(cx + 8, cy + 6, lang("oCursor_Draw_73_17") + string(x - cx) + lang("oCursor_Draw_73_18") + string(y - cy));
+    draw_text(cx + 6, cy + 4, translation_get_string("gml_Object_oCursor_Draw_73_11") + string(x - cx) + translation_get_string("gml_Object_oCursor_Draw_73_12") + string(y - cy));
+    draw_text(cx + 6, cy + 8, translation_get_string("gml_Object_oCursor_Draw_73_13") + string(x - cx) + translation_get_string("gml_Object_oCursor_Draw_73_14") + string(y - cy));
+    draw_text(cx + 4, cy + 6, translation_get_string("gml_Object_oCursor_Draw_73_15") + string(x - cx) + translation_get_string("gml_Object_oCursor_Draw_73_16") + string(y - cy));
+    draw_text(cx + 8, cy + 6, translation_get_string("gml_Object_oCursor_Draw_73_17") + string(x - cx) + translation_get_string("gml_Object_oCursor_Draw_73_18") + string(y - cy));
     draw_set_alpha(0.8);
     draw_set_color(c_white);
-    draw_text(cx + 6, cy + 6, lang("oCursor_Draw_73_19") + string(x - cx) + lang("oCursor_Draw_73_20") + string(y - cy));
+    draw_text(cx + 6, cy + 6, translation_get_string("gml_Object_oCursor_Draw_73_19") + string(x - cx) + translation_get_string("gml_Object_oCursor_Draw_73_20") + string(y - cy));
     draw_set_alpha(1);
 }
 

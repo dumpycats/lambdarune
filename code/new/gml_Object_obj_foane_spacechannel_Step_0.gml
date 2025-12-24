@@ -27,7 +27,7 @@ if (turn)
     
     if (turntimer == 75)
     {
-        window_set_caption(lang("obj_foane_spacechannel_Step_0_0"));
+        window_set_caption(translation_get_string("gml_Object_obj_foane_spacechannel_Step_0_0"));
         audio_sound_gain(mus_broadcast_error, 1, 0);
         audio_play_sound(mus_broadcast_error, 1, true, 0.6);
     }

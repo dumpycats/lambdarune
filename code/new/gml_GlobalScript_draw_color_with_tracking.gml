@@ -10,7 +10,7 @@ function draw_color_with_tracking(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7
     {
         var char = string_char_at(arg2, i);
         
-        if (char == lang("draw_color_with_tracking_0"))
+        if (char == translation_get_string("gml_GlobalScript_draw_color_with_tracking_0"))
         {
             current_x = arg0;
             current_y += (string_height(char) + arg9);

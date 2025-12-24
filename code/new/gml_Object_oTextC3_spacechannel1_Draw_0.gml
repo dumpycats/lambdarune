@@ -19,7 +19,7 @@ draw_text_color(text_x + 1, text_y + 1, global.displayed_text, shadow_color1, sh
 
 if (global.dialogue == 3)
 {
-    var text_parts = string_split(global.current_dialogue, lang("oTextC3_spacechannel1_Draw_0_0"));
+    var text_parts = string_split(global.current_dialogue, translation_get_string("gml_Object_oTextC3_spacechannel1_Draw_0_0"));
     var x_offset = text_x;
     var current_displayed = global.displayed_text;
     
