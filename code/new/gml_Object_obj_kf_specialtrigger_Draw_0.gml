@@ -21,12 +21,12 @@ draw_set_alpha(alpha);
 draw_set_halign(fa_center);
 draw_set_font(fDeterminationMW);
 draw_set_color(c_black);
-draw_text(cx + 318, cy + 50, translation_get_string("gml_Object_obj_kf_specialtrigger_Draw_0_0"));
-draw_text(cx + 322, cy + 50, translation_get_string("gml_Object_obj_kf_specialtrigger_Draw_0_1"));
-draw_text(cx + 320, cy + 48, translation_get_string("gml_Object_obj_kf_specialtrigger_Draw_0_2"));
-draw_text(cx + 320, cy + 52, translation_get_string("gml_Object_obj_kf_specialtrigger_Draw_0_3"));
+draw_text(cx + 318, cy + 50, lang("obj_kf_specialtrigger_Draw_0_0"));
+draw_text(cx + 322, cy + 50, lang("obj_kf_specialtrigger_Draw_0_1"));
+draw_text(cx + 320, cy + 48, lang("obj_kf_specialtrigger_Draw_0_2"));
+draw_text(cx + 320, cy + 52, lang("obj_kf_specialtrigger_Draw_0_3"));
 draw_set_color(c_white);
-draw_text(cx + 320, cy + 50, translation_get_string("gml_Object_obj_kf_specialtrigger_Draw_0_4"));
+draw_text(cx + 320, cy + 50, lang("obj_kf_specialtrigger_Draw_0_4"));
 draw_set_halign(fa_left);
 draw_set_alpha(1);
 

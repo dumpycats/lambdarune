@@ -1,6 +1,6 @@
 image_index = 0;
 image_speed = 0;
-window_set_caption(translation_get_string("gml_Object_obj_SOUL_shatter_c3_Create_0_0"));
+window_set_caption(lang("obj_SOUL_shatter_c3_Create_0_0"));
 timer = 0;
 skip = 0;
 global.dialogue = 3;

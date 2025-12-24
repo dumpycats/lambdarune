@@ -1,4 +1,4 @@
-if (!variable_instance_exists(id, translation_get_string("gml_Object_oSOUL_Step_0_0")))
+if (!variable_instance_exists(id, lang("oSOUL_Step_0_0")))
     buyselltalkexit = 1;
 
 if (global.shopmainmenu)

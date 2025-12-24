@@ -322,9 +322,9 @@ if (krismenuaccessible)
                 draw_sprite_ext(spr_SOUL_battle, 0, cx + 63, cy + 393, 1, 1, 0, c_red, 1);
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
-                draw_text(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_kf_Draw_0_0"));
-                draw_text_transformed(cx + 424, cy + 366, translation_get_string("gml_Object_obj_battle_kf_Draw_0_1"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, translation_get_string("gml_Object_obj_battle_kf_Draw_0_2"), 1, 0.5, 0);
+                draw_text(cx + 80, cy + 379, lang("obj_battle_kf_Draw_0_0"));
+                draw_text_transformed(cx + 424, cy + 366, lang("obj_battle_kf_Draw_0_1"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, lang("obj_battle_kf_Draw_0_2"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (2555 / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -339,9 +339,9 @@ if (krismenuaccessible)
                 else
                     roundedhp = round((global.enemyhp / global.enemymaxhp) * 100);
                 
-                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + translation_get_string("gml_Object_obj_battle_kf_Draw_0_3"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 382, string(roundedhp) + lang("obj_battle_kf_Draw_0_3"), 1, 0.5, 0);
                 draw_set_color(darkred);
-                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + translation_get_string("gml_Object_obj_battle_kf_Draw_0_4"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 382, string(global.mercy / 1) + lang("obj_battle_kf_Draw_0_4"), 1, 0.5, 0);
                 draw_set_color(c_white);
                 draw_sprite_ext(spr_nomercy, 1, cx + 320, cy + 240, 1, 1, 0, c_white, 1);
             }
@@ -396,12 +396,12 @@ if (krismenuaccessible)
                             reason++;
                     }
                     
-                    draw_text(cx + 80, cy + 379, translation_get_string("gml_Object_obj_battle_kf_Draw_0_5"));
+                    draw_text(cx + 80, cy + 379, lang("obj_battle_kf_Draw_0_5"));
                     
                     if (global.turn > 7)
-                        draw_text(cx + 310, cy + 379, translation_get_string("gml_Object_obj_battle_kf_Draw_0_6"));
+                        draw_text(cx + 310, cy + 379, lang("obj_battle_kf_Draw_0_6"));
                     else
-                        draw_text(cx + 310, cy + 379, translation_get_string("gml_Object_obj_battle_kf_Draw_0_7"));
+                        draw_text(cx + 310, cy + 379, lang("obj_battle_kf_Draw_0_7"));
                     
                     if (left)
                         krisactoptions--;

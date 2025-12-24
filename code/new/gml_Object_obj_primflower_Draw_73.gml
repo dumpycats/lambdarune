@@ -39,78 +39,78 @@ if (talking && !obj_primflowershop.selectedbuy)
     {
         case 1:
             primtalk = true;
-            current_dialogue = translation_get_string("gml_Object_obj_primflower_Draw_73_0");
+            current_dialogue = lang("obj_primflower_Draw_73_0");
             typing_speed = 1;
             progressallow = false;
             break;
         case 2:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_1"), 21);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_1"), 21);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 3:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_2"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_3"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_4"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_4"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 6:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_5"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_5"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 7:
             primtalk = true;
-            current_dialogue = translation_get_string("gml_Object_obj_primflower_Draw_73_6");
+            current_dialogue = lang("obj_primflower_Draw_73_6");
             typing_speed = 1;
             break;
         case 8:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_7"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_7"), 31);
             typing_speed = 1;
             break;
         case 9:
             primtalk = true;
-            current_dialogue = translation_get_string("gml_Object_obj_primflower_Draw_73_8");
+            current_dialogue = lang("obj_primflower_Draw_73_8");
             typing_speed = 1;
             break;
         case 10:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_9"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_9"), 31);
             typing_speed = 1;
             break;
         case 11:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_10"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_10"), 31);
             typing_speed = 1;
             break;
         case 12:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_11"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_11"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 13:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_12"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_12"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 14:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_13"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_13"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             
@@ -120,224 +120,224 @@ if (talking && !obj_primflowershop.selectedbuy)
             break;
         case 15:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_14"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_14"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 16:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_15"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_15"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 17:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_16"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_16"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 18:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_17"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_17"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 19:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_18"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_18"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 20:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_19"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_19"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             audio_sound_gain(mus_primflower, 0, 0);
             break;
         case 21:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_20"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_20"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 22:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_21"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_21"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 23:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_22"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_22"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 24:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_23"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_23"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 25:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_24"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_24"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 26:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_25"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_25"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 27:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_26"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_26"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 28:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_27"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_27"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 29:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_28"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_28"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 30:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_29"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_29"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 31:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_30"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_30"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 32:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_31"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_31"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 33:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_32"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_32"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 34:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_33"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_33"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 35:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_34"), 40);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_34"), 40);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 36:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_35"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_35"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 37:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_36"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_36"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 38:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_37"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_37"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 39:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_38"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_38"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 40:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_39"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_39"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 41:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_40"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_40"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 42:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_41"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_41"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 43:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_42"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_42"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 44:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_43"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_43"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 45:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_44"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_44"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 46:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_45"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_45"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 47:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_46"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_46"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 48:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_47"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_47"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 49:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_48"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_48"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 50:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_49"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_49"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 51:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_50"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_50"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             
@@ -347,25 +347,25 @@ if (talking && !obj_primflowershop.selectedbuy)
             break;
         case 52:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_51"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_51"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 53:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_52"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_52"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 54:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_53"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_53"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 55:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_54"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_54"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             
@@ -376,32 +376,32 @@ if (talking && !obj_primflowershop.selectedbuy)
             break;
         case 56:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_55"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_55"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 57:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_56"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_56"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 58:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_57"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_57"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             break;
         case 59:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_58"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_58"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 60:
             texttalk = true;
             primtalk = false;
-            current_dialogue = translation_get_string("gml_Object_obj_primflower_Draw_73_59");
+            current_dialogue = lang("obj_primflower_Draw_73_59");
             global.finished = true;
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
@@ -414,14 +414,14 @@ if (talking && !obj_primflowershop.selectedbuy)
         case 61:
             texttalk = false;
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_60"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_60"), 31);
             avatar.sprite_index = spr_primflower;
             typing_speed = 1;
             global.finished = true;
             break;
         case 62:
             primtalk = true;
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_61"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_61"), 31);
             avatar.sprite_index = spr_primflower_laugh;
             typing_speed = 1;
             mantlereceived = true;
@@ -429,14 +429,14 @@ if (talking && !obj_primflowershop.selectedbuy)
             break;
         case 63:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_62"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_62"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 64:
             primtalk = true;
             audio_stop_sound(mus_primflower);
-            current_dialogue = format_text(translation_get_string("gml_Object_obj_primflower_Draw_73_63"), 31);
+            current_dialogue = format_text(lang("obj_primflower_Draw_73_63"), 31);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_direct;
             
@@ -451,42 +451,42 @@ if (talking && !obj_primflowershop.selectedbuy)
         case 65:
             primtalk = false;
             ralseitalk = true;
-            current_dialogue = translation_get_string("gml_Object_obj_primflower_Draw_73_64");
+            current_dialogue = lang("obj_primflower_Draw_73_64");
             displayed_text = "";
             typing_speed = 1;
             break;
         case 80:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_65"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_65"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 81:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_66"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_66"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_laugh;
             break;
         case 82:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_67"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_67"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         case 83:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_68"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_68"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower_tense;
             break;
         case 84:
             primtalk = true;
-            current_dialogue = format_text_battle(translation_get_string("gml_Object_obj_primflower_Draw_73_69"), 10);
+            current_dialogue = format_text_battle(lang("obj_primflower_Draw_73_69"), 10);
             typing_speed = 1;
             avatar.sprite_index = spr_primflower;
             break;
         default:
-            current_dialogue = translation_get_string("gml_Object_obj_primflower_Draw_73_70");
+            current_dialogue = lang("obj_primflower_Draw_73_70");
             break;
     }
     
@@ -507,7 +507,7 @@ if (talking && !obj_primflowershop.selectedbuy)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : translation_get_string("gml_Object_obj_primflower_Draw_73_71");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_primflower_Draw_73_71");
                 
                 if (next_char == " " && following_char == " ")
                 {
@@ -568,7 +568,7 @@ if (talking && !obj_primflowershop.selectedbuy)
     
     if (dialogue == 60)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_primflower_Draw_73_72"));
+        var text_parts = string_split(current_dialogue, lang("obj_primflower_Draw_73_72"));
         var x_offset = textx;
         var y_offset = texty;
         var current_displayed = displayed_text;
@@ -580,7 +580,7 @@ if (talking && !obj_primflowershop.selectedbuy)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, translation_get_string("gml_Object_obj_primflower_Draw_73_73"));
+            var lines = string_split(part, lang("obj_primflower_Draw_73_73"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -616,7 +616,7 @@ if (talking && !obj_primflowershop.selectedbuy)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(translation_get_string("gml_Object_obj_primflower_Draw_73_74"), remaining) > 0)
+                if (string_pos(lang("obj_primflower_Draw_73_74"), remaining) > 0)
                 {
                     x_offset = textx;
                     y_offset += string_height(remaining);
@@ -629,7 +629,7 @@ if (talking && !obj_primflowershop.selectedbuy)
     
     if (dialogue == 29)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("gml_Object_obj_primflower_Draw_73_75"));
+        var text_parts = string_split(current_dialogue, lang("obj_primflower_Draw_73_75"));
         var x_offset = textx;
         var y_offset = texty;
         var current_displayed = displayed_text;
@@ -641,7 +641,7 @@ if (talking && !obj_primflowershop.selectedbuy)
             if (string_length(current_displayed) < string_length(part))
                 part = string_copy(part, 1, string_length(current_displayed));
             
-            var lines = string_split(part, translation_get_string("gml_Object_obj_primflower_Draw_73_76"));
+            var lines = string_split(part, lang("obj_primflower_Draw_73_76"));
             
             for (var j = 0; j < array_length(lines); j++)
             {
@@ -677,7 +677,7 @@ if (talking && !obj_primflowershop.selectedbuy)
                 draw_text_color(x_offset, y_offset, remaining, c_white, c_white, color, color, 1);
                 x_offset += string_width(remaining);
                 
-                if (string_pos(translation_get_string("gml_Object_obj_primflower_Draw_73_77"), remaining) > 0)
+                if (string_pos(lang("obj_primflower_Draw_73_77"), remaining) > 0)
                 {
                     x_offset = textx;
                     y_offset += string_height(remaining);

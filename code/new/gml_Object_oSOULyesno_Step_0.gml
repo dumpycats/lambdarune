@@ -1,4 +1,4 @@
-if (!variable_instance_exists(id, translation_get_string("gml_Object_oSOULyesno_Step_0_0")))
+if (!variable_instance_exists(id, lang("oSOULyesno_Step_0_0")))
     yesno = 1;
 
 if (keyboard_check_pressed(vk_down))

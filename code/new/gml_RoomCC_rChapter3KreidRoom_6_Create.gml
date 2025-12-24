@@ -1,5 +1,5 @@
-dialoguesend = translation_get_string("gml_RoomCC_rChapter3KreidRoom_6_Create_0");
-dialoguesend2 = translation_get_string("gml_RoomCC_rChapter3KreidRoom_6_Create_1");
-dialoguesend3 = translation_get_string("gml_RoomCC_rChapter3KreidRoom_6_Create_2");
-dialoguesend4 = translation_get_string("gml_RoomCC_rChapter3KreidRoom_6_Create_3");
+dialoguesend = lang("rChapter3KreidRoom_6_Create_0");
+dialoguesend2 = lang("rChapter3KreidRoom_6_Create_1");
+dialoguesend3 = lang("rChapter3KreidRoom_6_Create_2");
+dialoguesend4 = lang("rChapter3KreidRoom_6_Create_3");
 value = 3;

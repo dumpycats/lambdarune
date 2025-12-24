@@ -10,14 +10,14 @@ switch (global.dialogue)
     case 1:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_0");
+        global.current_dialogue = lang("oTextC3R3_Step_0_0");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 11;
         break;
     case 2:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_1");
+        global.current_dialogue = lang("oTextC3R3_Step_0_1");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 11;
         break;
@@ -25,7 +25,7 @@ switch (global.dialogue)
         global.emptytalk = true;
         global.susietalk = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_2");
+        global.current_dialogue = lang("oTextC3R3_Step_0_2");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -35,14 +35,14 @@ switch (global.dialogue)
     case 4:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_3");
+        global.current_dialogue = lang("oTextC3R3_Step_0_3");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 34;
         break;
     case 5:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_4");
+        global.current_dialogue = lang("oTextC3R3_Step_0_4");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 18;
         oSusieC3.sprite_index = sSusieWalkUp;
@@ -50,7 +50,7 @@ switch (global.dialogue)
     case 6:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_5");
+        global.current_dialogue = lang("oTextC3R3_Step_0_5");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 5;
         break;
@@ -58,7 +58,7 @@ switch (global.dialogue)
         global.emptytalk = true;
         global.susietalk = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_6");
+        global.current_dialogue = lang("oTextC3R3_Step_0_6");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -71,7 +71,7 @@ switch (global.dialogue)
     case 280:
         global.emptytalk = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_7");
+        global.current_dialogue = lang("oTextC3R3_Step_0_7");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -79,7 +79,7 @@ switch (global.dialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3R3_Step_0_8");
+        global.current_dialogue = lang("oTextC3R3_Step_0_8");
         break;
 }
 
@@ -94,7 +94,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : translation_get_string("gml_Object_oTextC3R3_Step_0_9");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextC3R3_Step_0_9");
             
             if (next_char == " " && following_char == " ")
             {

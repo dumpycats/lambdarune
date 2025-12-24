@@ -47,7 +47,7 @@ if (debugfps)
     draw_set_valign(fa_top);
     draw_set_font(fDeterminationMW);
     draw_set_color(c_black);
-    var fpscounter = translation_get_string("gml_Object_oESC_Draw_73_0") + string(round(fps_real));
+    var fpscounter = lang("oESC_Draw_73_0") + string(round(fps_real));
     draw_text(cx + 6, cy + 4 + 2, fpscounter);
     draw_text(cx + 6, (cy + 4) - 2, fpscounter);
     draw_text(cx + 6 + 2, cy + 4, fpscounter);
@@ -121,7 +121,7 @@ if (crttrigger)
     
     if (!instance_exists(oCRT))
     {
-        var warning = translation_get_string("gml_Object_oESC_Draw_73_1");
+        var warning = lang("oESC_Draw_73_1");
         draw_text(cx + 320, cy + 48 + 2, warning);
         draw_text(cx + 320, (cy + 48) - 2, warning);
         draw_text(cx + 320 + 2, cy + 48, warning);
@@ -140,7 +140,7 @@ if (crttrigger)
     }
     else if (instance_exists(oCRT))
     {
-        var warning = translation_get_string("gml_Object_oESC_Draw_73_2");
+        var warning = lang("oESC_Draw_73_2");
         draw_text(cx + 320, cy + 48 + 2, warning);
         draw_text(cx + 320, (cy + 48) - 2, warning);
         draw_text(cx + 320 + 2, cy + 48, warning);

@@ -1,26 +1,13 @@
-
-# Папка, где лежат все спрайты
-BASE_DIR = r""
-
-# Куда
-OUTPUT_DIR = r""
-
-
-# Путь к JSON файлу с информацией о спрайтах, тебе это не надо
-JSON_PATH = r""
-
-
-
-
-
-
-
  
 import os
 from PIL import Image
 import json
 import sys
 
+# Папка, где лежат все спрайты
+BASE_DIR = "/home/yartom/Downloads/mike/"
+OUTPUT_DIR = "/home/yartom/Downloads/mike_output"
+JSON_PATH = "/home/yartom/Downloads/mike_output/sprites.json"
 
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
@@ -41,6 +28,7 @@ for sprite_name in os.listdir(BASE_DIR):
         print(f"⚠️  В папке '{sprite_name}' не найдено кадров (.png или .jpg)")
         continue
 
+    # Проверяем нумерацию кадров
     actual_frames = []
     for f in frame_files:
         try:
@@ -60,6 +48,7 @@ for sprite_name in os.listdir(BASE_DIR):
         input("Добавь недостающие кадры и нажми Enter для продолжения...")
         sys.exit(1)
 
+    # Загружаем изображения
     frames = []
     for f in sorted(frame_files, key=lambda x: int(os.path.splitext(x)[0].split("_")[-1])):
         path = os.path.join(sprite_path, f)
@@ -72,6 +61,7 @@ for sprite_name in os.listdir(BASE_DIR):
         print(f"⚠️  Нет загруженных кадров для '{sprite_name}', пропускаю.")
         continue
 
+    # Склеиваем кадры
     widths, heights = zip(*(img.size for img in frames))
     total_width = sum(widths)
     max_height = max(heights)
@@ -86,9 +76,11 @@ for sprite_name in os.listdir(BASE_DIR):
     new_img.save(output_path)
     print(f"✅ Экспортировано: {output_path}")
 
+    # Добавляем информацию в JSON
     sprites_info[sprite_name] = {"frames": str(len(frames))}
 
-#with open(JSON_PATH, "w", encoding="utf-8") as f:
-#    json.dump(sprites_info, f, indent=4, ensure_ascii=False)
+# Сохраняем JSON
+with open(JSON_PATH, "w", encoding="utf-8") as f:
+    json.dump(sprites_info, f, indent=4, ensure_ascii=False)
 
-#print(f"\n✅ JSON сохранён в {JSON_PATH}")
+print(f"\n✅ JSON сохранён в {JSON_PATH}")

@@ -69,7 +69,7 @@ if (room == rm_ch3_spacechannel_2)
             
             if (!global.missedopportunity)
             {
-                window_set_caption(translation_get_string("gml_Object_obj_cameracontroller_Step_2_0"));
+                window_set_caption(lang("obj_cameracontroller_Step_2_0"));
                 instance_create_depth(cam_x + 320, cam_y + 394, -40, oDialogueBox);
                 instance_create_depth(cam_x + 320, cam_y - 270, -50, oTextC3_spacechannel6);
             }

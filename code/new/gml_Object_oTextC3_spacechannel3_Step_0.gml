@@ -22,7 +22,7 @@ switch (global.dialogue)
         fe = true;
         fo = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_0");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_0");
         global.typing_speed = 1;
         audio_sound_pitch(snd_foane, 1);
         
@@ -52,7 +52,7 @@ switch (global.dialogue)
         fe = false;
         fo = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_1");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_1");
         global.typing_speed = 1;
         obj_foane_spacechannel.sprite_index = spr_foane_feighline_up;
         
@@ -64,7 +64,7 @@ switch (global.dialogue)
         fe = true;
         fo = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_2");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_2");
         global.typing_speed = 1;
         pitchtimer++;
         
@@ -86,7 +86,7 @@ switch (global.dialogue)
         fe = false;
         fo = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_3");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_3");
         global.typing_speed = 1;
         obj_foane_spacechannel.sprite_index = spr_foane_feighline_up;
         obj_foane_spacechannel.image_speed = 0;
@@ -95,7 +95,7 @@ switch (global.dialogue)
         fe = true;
         fo = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_4");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_4");
         global.typing_speed = 1;
         
         if (!global.text_complete)
@@ -113,14 +113,14 @@ switch (global.dialogue)
         fe = false;
         fo = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_5");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_5");
         global.typing_speed = 1;
         obj_foane_spacechannel.sprite_index = spr_foane_feighline_up;
         obj_foane_spacechannel.image_speed = 0;
         break;
     case 7:
         oDialogueBox.image_alpha = 0;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_6");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_6");
         blockprogress = true;
         break;
     case 8:
@@ -128,7 +128,7 @@ switch (global.dialogue)
         fo = false;
         audio_stop_sound(mus_outofbounds);
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_7");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_7");
         global.typing_speed = 1;
         
         if (!global.text_complete)
@@ -145,7 +145,7 @@ switch (global.dialogue)
     case 9:
         global.emptytalk = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_8");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_8");
         global.typing_speed = 1;
         blockprogress = true;
         obj_foane_spacechannel.image_speed = 0;
@@ -155,7 +155,7 @@ switch (global.dialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_9");
+        global.current_dialogue = lang("oTextC3_spacechannel3_Step_0_9");
         break;
 }
 
@@ -170,7 +170,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : translation_get_string("gml_Object_oTextC3_spacechannel3_Step_0_10");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextC3_spacechannel3_Step_0_10");
             
             if (next_char == " " && following_char == " ")
             {

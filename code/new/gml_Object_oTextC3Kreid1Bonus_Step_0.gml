@@ -10,98 +10,98 @@ switch (global.dialogue)
     case 1:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_0");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_0");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 2;
         break;
     case 2:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_1");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_1");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 5;
         break;
     case 3:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_2");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_2");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 4;
         break;
     case 4:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_3");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_3");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 5;
         break;
     case 5:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_4");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_4");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 11;
         break;
     case 6:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_5");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_5");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 4;
         break;
     case 7:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_6");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_6");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 12;
         break;
     case 8:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_7");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_7");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 13;
         break;
     case 9:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_8");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_8");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 8;
         break;
     case 10:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_9");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_9");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 3;
         break;
     case 11:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_10");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_10");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 4;
         break;
     case 12:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_11");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_11");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 12;
         break;
     case 13:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_12");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_12");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 5;
         break;
     case 14:
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_13");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_13");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 4;
         d14timer++;
@@ -120,7 +120,7 @@ switch (global.dialogue)
         audio_stop_sound(mus_THE_GREATEST_COMEDY);
         global.kreidtalk = true;
         global.charactertalking = true;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_14");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_14");
         global.typing_speed = 1;
         oDialogueSprite.image_index = 14;
         d15timer++;
@@ -141,7 +141,7 @@ switch (global.dialogue)
     case 16:
         oDialogueBox.image_alpha = 0;
         oDialogueSprite.image_alpha = 0;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_15");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_15");
         blockprogress = true;
         
         if (instance_exists(obj_sistertext1))
@@ -167,7 +167,7 @@ switch (global.dialogue)
     case 280:
         global.emptytalk = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_16");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_16");
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -175,7 +175,7 @@ switch (global.dialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_17");
+        global.current_dialogue = lang("oTextC3Kreid1Bonus_Step_0_17");
         break;
 }
 
@@ -190,7 +190,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : translation_get_string("gml_Object_oTextC3Kreid1Bonus_Step_0_18");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextC3Kreid1Bonus_Step_0_18");
             
             if (next_char == " " && following_char == " ")
             {
