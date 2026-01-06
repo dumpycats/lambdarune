@@ -8,7 +8,7 @@ switch (global.wtfdialogue)
     case 1:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextC3R2_wtf_Step_0_0");
+        global.current_dialogue = get_lang_string("oTextC3R2_wtf_Step_0_0");
         global.typing_speed = 2.3;
         oDialogueSprite.image_index = 17;
         blockprogress = true;

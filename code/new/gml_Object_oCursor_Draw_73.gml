@@ -49,7 +49,7 @@ if (instance_exists(obj_battle_sof) || instance_exists(obj_battle_sio) || instan
     draw_set_font(fDeterminationMW);
     draw_set_color(c_black);
     draw_set_alpha(turnalpha);
-    var turn = get_lang_string("gml_Object_oCursor_Draw_73_0") + string(global.turn);
+    var turn = get_lang_string("oCursor_Draw_73_0") + string(global.turn);
     draw_text(cx + 320, cy + 48 + 2, turn);
     draw_text(cx + 320, (cy + 48) - 2, turn);
     draw_text(cx + 320 + 2, cy + 48, turn);
@@ -128,13 +128,13 @@ if (on && selecton)
     draw_set_valign(fa_top);
     draw_set_font(fDeterminationSans);
     draw_set_alpha(1);
-    draw_text(cx + 6, cy + 4, get_lang_string("gml_Object_oCursor_Draw_73_1") + string(selectedx - cx) + "\n" + string(selectedy - cy));
-    draw_text(cx + 6, cy + 8, get_lang_string("gml_Object_oCursor_Draw_73_2") + string(selectedx - cx) + "\n" + string(selectedy - cy));
-    draw_text(cx + 4, cy + 6, get_lang_string("gml_Object_oCursor_Draw_73_3") + string(selectedx - cx) + "\n" + string(selectedy - cy));
-    draw_text(cx + 8, cy + 6, get_lang_string("gml_Object_oCursor_Draw_73_4") + string(selectedx - cx) + "\n" + string(selectedy - cy));
+    draw_text(cx + 6, cy + 4, get_lang_string("oCursor_Draw_73_1") + string(selectedx - cx) + "\n" + string(selectedy - cy));
+    draw_text(cx + 6, cy + 8, get_lang_string("oCursor_Draw_73_2") + string(selectedx - cx) + "\n" + string(selectedy - cy));
+    draw_text(cx + 4, cy + 6, get_lang_string("oCursor_Draw_73_3") + string(selectedx - cx) + "\n" + string(selectedy - cy));
+    draw_text(cx + 8, cy + 6, get_lang_string("oCursor_Draw_73_4") + string(selectedx - cx) + "\n" + string(selectedy - cy));
     draw_set_alpha(0.8);
     draw_set_color(c_white);
-    draw_text(cx + 6, cy + 6, get_lang_string("gml_Object_oCursor_Draw_73_5") + string(selectedx - cx) + "\n" + string(selectedy - cy));
+    draw_text(cx + 6, cy + 6, get_lang_string("oCursor_Draw_73_5") + string(selectedx - cx) + "\n" + string(selectedy - cy));
     draw_set_alpha(1);
 }
 

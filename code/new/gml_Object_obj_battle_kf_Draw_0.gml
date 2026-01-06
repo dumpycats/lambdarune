@@ -322,9 +322,9 @@ if (krismenuaccessible)
                 draw_sprite_ext(spr_SOUL_battle, 0, cx + 63, cy + 393, 1, 1, 0, c_red, 1);
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
-                draw_text(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_kf_Draw_0_0"));
-                draw_text_transformed(cx + 424, cy + 366, get_lang_string("gml_Object_obj_battle_kf_Draw_0_1"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, get_lang_string("gml_Object_obj_battle_kf_Draw_0_2"), 1, 0.5, 0);
+                draw_text(cx + 80, cy + 379, get_lang_string("obj_battle_kf_Draw_0_0"));
+                draw_text_transformed(cx + 424, cy + 366, get_lang_string("obj_battle_kf_Draw_0_1"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, get_lang_string("obj_battle_kf_Draw_0_2"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (2555 / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -396,12 +396,12 @@ if (krismenuaccessible)
                             reason++;
                     }
                     
-                    draw_text(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_kf_Draw_0_3"));
+                    draw_text(cx + 80, cy + 379, get_lang_string("obj_battle_kf_Draw_0_3"));
                     
                     if (global.turn > 7)
-                        draw_text(cx + 310, cy + 379, get_lang_string("gml_Object_obj_battle_kf_Draw_0_4"));
+                        draw_text(cx + 310, cy + 379, get_lang_string("obj_battle_kf_Draw_0_4"));
                     else
-                        draw_text(cx + 310, cy + 379, get_lang_string("gml_Object_obj_battle_kf_Draw_0_5"));
+                        draw_text(cx + 310, cy + 379, get_lang_string("obj_battle_kf_Draw_0_5"));
                     
                     if (left)
                         krisactoptions--;

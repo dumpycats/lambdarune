@@ -19,7 +19,7 @@ draw_text_color(text_x + 1, text_y + 1, global.displayed_text, shadow_color1, sh
 
 if (global.dialogue == 2)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel2_Draw_0_0"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel2_Draw_0_0"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -107,7 +107,7 @@ if (global.dialogue == 2)
 
 if (global.dialogue == 6)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel2_Draw_0_1"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel2_Draw_0_1"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;

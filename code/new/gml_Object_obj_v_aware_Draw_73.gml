@@ -38,112 +38,112 @@ if (talking)
     {
         case 1:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_1"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         case 3:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_2"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_3"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_4"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_4"), 31);
             typing_speed = 1;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_5"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_5"), 31);
             typing_speed = 1;
             break;
         case 7:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_6"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_6"), 31);
             typing_speed = 1;
             break;
         case 8:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_7"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_7"), 31);
             typing_speed = 1;
             break;
         case 9:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_8"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_8"), 31);
             typing_speed = 1;
             break;
         case 10:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_9"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_9"), 31);
             typing_speed = 1;
             break;
         case 11:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_10"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_10"), 31);
             typing_speed = 1;
             break;
         case 12:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_11"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_11"), 31);
             typing_speed = 1;
             break;
         case 13:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_12"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_12"), 31);
             typing_speed = 1;
             break;
         case 14:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_13"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_13"), 31);
             typing_speed = 1;
             break;
         case 15:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_14"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_14"), 31);
             typing_speed = 1;
             break;
         case 16:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_15"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_15"), 31);
             typing_speed = 1;
             break;
         case 17:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_16"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_16"), 31);
             typing_speed = 1;
             break;
         case 18:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_17"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_17"), 31);
             typing_speed = 1;
             break;
         case 19:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_18"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_18"), 31);
             typing_speed = 1;
             break;
         case 20:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_19"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_19"), 31);
             typing_speed = 1;
             break;
         case 21:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_20"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_20"), 31);
             typing_speed = 1;
             break;
         case 22:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_21"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_21"), 31);
             typing_speed = 1;
             d22timer++;
             
@@ -153,32 +153,32 @@ if (talking)
             break;
         case 23:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_22"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_22"), 31);
             typing_speed = 1;
             break;
         case 24:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_23"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_23"), 31);
             typing_speed = 1;
             break;
         case 25:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_24"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_24"), 31);
             typing_speed = 1;
             break;
         case 26:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_25"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_25"), 31);
             typing_speed = 1;
             break;
         case 27:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_26"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_26"), 31);
             typing_speed = 1;
             break;
         case 28:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_v_aware_Draw_73_27"), 31);
+            current_dialogue = format_text(get_lang_string("obj_v_aware_Draw_73_27"), 31);
             typing_speed = 1;
             break;
         default:

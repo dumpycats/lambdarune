@@ -46,29 +46,29 @@ if (talking)
             foanetalk = false;
             reverbtalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
             foanetalk = false;
             reverbtalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_1"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         case 3:
             foanetalk = false;
             reverbtalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_2"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
-            window_set_caption(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_3"));
+            window_set_caption(get_lang_string("obj_foane_pretalk_1_Draw_73_3"));
             foanetalk = false;
             reverbtalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_4"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_4"), 31);
             typing_speed = 0.5;
             blockprogress = true;
             dsongtrigger = true;
@@ -82,21 +82,21 @@ if (talking)
             foanetalk = false;
             reverbtalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_5"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_5"), 31);
             typing_speed = 0.5;
             break;
         case 6:
             foanetalk = false;
             reverbtalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_6"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_6"), 31);
             typing_speed = 0.5;
             break;
         case 7:
             foanetalk = true;
             reverbtalk = false;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_7"), 31);
+            current_dialogue = format_text(get_lang_string("obj_foane_pretalk_1_Draw_73_7"), 31);
             typing_speed = 2/3;
             blockprogress = false;
             audio_sound_pitch(snd_foane, 1);
@@ -115,7 +115,7 @@ if (talking)
             texttalk = true;
             charactertalking = false;
             textxoffset = -26;
-            current_dialogue = get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_8");
+            current_dialogue = get_lang_string("obj_foane_pretalk_1_Draw_73_8");
             typing_speed = 1;
             break;
         case 9:
@@ -123,7 +123,7 @@ if (talking)
             texttalk = true;
             textxoffset = 150;
             charactertalking = false;
-            current_dialogue = get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_9");
+            current_dialogue = get_lang_string("obj_foane_pretalk_1_Draw_73_9");
             typing_speed = 1;
             break;
         default:
@@ -200,7 +200,7 @@ if (talking)
     
     if (dialogue == 2)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_10"));
+        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_pretalk_1_Draw_73_10"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -281,7 +281,7 @@ if (talking)
     
     if (dialogue == 6)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_11"));
+        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_pretalk_1_Draw_73_11"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -362,7 +362,7 @@ if (talking)
     
     if (dialogue == 8)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("gml_Object_obj_foane_pretalk_1_Draw_73_12"));
+        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_pretalk_1_Draw_73_12"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;

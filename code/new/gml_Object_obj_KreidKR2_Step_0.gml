@@ -66,7 +66,7 @@ if (global.dialogue == 15)
     
     if (d15timer == 90)
     {
-        window_set_caption(get_lang_string("gml_Object_obj_KreidKR2_Step_0_0"));
+        window_set_caption(get_lang_string("obj_KreidKR2_Step_0_0"));
         audio_play_sound(mus_kreid_overworld, 1, true);
     }
     

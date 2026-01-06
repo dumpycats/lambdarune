@@ -3,37 +3,37 @@ switch (global.daddialogue)
     case 1:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextDadTalk_Step_0_0");
+        global.current_dialogue = get_lang_string("oTextDadTalk_Step_0_0");
         global.typing_speed = 0.5;
         break;
     case 2:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextDadTalk_Step_0_1");
+        global.current_dialogue = get_lang_string("oTextDadTalk_Step_0_1");
         global.typing_speed = 0.5;
         break;
     case 3:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextDadTalk_Step_0_2");
+        global.current_dialogue = get_lang_string("oTextDadTalk_Step_0_2");
         global.typing_speed = 0.5;
         break;
     case 4:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextDadTalk_Step_0_3");
+        global.current_dialogue = get_lang_string("oTextDadTalk_Step_0_3");
         global.typing_speed = 0.5;
         break;
     case 5:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextDadTalk_Step_0_4");
+        global.current_dialogue = get_lang_string("oTextDadTalk_Step_0_4");
         global.typing_speed = 0.5;
         break;
     case 6:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("gml_Object_oTextDadTalk_Step_0_5");
+        global.current_dialogue = get_lang_string("oTextDadTalk_Step_0_5");
         global.typing_speed = 0.25;
         break;
     default:

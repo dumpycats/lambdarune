@@ -82,7 +82,7 @@ if (mercy)
     {
         audio_play_sound(snd_mercyadd, 1, false);
         var mercyobj = instance_create_depth(x + 22, y, depth - 100, obj_mercynumber);
-        mercyobj.value = get_lang_string("gml_Object_obj_kreid_aftermath_Draw_0_0");
+        mercyobj.value = get_lang_string("obj_kreid_aftermath_Draw_0_0");
         mercyobj.maximum = true;
     }
     

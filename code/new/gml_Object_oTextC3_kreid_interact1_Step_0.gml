@@ -22,13 +22,13 @@ switch (dialogue)
             switch (randomdialogue)
             {
                 case 1:
-                    current_dialogue = get_lang_string("gml_Object_oTextC3_kreid_interact1_Step_0_0");
+                    current_dialogue = get_lang_string("oTextC3_kreid_interact1_Step_0_0");
                     break;
                 case 2:
-                    current_dialogue = get_lang_string("gml_Object_oTextC3_kreid_interact1_Step_0_1");
+                    current_dialogue = get_lang_string("oTextC3_kreid_interact1_Step_0_1");
                     break;
                 case 3:
-                    current_dialogue = get_lang_string("gml_Object_oTextC3_kreid_interact1_Step_0_2");
+                    current_dialogue = get_lang_string("oTextC3_kreid_interact1_Step_0_2");
                     break;
             }
         }

@@ -1,7 +1,7 @@
 if (global.dialogue == 7)
 {
     image_alpha += 0.06666;
-    window_set_caption(get_lang_string("gml_Object_obj_ch3_rm3_2_Step_0_0"));
+    window_set_caption(get_lang_string("obj_ch3_rm3_2_Step_0_0"));
 }
 
 if (global.krishp <= 0)

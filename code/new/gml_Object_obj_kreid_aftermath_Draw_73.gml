@@ -56,7 +56,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_0"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -68,7 +68,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_1"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_1"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -80,7 +80,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_2"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_2"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -92,7 +92,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_3"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_3"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -104,7 +104,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_4"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_4"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -116,7 +116,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_5"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_5"), 31);
             image_index = 1;
             dialogueicon = 11;
             typing_speed = 1;
@@ -130,7 +130,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
             audio_sound_gain(mus_wind, 0, 1000);
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_6"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_6"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -142,7 +142,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_7"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_7"), 31);
             image_index = 2;
             dialogueicon = 11;
             typing_speed = 1;
@@ -155,7 +155,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_8"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_8"), 31);
             image_index = 0;
             dialogueicon = 11;
             typing_speed = 1;
@@ -169,7 +169,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
             audio_stop_sound(mus_wind);
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_9"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_9"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -182,7 +182,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
             audio_sound_gain(mus_wind, 1, 0);
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_10"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_10"), 31);
             image_index = 1;
             dialogueicon = 11;
             typing_speed = 1;
@@ -195,7 +195,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_11"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_11"), 31);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -207,7 +207,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_12"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_12"), 31);
             image_index = 0;
             dialogueicon = 11;
             typing_speed = 1;
@@ -220,7 +220,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_13"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_13"), 31);
             image_index = 1;
             dialogueicon = 11;
             typing_speed = 1;
@@ -233,7 +233,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_14"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_14"), 31);
             image_index = 3;
             dialogueicon = 11;
             typing_speed = 1;
@@ -246,7 +246,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_15"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_15"), 31);
             image_index = 3;
             dialogueicon = 11;
             typing_speed = 1;
@@ -259,7 +259,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_16"), 31);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_16"), 31);
             image_index = 3;
             dialogueicon = 11;
             typing_speed = 1;
@@ -272,7 +272,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_17"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_17"), 25);
             dialogueicon = 16;
             typing_speed = 1;
             break;
@@ -284,7 +284,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_18"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_18"), 25);
             dialogueicon = 17;
             typing_speed = 1;
             break;
@@ -296,7 +296,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_19"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_19"), 25);
             dialogueicon = 18;
             typing_speed = 1;
             break;
@@ -308,7 +308,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_20"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_20"), 25);
             dialogueicon = 16;
             typing_speed = 1;
             break;
@@ -320,7 +320,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_21"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_21"), 25);
             dialogueicon = 16;
             typing_speed = 1;
             break;
@@ -332,7 +332,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_22"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_22"), 25);
             dialogueicon = 17;
             typing_speed = 1;
             break;
@@ -344,7 +344,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_23"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_23"), 25);
             dialogueicon = 18;
             typing_speed = 1;
             break;
@@ -356,7 +356,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_24"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_24"), 25);
             dialogueicon = 16;
             typing_speed = 1;
             break;
@@ -368,7 +368,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_25"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_25"), 25);
             dialogueicon = 2;
             typing_speed = 1;
             break;
@@ -380,7 +380,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_26"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_26"), 25);
             dialogueicon = 4;
             typing_speed = 1;
             break;
@@ -392,7 +392,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_27"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_27"), 25);
             dialogueicon = 13;
             typing_speed = 1;
             break;
@@ -404,7 +404,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_28"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_28"), 25);
             dialogueicon = 12;
             typing_speed = 1;
             endcase29 = dialogue;
@@ -417,7 +417,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_29"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_29"), 25);
             dialogueicon = 8;
             typing_speed = 1;
             break;
@@ -429,7 +429,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_30"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_30"), 25);
             dialogueicon = 11;
             typing_speed = 1;
             break;
@@ -441,7 +441,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_31"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_31"), 25);
             dialogueicon = 12;
             typing_speed = 1;
             
@@ -460,7 +460,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_32"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_32"), 25);
             dialogueicon = 5;
             typing_speed = 1;
             break;
@@ -471,11 +471,11 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_33"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_33"), 25);
             dialogueicon = 4;
             typing_speed = 1;
             quip = true;
-            quipstring = format_text_battle(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_34"), 36);
+            quipstring = format_text_battle(get_lang_string("obj_kreid_aftermath_Draw_73_34"), 36);
             quipicon = sKreidDialogueSprite;
             quipindex = 8;
             break;
@@ -487,7 +487,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_35"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_35"), 25);
             dialogueicon = 5;
             typing_speed = 1;
             break;
@@ -499,7 +499,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_36"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_36"), 25);
             dialogueicon = 2;
             typing_speed = 1;
             break;
@@ -511,7 +511,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_37"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_37"), 25);
             dialogueicon = 8;
             typing_speed = 1;
             break;
@@ -523,7 +523,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_38"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_38"), 25);
             dialogueicon = 19;
             typing_speed = 1;
             break;
@@ -538,17 +538,17 @@ if (talking)
             
             if (instance_exists(obj_kreid_nohitcheck))
             {
-                current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_39"), 25);
+                current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_39"), 25);
                 dialogueicon = 13;
             }
             else if (!instance_exists(obj_kreid_attackcheck))
             {
-                current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_40"), 25);
+                current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_40"), 25);
                 dialogueicon = 19;
             }
             else
             {
-                current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_41"), 25);
+                current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_41"), 25);
                 dialogueicon = 21;
             }
             
@@ -565,12 +565,12 @@ if (talking)
             
             if (instance_exists(obj_kreid_nohitcheck))
             {
-                current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_42"), 25);
+                current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_42"), 25);
                 dialogueicon = 4;
             }
             else
             {
-                current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_43"), 25);
+                current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_43"), 25);
                 dialogueicon = 20;
             }
             
@@ -584,7 +584,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_44"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_44"), 25);
             dialogueicon = 18;
             typing_speed = 1;
             break;
@@ -596,7 +596,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_45"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_45"), 25);
             dialogueicon = 12;
             typing_speed = 1;
             break;
@@ -608,7 +608,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_kreid_aftermath_Draw_73_46"), 25);
+            current_dialogue = format_text(get_lang_string("obj_kreid_aftermath_Draw_73_46"), 25);
             dialogueicon = 8;
             typing_speed = 1;
             break;

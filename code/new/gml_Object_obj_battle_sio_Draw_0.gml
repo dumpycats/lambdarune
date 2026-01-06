@@ -8,13 +8,13 @@ if (debug)
     
     if (generator1)
     {
-        draw_text_ext_transformed(cx + 320, cy + 20, get_lang_string("gml_Object_obj_battle_sio_Draw_0_0"), 0, 640, 1, 1, 0);
+        draw_text_ext_transformed(cx + 320, cy + 20, get_lang_string("obj_battle_sio_Draw_0_0"), 0, 640, 1, 1, 0);
         draw_text_ext_transformed(cx + 320, cy + 60, string(jamphase), 0, 640, 1, 1, 0);
     }
     
     if (generator2)
     {
-        draw_text_ext_transformed(cx + 320, cy + 40, get_lang_string("gml_Object_obj_battle_sio_Draw_0_1"), 0, 640, 1, 1, 0);
+        draw_text_ext_transformed(cx + 320, cy + 40, get_lang_string("obj_battle_sio_Draw_0_1"), 0, 640, 1, 1, 0);
         draw_text_ext_transformed(cx + 320, cy + 60, string(jamphase), 0, 640, 1, 1, 0);
     }
     
@@ -619,7 +619,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_2");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_2");
         actdialogue = 1;
         PARTYMEMBER1.image_speed = 1;
         reset_dialogue_normal();
@@ -633,7 +633,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_3");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_3");
         actdialogue = 1;
         PARTYMEMBER2.image_speed = 1;
         PARTYMEMBER2.sprite_index = spr_susie_act;
@@ -648,7 +648,7 @@ if (progressfinal)
     }
     else if (ralseiacting)
     {
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_4");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_4");
         textmenu = false;
         textact = true;
         PARTYMEMBER3.image_speed = 1;
@@ -667,7 +667,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_5");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_5");
         PARTYMEMBER1.sprite_index = spr_kris_act;
         PARTYMEMBER1.image_index = 0;
         PARTYMEMBER1.image_speed = 1;
@@ -677,7 +677,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_6");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_6");
         PARTYMEMBER2.sprite_index = spr_susie_act;
         PARTYMEMBER2.image_index = 0;
         PARTYMEMBER2.image_speed = 1;
@@ -687,7 +687,7 @@ if (progressfinal)
     {
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_7");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_7");
         PARTYMEMBER3.sprite_index = spr_ralsei_act;
         PARTYMEMBER3.image_index = 0;
         PARTYMEMBER3.image_speed = 1;
@@ -698,7 +698,7 @@ if (progressfinal)
         PARTYMEMBER1.image_speed = 1;
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_8");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_8");
         reset_dialogue_normal();
     }
     else if (susieitem)
@@ -707,7 +707,7 @@ if (progressfinal)
         PARTYMEMBER2.sprite_index = spr_susie_item;
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_9");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_9");
         reset_dialogue_normal();
     }
     else if (ralseiitem)
@@ -716,12 +716,12 @@ if (progressfinal)
         PARTYMEMBER3.sprite_index = spr_ralsei_item;
         textmenu = false;
         textact = true;
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_10");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_10");
         reset_dialogue_normal();
     }
     else if (susiemagic && !(susieactoptions == 1 && jammed))
     {
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_11");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_11");
         textmenu = false;
         textact = true;
         PARTYMEMBER2.image_index = 0;
@@ -734,7 +734,7 @@ if (progressfinal)
     }
     else if (ralseimagic)
     {
-        ACTNAME = get_lang_string("gml_Object_obj_battle_sio_Draw_0_12");
+        ACTNAME = get_lang_string("obj_battle_sio_Draw_0_12");
         textmenu = false;
         textact = true;
         PARTYMEMBER3.image_index = 0;
@@ -782,35 +782,35 @@ if (progressfinal)
         switch (randomenemydialogue)
         {
             case 0:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_13");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_13");
                 break;
             case 1:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_14");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_14");
                 break;
             case 2:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_15");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_15");
                 break;
             case 3:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_16");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_16");
                 break;
             case 4:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_17");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_17");
                 break;
             case 5:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_18");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_18");
                 break;
             case 6:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_19");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_19");
                 break;
             case 7:
-                tennatext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_20");
+                tennatext = get_lang_string("obj_battle_sio_Draw_0_20");
                 break;
         }
     }
     
     if (jammed)
     {
-        jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_21");
+        jamtext = get_lang_string("obj_battle_sio_Draw_0_21");
         
         if (!generator1 && !generator2)
         {
@@ -821,15 +821,15 @@ if (progressfinal)
     }
     else if (global.turn == 3)
     {
-        jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_22");
+        jamtext = get_lang_string("obj_battle_sio_Draw_0_22");
     }
     else if (global.turn == 10)
     {
-        jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_23");
+        jamtext = get_lang_string("obj_battle_sio_Draw_0_23");
     }
     else if (global.turn == 11)
     {
-        jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_24");
+        jamtext = get_lang_string("obj_battle_sio_Draw_0_24");
     }
     else if (jamphase == 0)
     {
@@ -839,13 +839,13 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_25");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_25");
                 break;
             case 1:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_26");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_26");
                 break;
             case 2:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_27");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_27");
                 break;
         }
     }
@@ -857,13 +857,13 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_28");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_28");
                 break;
             case 1:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_29");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_29");
                 break;
             case 2:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_30");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_30");
                 break;
         }
     }
@@ -875,13 +875,13 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_31");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_31");
                 break;
             case 1:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_32");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_32");
                 break;
             case 2:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_33");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_33");
                 break;
         }
     }
@@ -893,16 +893,16 @@ if (progressfinal)
         switch (randomtextjam)
         {
             case 0:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_34");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_34");
                 break;
             case 1:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_35");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_35");
                 break;
             case 2:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_36");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_36");
                 break;
             case 3:
-                jamtext = get_lang_string("gml_Object_obj_battle_sio_Draw_0_37");
+                jamtext = get_lang_string("obj_battle_sio_Draw_0_37");
                 break;
         }
     }
@@ -1039,8 +1039,8 @@ if (krismenuaccessible)
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
                 draw_text(cx + 80, cy + 379, ENEMYNAME);
-                draw_text_transformed(cx + 424, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_38"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_39"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, get_lang_string("obj_battle_sio_Draw_0_38"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, get_lang_string("obj_battle_sio_Draw_0_39"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -1155,18 +1155,18 @@ if (krismenuaccessible)
                     }
                     
                     draw_sprite_ext(spr_susieralsei_icon, 0, cx + 320, cx + 240, 1, 1, 0, c_white, 1);
-                    draw_text(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_40"));
+                    draw_text(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_40"));
                     
                     if (!jammed)
                     {
                         if (!krisdown && !susiedown && !ralseidown)
-                            draw_text(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_41"));
+                            draw_text(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_41"));
                         else
-                            draw_text_color(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_42"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_42"), c_gray, c_gray, c_gray, c_gray, 1);
                     }
                     else
                     {
-                        draw_text_color(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_43"), c_red, c_red, c_red, c_red, 1);
+                        draw_text_color(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_43"), c_red, c_red, c_red, c_red, 1);
                     }
                     
                     if (left)
@@ -1346,7 +1346,7 @@ if (krismenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_44"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("obj_battle_sio_Draw_0_44"), 16777215, 0, -2);
                 
                 if (revert)
                 {
@@ -1639,33 +1639,33 @@ if (susiemenuaccessible)
             if (!susieactselected)
             {
                 if (global.tp < 50)
-                    draw_text_color(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_45"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_45"), c_gray, c_gray, c_gray, c_gray, 1);
                 else
-                    draw_text(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_46"));
+                    draw_text(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_46"));
                 
                 if (global.tp < 84)
-                    draw_text_color(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_47"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_47"), c_gray, c_gray, c_gray, c_gray, 1);
                 else
-                    draw_text(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_48"));
+                    draw_text(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_48"));
                 
                 var saction = 16744703;
                 
                 if (!jammed)
-                    draw_text_color(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_49"), saction, saction, saction, saction, 1);
+                    draw_text_color(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_49"), saction, saction, saction, saction, 1);
                 else
-                    draw_text_color(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_50"), c_red, c_red, c_red, c_red, 1);
+                    draw_text_color(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_50"), c_red, c_red, c_red, c_red, 1);
                 
                 if (susieactoptions == 1)
                 {
                     draw_sprite_ext(spr_SOUL_battle, 0, cx + 238, cy + 393, 1, 1, 0, c_red, 1);
-                    draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_51"), c_gray, c_gray, c_gray, c_gray, 1);
-                    draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_52"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                    draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_51"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_52"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                 }
                 else if (susieactoptions == 0 && susieactoptionsvertical == 1)
                 {
                     draw_sprite_ext(spr_SOUL_battle, 0, cx + 18, cy + 423, 1, 1, 0, c_red, 1);
-                    draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_53"), c_gray, c_gray, c_gray, c_gray, 1);
-                    draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_54"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                    draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_53"), c_gray, c_gray, c_gray, c_gray, 1);
+                    draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_54"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                 }
                 else if (susieactoptions == 0)
                 {
@@ -1730,7 +1730,7 @@ if (susiemenuaccessible)
                 
                 if (susieactoptions == 1 && susieactoptionsvertical == 0 && jammed)
                 {
-                    draw_text(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_55"));
+                    draw_text(cx + 80, cy + 379, get_lang_string("obj_battle_sio_Draw_0_55"));
                 }
                 else
                 {
@@ -1744,8 +1744,8 @@ if (susiemenuaccessible)
                     ENEMY1.flashalpha = clamp(ENEMY1.flashalpha, 0.25, 1);
                 }
                 
-                draw_text_transformed(cx + 424, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_56"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_57"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, get_lang_string("obj_battle_sio_Draw_0_56"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, get_lang_string("obj_battle_sio_Draw_0_57"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -1872,7 +1872,7 @@ if (susiemenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_58"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("obj_battle_sio_Draw_0_58"), 16777215, 0, -2);
                 
                 if (up)
                 {
@@ -1936,8 +1936,8 @@ if (susiemenuaccessible)
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
                 draw_text(cx + 80, cy + 379, ENEMYNAME);
-                draw_text_transformed(cx + 424, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_59"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_60"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, get_lang_string("obj_battle_sio_Draw_0_59"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, get_lang_string("obj_battle_sio_Draw_0_60"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -2140,7 +2140,7 @@ if (susiemenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_61"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("obj_battle_sio_Draw_0_61"), 16777215, 0, -2);
                 
                 if (revert)
                 {
@@ -2435,8 +2435,8 @@ if (ralseimenuaccessible)
                 draw_set_font(fDeterminationSans);
                 draw_set_halign(fa_left);
                 draw_text(cx + 80, cy + 379, ENEMYNAME);
-                draw_text_transformed(cx + 424, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_62"), 1, 0.5, 0);
-                draw_text_transformed(cx + 524, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_63"), 1, 0.5, 0);
+                draw_text_transformed(cx + 424, cy + 366, get_lang_string("obj_battle_sio_Draw_0_62"), 1, 0.5, 0);
+                draw_text_transformed(cx + 524, cy + 366, get_lang_string("obj_battle_sio_Draw_0_63"), 1, 0.5, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                 draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                 draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -2509,8 +2509,8 @@ if (ralseimenuaccessible)
                             draw_set_font(fDeterminationSans);
                             draw_set_halign(fa_left);
                             draw_text(cx + 80, cy + 379, ENEMYNAME);
-                            draw_text_transformed(cx + 424, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_64"), 1, 0.5, 0);
-                            draw_text_transformed(cx + 524, cy + 366, get_lang_string("gml_Object_obj_battle_sio_Draw_0_65"), 1, 0.5, 0);
+                            draw_text_transformed(cx + 424, cy + 366, get_lang_string("obj_battle_sio_Draw_0_64"), 1, 0.5, 0);
+                            draw_text_transformed(cx + 524, cy + 366, get_lang_string("obj_battle_sio_Draw_0_65"), 1, 0.5, 0);
                             draw_rectangle_color(cx + 420, cy + 380, cx + 500, cy + 395, darkred, darkred, darkred, darkred, 0);
                             draw_rectangle_color(cx + 420, cy + 380, cx + 420 + (80 / (global.enemymaxhp / global.enemyhp)), cy + 395, green, green, green, green, 0);
                             draw_rectangle_color(cx + 520, cy + 380, cx + 600, cy + 395, orange, orange, orange, orange, 0);
@@ -2642,7 +2642,7 @@ if (ralseimenuaccessible)
                             var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                             draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                             draw_set_font(fDeterminationSans);
-                            draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_66"), 16777215, 0, -2);
+                            draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("obj_battle_sio_Draw_0_66"), 16777215, 0, -2);
                             
                             if (revert)
                             {
@@ -2706,32 +2706,32 @@ if (ralseimenuaccessible)
                         var raction = 8454016;
                         
                         if (!jammed)
-                            draw_text_color(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_67"), raction, raction, raction, raction, 1);
+                            draw_text_color(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_67"), raction, raction, raction, raction, 1);
                         else
-                            draw_text_color(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_68"), c_red, c_red, c_red, c_red, 1);
+                            draw_text_color(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_68"), c_red, c_red, c_red, c_red, 1);
                         
                         if (global.tp < 16)
-                            draw_text_color(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_69"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_69"), c_gray, c_gray, c_gray, c_gray, 1);
                         else
-                            draw_text(cx + 260, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_70"));
+                            draw_text(cx + 260, cy + 379, get_lang_string("obj_battle_sio_Draw_0_70"));
                         
                         if (global.tp < 32)
-                            draw_text_color(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_71"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_71"), c_gray, c_gray, c_gray, c_gray, 1);
                         else
-                            draw_text(cx + 30, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_72"));
+                            draw_text(cx + 30, cy + 379, get_lang_string("obj_battle_sio_Draw_0_72"));
                         
                         if (ralseiactoptions == 0 && ralseiactoptionsvertical == 0)
                         {
                         }
                         else if (ralseiactoptions == 1)
                         {
-                            draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_73"), c_gray, c_gray, c_gray, c_gray, 1);
-                            draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_74"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                            draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_73"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_74"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                         }
                         else if (ralseiactoptions == 0 && ralseiactoptionsvertical == 1)
                         {
-                            draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_75"), c_gray, c_gray, c_gray, c_gray, 1);
-                            draw_text_color(cx + 500, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_76"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
+                            draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_75"), c_gray, c_gray, c_gray, c_gray, 1);
+                            draw_text_color(cx + 500, cy + 379, get_lang_string("obj_battle_sio_Draw_0_76"), tpcolor, tpcolor, tpcolor, tpcolor, 1);
                         }
                         
                         if (left)
@@ -2935,7 +2935,7 @@ if (ralseimenuaccessible)
                 var ralseipercent = clamp(global.ralseihp / global.ralseimaxhp, 0, 1);
                 draw_rectangle_color(barstart, cy + 440, barstart + (barwidth * ralseipercent), cy + 455, green, green, green, green, 0);
                 draw_set_font(fDeterminationSans);
-                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("gml_Object_obj_battle_sio_Draw_0_77"), 16777215, 0, -2);
+                draw_text_with_tracking(cx + 80, cy + 379, get_lang_string("obj_battle_sio_Draw_0_77"), 16777215, 0, -2);
                 
                 if (revert)
                 {

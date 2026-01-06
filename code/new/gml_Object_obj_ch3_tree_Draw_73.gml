@@ -49,7 +49,7 @@ if (talking)
     switch (dialogue)
     {
         case 1:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_tree_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_tree_Draw_73_0"), 31);
             break;
         default:
             current_dialogue = "";

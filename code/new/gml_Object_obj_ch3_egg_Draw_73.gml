@@ -52,44 +52,44 @@ if (talking)
     switch (dialogue)
     {
         case 1:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_0"), 31);
             break;
         case 2:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_1"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_1"), 31);
             break;
         case 3:
             endcasequestion1 = dialogue;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_2"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_2"), 31);
             break;
         case 4:
             audio_stop_sound(mus_man_ragtime);
             endcasebad = dialogue;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_3"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_3"), 31);
             window_set_caption("");
             break;
         case 5:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_4"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_4"), 31);
             break;
         case 6:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_5"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_5"), 31);
             break;
         case 7:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_6"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_6"), 31);
             break;
         case 8:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_7"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_7"), 31);
             break;
         case 9:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_8"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_8"), 31);
             break;
         case 10:
             audio_stop_sound(mus_man_ragtime);
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_9"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_9"), 31);
             window_set_caption("");
             break;
         case 11:
             endcasefinal = dialogue;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_ch3_egg_Draw_73_10"), 31);
+            current_dialogue = format_text(get_lang_string("obj_ch3_egg_Draw_73_10"), 31);
             break;
         default:
             current_dialogue = "";
@@ -287,15 +287,15 @@ if (yesnooption)
     if (options == 0)
     {
         draw_sprite_ext(spr_menu_SOUL, 0, cx + 289, cy + 391, 1, 1, 0, c_white, 1);
-        draw_text_color(cx + 92, cy + 371, get_lang_string("gml_Object_obj_ch3_egg_Draw_73_11"), c_white, c_white, c_white, c_white, 1);
-        draw_text_color(cx + 556, cy + 371, get_lang_string("gml_Object_obj_ch3_egg_Draw_73_12"), c_white, c_white, c_white, c_white, 1);
+        draw_text_color(cx + 92, cy + 371, get_lang_string("obj_ch3_egg_Draw_73_11"), c_white, c_white, c_white, c_white, 1);
+        draw_text_color(cx + 556, cy + 371, get_lang_string("obj_ch3_egg_Draw_73_12"), c_white, c_white, c_white, c_white, 1);
     }
     
     if (options == 1)
     {
         draw_sprite_ext(spr_menu_SOUL, 0, cx + 69, cy + 387, 1, 1, 0, c_white, 1);
-        draw_text_color(cx + 92, cy + 371, get_lang_string("gml_Object_obj_ch3_egg_Draw_73_13"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
-        draw_text_color(cx + 556, cy + 371, get_lang_string("gml_Object_obj_ch3_egg_Draw_73_14"), c_white, c_white, c_white, c_white, 1);
+        draw_text_color(cx + 92, cy + 371, get_lang_string("obj_ch3_egg_Draw_73_13"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        draw_text_color(cx + 556, cy + 371, get_lang_string("obj_ch3_egg_Draw_73_14"), c_white, c_white, c_white, c_white, 1);
         
         if (keyboard_check_pressed(vk_right))
             options = 2;
@@ -324,8 +324,8 @@ if (yesnooption)
     if (options == 2)
     {
         draw_sprite_ext(spr_menu_SOUL, 0, cx + 533, cy + 387, 1, 1, 0, c_white, 1);
-        draw_text_color(cx + 92, cy + 371, get_lang_string("gml_Object_obj_ch3_egg_Draw_73_15"), c_white, c_white, c_white, c_white, 1);
-        draw_text_color(cx + 556, cy + 371, get_lang_string("gml_Object_obj_ch3_egg_Draw_73_16"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        draw_text_color(cx + 92, cy + 371, get_lang_string("obj_ch3_egg_Draw_73_15"), c_white, c_white, c_white, c_white, 1);
+        draw_text_color(cx + 556, cy + 371, get_lang_string("obj_ch3_egg_Draw_73_16"), c_yellow, c_yellow, c_yellow, c_yellow, 1);
         
         if (keyboard_check_pressed(vk_left))
             options = 1;

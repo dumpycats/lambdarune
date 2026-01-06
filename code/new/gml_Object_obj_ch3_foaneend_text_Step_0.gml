@@ -26,7 +26,7 @@ if (e1trigger)
     
     if (e1timer == 40)
     {
-        window_set_caption(get_lang_string("gml_Object_obj_ch3_foaneend_text_Step_0_0"));
+        window_set_caption(get_lang_string("obj_ch3_foaneend_text_Step_0_0"));
         audio_stop_sound(snd_foane_laugh);
         audio_play_sound(mus_sfx_glitch, 1, false, 1, false, 1);
         obj_foane_ex_end.image_index = 0;
@@ -77,7 +77,7 @@ if (e2trigger)
         obj_foane_ex_end.floatmultiplier = 0.5;
         obj_foane_ex_end.image_index = 0;
         obj_foane_ex_end.sprite_index = spr_foane_ex_end;
-        window_set_caption(get_lang_string("gml_Object_obj_ch3_foaneend_text_Step_0_1"));
+        window_set_caption(get_lang_string("obj_ch3_foaneend_text_Step_0_1"));
         audio_play_sound(mus_sfx_glitch, 1, false, 1, false, 1);
         obj_foane_background_final.subimgspeed = 0;
         obj_foane_background_final.antialpha = -0.5;

@@ -1,5 +1,5 @@
 if (!(room == rm_ch3_kreidfight) && !(room == rm_ch3_kreidfight_skip))
-    window_set_caption(get_lang_string("gml_Object_oGlobalC3RoomKreidFight_Create_0_0"));
+    window_set_caption(get_lang_string("oGlobalC3RoomKreidFight_Create_0_0"));
 else
     window_set_caption("");
 

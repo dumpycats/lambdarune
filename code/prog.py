@@ -67,7 +67,7 @@ for root, _, files in os.walk(TARGET_DIR):
                 if filename_without_ext in ["gml_GlobalScript_format_text_replacements", "gml_Object_oSOUL_Step_0", "gml_GlobalScript_scr_InvLerp", "gml_GlobalScript_format_text", "gml_Object_oCRT_Create_0"]:
                     continue
 
-                key = f"{filename_without_ext}_{key_counter}"
+                key = f"{filename_without_ext}_{key_counter}".replace("gml_Object_", "").replace("gml_Script_", "").replace("gml_RoomCC_", "").replace("gml_GlobalScript_", "").replace("gml_Room_", "")
                 key_counter += 1
 
                 localization[key] = original

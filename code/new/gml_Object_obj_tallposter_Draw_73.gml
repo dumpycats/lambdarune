@@ -38,31 +38,31 @@ if (talking)
     {
         case 1:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_tallposter_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("obj_tallposter_Draw_73_0"), 31);
             typing_speed = 1;
             break;
         case 2:
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_tallposter_Draw_73_1"), 31);
+            current_dialogue = format_text(get_lang_string("obj_tallposter_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         case 3:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_tallposter_Draw_73_2"), 31);
+            current_dialogue = format_text(get_lang_string("obj_tallposter_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_tallposter_Draw_73_3"), 31);
+            current_dialogue = format_text(get_lang_string("obj_tallposter_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_tallposter_Draw_73_4"), 31);
+            current_dialogue = format_text(get_lang_string("obj_tallposter_Draw_73_4"), 31);
             typing_speed = 1;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("gml_Object_obj_tallposter_Draw_73_5"), 31);
+            current_dialogue = format_text(get_lang_string("obj_tallposter_Draw_73_5"), 31);
             typing_speed = 1;
             break;
         case 7:

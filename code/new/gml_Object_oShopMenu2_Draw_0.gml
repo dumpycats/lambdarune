@@ -5,16 +5,16 @@ draw_set_halign(fa_left);
 var text;
 
 if (global.buyitems == 1)
-    text = get_lang_string("gml_Object_oShopMenu2_Draw_0_0");
+    text = get_lang_string("oShopMenu2_Draw_0_0");
 
 if (global.buyitems == 2)
-    text = get_lang_string("gml_Object_oShopMenu2_Draw_0_1");
+    text = get_lang_string("oShopMenu2_Draw_0_1");
 
 if (global.buyitems == 3)
-    text = get_lang_string("gml_Object_oShopMenu2_Draw_0_2");
+    text = get_lang_string("oShopMenu2_Draw_0_2");
 
 if (global.buyitems == 4)
-    text = get_lang_string("gml_Object_oShopMenu2_Draw_0_3");
+    text = get_lang_string("oShopMenu2_Draw_0_3");
 
 if (global.buyitems == 5)
     text = "";

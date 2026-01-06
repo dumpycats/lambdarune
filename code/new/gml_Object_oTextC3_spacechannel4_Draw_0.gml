@@ -19,7 +19,7 @@ draw_text_color(text_x + 1, text_y + 1, global.displayed_text, shadow_color1, sh
 
 if (global.dialogue == 2)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_0"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_0"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -120,7 +120,7 @@ if (global.dialogue == 2)
 
 if (global.dialogue == 5)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_1"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_1"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -208,7 +208,7 @@ if (global.dialogue == 5)
 
 if (global.dialogue == 18)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_2"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_2"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -307,7 +307,7 @@ if (global.dialogue == 18)
 
 if (global.dialogue == 20)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_3"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_3"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -408,7 +408,7 @@ if (global.dialogue == 20)
 
 if (global.dialogue == 22)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_4"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_4"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -500,7 +500,7 @@ if (global.dialogue == 22)
 
 if (global.dialogue == 27)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_5"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_5"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -588,7 +588,7 @@ if (global.dialogue == 27)
 
 if (global.dialogue == 36)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_6"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_6"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -680,7 +680,7 @@ if (global.dialogue == 36)
 
 if (global.dialogue == 39)
 {
-    var text_parts = string_split(global.current_dialogue, get_lang_string("gml_Object_oTextC3_spacechannel4_Draw_0_7"));
+    var text_parts = string_split(global.current_dialogue, get_lang_string("oTextC3_spacechannel4_Draw_0_7"));
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
