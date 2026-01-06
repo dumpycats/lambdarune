@@ -8,4 +8,4 @@ image_yscale = 0.22;
 timer = 0;
 curve1 = animcurve_get_channel(Bezier, "acEaseInOutB");
 percent1 = 0;
-mercyfont = font_add_sprite_ext(spr_numbers_font_gold, lang("obj_mercynumber_Create_0_0"), true, 0);
+mercyfont = font_add_sprite_ext(spr_numbers_font_gold, get_lang_string("gml_Object_obj_mercynumber_Create_0_0"), true, 0);

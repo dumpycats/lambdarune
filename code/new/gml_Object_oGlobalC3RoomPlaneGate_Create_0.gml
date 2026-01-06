@@ -1,4 +1,4 @@
-window_set_caption(lang("oGlobalC3RoomPlaneGate_Create_0_0"));
+window_set_caption(get_lang_string("gml_Object_oGlobalC3RoomPlaneGate_Create_0_0"));
 sprite_prefetch(sDialogueBox);
 sprite_prefetch(spr_planegate_door);
 sprite_prefetch(spr_planegate);

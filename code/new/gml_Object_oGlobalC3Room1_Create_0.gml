@@ -1,4 +1,4 @@
-window_set_caption(lang("oGlobalC3Room1_Create_0_0"));
+window_set_caption(get_lang_string("gml_Object_oGlobalC3Room1_Create_0_0"));
 audio_play_sound(mus_wind, 1, true, 0.1, false, 0.5);
 timer = 0;
 dialogue2timer = 0;

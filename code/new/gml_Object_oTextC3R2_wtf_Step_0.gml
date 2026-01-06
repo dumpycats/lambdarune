@@ -8,7 +8,7 @@ switch (global.wtfdialogue)
     case 1:
         global.susietalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R2_wtf_Step_0_0");
+        global.current_dialogue = get_lang_string("gml_Object_oTextC3R2_wtf_Step_0_0");
         global.typing_speed = 2.3;
         oDialogueSprite.image_index = 17;
         blockprogress = true;
@@ -17,7 +17,7 @@ switch (global.wtfdialogue)
         global.susietalk = false;
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = lang("oTextC3R2_wtf_Step_0_1");
+        global.current_dialogue = "";
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -25,7 +25,7 @@ switch (global.wtfdialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = lang("oTextC3R2_wtf_Step_0_2");
+        global.current_dialogue = "";
         break;
 }
 
@@ -40,7 +40,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextC3R2_wtf_Step_0_3");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : "";
             
             if (next_char == " " && following_char == " ")
             {

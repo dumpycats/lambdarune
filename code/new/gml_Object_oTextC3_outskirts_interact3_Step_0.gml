@@ -11,9 +11,9 @@ switch (dialogue)
         global.susietalk = true;
         
         if (!global.morehungry)
-            current_dialogue = lang("oTextC3_outskirts_interact3_Step_0_0");
+            current_dialogue = get_lang_string("gml_Object_oTextC3_outskirts_interact3_Step_0_0");
         else
-            current_dialogue = lang("oTextC3_outskirts_interact3_Step_0_1");
+            current_dialogue = get_lang_string("gml_Object_oTextC3_outskirts_interact3_Step_0_1");
         
         typing_speed = 1;
         
@@ -34,20 +34,20 @@ switch (dialogue)
         if (global.morehungry)
             destroy = true;
         
-        current_dialogue = lang("oTextC3_outskirts_interact3_Step_0_2");
+        current_dialogue = get_lang_string("gml_Object_oTextC3_outskirts_interact3_Step_0_2");
         typing_speed = 1;
         oDialogueSprite.image_index = 10;
         break;
     case 3:
         global.susietalk = true;
-        current_dialogue = lang("oTextC3_outskirts_interact3_Step_0_3");
+        current_dialogue = get_lang_string("gml_Object_oTextC3_outskirts_interact3_Step_0_3");
         typing_speed = 1;
         oDialogueSprite.image_index = 20;
         oSusieC3.sprite_index = sSusieWalkRightUpset;
         break;
     case 4:
         global.susietalk = true;
-        current_dialogue = lang("oTextC3_outskirts_interact3_Step_0_4");
+        current_dialogue = get_lang_string("gml_Object_oTextC3_outskirts_interact3_Step_0_4");
         typing_speed = 1;
         oDialogueSprite.image_index = 17;
         oSusieC3.sprite_index = sSusieWalkDown;
@@ -84,7 +84,7 @@ switch (dialogue)
         typing_speed = 1;
         break;
     default:
-        current_dialogue = lang("oTextC3_outskirts_interact3_Step_0_5");
+        current_dialogue = "";
         break;
 }
 
@@ -112,7 +112,7 @@ if (!text_complete && !pause_for_punctuation)
         if (letter_index < string_length(current_dialogue))
         {
             var next_char = string_char_at(current_dialogue, letter_index + 1);
-            var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("oTextC3_outskirts_interact3_Step_0_6");
+            var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : "";
             
             if (next_char == " " && following_char == " ")
             {

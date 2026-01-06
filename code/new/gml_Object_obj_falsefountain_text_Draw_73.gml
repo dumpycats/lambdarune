@@ -37,55 +37,55 @@ if (talking)
     {
         case 1:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_0"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_0"), 25);
             typing_speed = 1/3;
             break;
         case 2:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_1"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_1"), 25);
             typing_speed = 1/3;
             break;
         case 3:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_2"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_2"), 25);
             typing_speed = 1/3;
             break;
         case 4:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_3"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_3"), 25);
             typing_speed = 1/3;
             break;
         case 5:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_4"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_4"), 25);
             typing_speed = 1/3;
             obj_susie_c3.sprite_index = sSusieWalkRight;
             break;
         case 6:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_5"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_5"), 25);
             typing_speed = 1/3;
             obj_susie_c3.sprite_index = sSusieWalkDown;
             break;
         case 7:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_6"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_6"), 25);
             typing_speed = 1/3;
             obj_susie_c3.sprite_index = sSusieWalkLeft;
             break;
         case 8:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_7"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_7"), 25);
             typing_speed = 1/3;
             obj_susie_c3.sprite_index = sSusieWalkUp;
             break;
         case 9:
             susietalk = true;
-            current_dialogue = format_text_battle(lang("obj_falsefountain_text_Draw_73_8"), 25);
+            current_dialogue = format_text_battle(get_lang_string("gml_Object_obj_falsefountain_text_Draw_73_8"), 25);
             typing_speed = 1/3;
             break;
         default:
-            current_dialogue = lang("obj_falsefountain_text_Draw_73_9");
+            current_dialogue = "";
             break;
     }
     
@@ -106,7 +106,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_falsefountain_text_Draw_73_10");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : "";
                 
                 if (next_char == " " && following_char == " ")
                 {

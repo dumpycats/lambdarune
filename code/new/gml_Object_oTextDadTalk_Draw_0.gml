@@ -14,7 +14,7 @@ for (var i = 1; i <= string_length(global.displayed_text); i++)
 {
     var current_char = string_char_at(global.displayed_text, i);
     
-    if (current_char == lang("oTextDadTalk_Draw_0_0"))
+    if (current_char == "\n")
     {
         current_x = text_x;
         current_y += string_height(current_char);

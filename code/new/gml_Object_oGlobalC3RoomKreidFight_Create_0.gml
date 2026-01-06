@@ -1,7 +1,7 @@
 if (!(room == rm_ch3_kreidfight) && !(room == rm_ch3_kreidfight_skip))
-    window_set_caption(lang("oGlobalC3RoomKreidFight_Create_0_0"));
+    window_set_caption(get_lang_string("gml_Object_oGlobalC3RoomKreidFight_Create_0_0"));
 else
-    window_set_caption(lang("oGlobalC3RoomKreidFight_Create_0_1"));
+    window_set_caption("");
 
 sprite_prefetch(sDialogueBox);
 sprite_prefetch(spr_kris_fight);

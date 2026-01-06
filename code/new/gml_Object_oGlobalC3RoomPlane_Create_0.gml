@@ -1,4 +1,4 @@
-window_set_caption(lang("oGlobalC3RoomPlane_Create_0_0"));
+window_set_caption(get_lang_string("gml_Object_oGlobalC3RoomPlane_Create_0_0"));
 sprite_prefetch(sDialogueBox);
 sprite_prefetch(spr_planegate_door);
 audio_play_sound(snd_plane_ambience, 1, false);

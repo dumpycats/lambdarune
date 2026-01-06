@@ -20,9 +20,9 @@ switch (global.dialogue)
         global.charactertalking = true;
         
         if (value == 1)
-            global.current_dialogue = lang("oTextGameOverC3_Step_0_0");
+            global.current_dialogue = get_lang_string("gml_Object_oTextGameOverC3_Step_0_0");
         else if (value == 2)
-            global.current_dialogue = lang("oTextGameOverC3_Step_0_1");
+            global.current_dialogue = get_lang_string("gml_Object_oTextGameOverC3_Step_0_1");
         
         if (d1timer == 1)
             global.typing_speed = 0.5;
@@ -39,9 +39,9 @@ switch (global.dialogue)
         global.charactertalking = true;
         
         if (value == 1)
-            global.current_dialogue = lang("oTextGameOverC3_Step_0_2");
+            global.current_dialogue = get_lang_string("gml_Object_oTextGameOverC3_Step_0_2");
         else if (value == 2)
-            global.current_dialogue = lang("oTextGameOverC3_Step_0_3");
+            global.current_dialogue = get_lang_string("gml_Object_oTextGameOverC3_Step_0_3");
         
         if (d2timer == 1)
             global.typing_speed = 0.5;
@@ -50,7 +50,7 @@ switch (global.dialogue)
     case 3:
         global.emptytalk = true;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextGameOverC3_Step_0_4");
+        global.current_dialogue = "";
         global.typing_speed = 1;
         blockprogress = true;
         instance_create_depth(320, 240, -11, obj_continue_giveup);
@@ -61,7 +61,7 @@ switch (global.dialogue)
         global.emptytalk = true;
         global.susietalk = false;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextGameOverC3_Step_0_5");
+        global.current_dialogue = "";
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -72,7 +72,7 @@ switch (global.dialogue)
     case 280:
         global.emptytalk = true;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextGameOverC3_Step_0_6");
+        global.current_dialogue = "";
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -80,7 +80,7 @@ switch (global.dialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = lang("oTextGameOverC3_Step_0_7");
+        global.current_dialogue = "";
         break;
 }
 
@@ -95,7 +95,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextGameOverC3_Step_0_8");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : "";
             
             if (next_char == " " && following_char == " ")
             {

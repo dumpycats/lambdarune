@@ -1,6 +1,6 @@
 global.GameState = new GameStateCreate();
 depth = -666;
-window_set_caption(lang("oPersistent_Create_0_0"));
+window_set_caption(get_lang_string("gml_Object_oPersistent_Create_0_0"));
 sprite_prefetch(sLambdaruneLogo);
 audio_sound_gain(snd_stringpull, 0.7, 0);
 checkonce = true;

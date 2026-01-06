@@ -1,7 +1,7 @@
 function format_text_battle(arg0, arg1)
 {
-    var words = string_split(arg0, lang("format_text_battle_0"));
-    var formatted_text = lang("format_text_battle_1");
+    var words = string_split(arg0, get_lang_string("gml_GlobalScript_format_text_battle_0"));
+    var formatted_text = "";
     var current_length = 0;
     
     for (var i = 0; i < array_length(words); i++)
@@ -10,14 +10,14 @@ function format_text_battle(arg0, arg1)
         
         if ((current_length + string_length(word)) > arg1)
         {
-            formatted_text += (lang("format_text_battle_2") + word);
+            formatted_text += ("\n" + word);
             current_length = string_length(word);
         }
         else
         {
             if (current_length > 0)
             {
-                formatted_text += lang("format_text_battle_3");
+                formatted_text += get_lang_string("gml_GlobalScript_format_text_battle_1");
                 current_length += 1;
             }
             

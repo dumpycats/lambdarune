@@ -11,28 +11,28 @@ switch (global.dialogue)
         global.foanetalk = true;
         global.feighlinetalk = false;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextC3_spacechannel1_backup_Step_0_0");
+        global.current_dialogue = get_lang_string("gml_Object_oTextC3_spacechannel1_backup_Step_0_0");
         global.typing_speed = 1;
         break;
     case 2:
         global.foanetalk = false;
         global.feighlinetalk = true;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextC3_spacechannel1_backup_Step_0_1");
+        global.current_dialogue = get_lang_string("gml_Object_oTextC3_spacechannel1_backup_Step_0_1");
         global.typing_speed = 1;
         break;
     case 3:
         global.foanetalk = true;
         global.feighlinetalk = false;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextC3_spacechannel1_backup_Step_0_2");
+        global.current_dialogue = get_lang_string("gml_Object_oTextC3_spacechannel1_backup_Step_0_2");
         global.typing_speed = 1;
         break;
     case 10:
         global.emptytalk = true;
         global.susietalk = false;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextC3_spacechannel1_backup_Step_0_3");
+        global.current_dialogue = "";
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -42,7 +42,7 @@ switch (global.dialogue)
     case 280:
         global.emptytalk = true;
         global.charactertalking = false;
-        global.current_dialogue = lang("oTextC3_spacechannel1_backup_Step_0_4");
+        global.current_dialogue = "";
         global.typing_speed = 1;
         blockprogress = true;
         instance_destroy(oDialogueSprite);
@@ -50,7 +50,7 @@ switch (global.dialogue)
         instance_destroy();
         break;
     default:
-        global.current_dialogue = lang("oTextC3_spacechannel1_backup_Step_0_5");
+        global.current_dialogue = "";
         break;
 }
 
@@ -65,7 +65,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
         if (global.letter_index < string_length(global.current_dialogue))
         {
             var next_char = string_char_at(global.current_dialogue, global.letter_index + 1);
-            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : lang("oTextC3_spacechannel1_backup_Step_0_6");
+            var following_char = ((global.letter_index + 2) <= string_length(global.current_dialogue)) ? string_char_at(global.current_dialogue, global.letter_index + 2) : "";
             
             if (next_char == " " && following_char == " ")
             {

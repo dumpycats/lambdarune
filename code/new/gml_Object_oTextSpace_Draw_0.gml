@@ -4,7 +4,7 @@ draw_set_halign(fa_left);
 
 if (global.shopbuymenu == true)
 {
-    var text = lang("oTextSpace_Draw_0_0") + string(global.space);
+    var text = get_lang_string("gml_Object_oTextSpace_Draw_0_0") + string(global.space);
     var text_x = 521;
     var text_y = 430;
     var shadow_color = 8192771;
@@ -15,7 +15,7 @@ if (global.shopbuymenu == true)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == lang("oTextSpace_Draw_0_1"))
+        if (current_char == "\n")
         {
             text_x = 521;
             text_y += (string_height(current_char) + leading);

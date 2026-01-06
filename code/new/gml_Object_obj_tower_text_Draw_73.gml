@@ -55,7 +55,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_0"), 31);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_0"), 31);
             dialogueicon = 0;
             typing_speed = 1;
             endcaseintro = dialogue;
@@ -67,7 +67,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_1"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_1"), 25);
             dialogueicon = 7;
             typing_speed = 1;
             break;
@@ -78,7 +78,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_2"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_2"), 25);
             dialogueicon = 20;
             typing_speed = 1;
             break;
@@ -89,7 +89,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_3"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_3"), 25);
             dialogueicon = 17;
             typing_speed = 1;
             break;
@@ -100,7 +100,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_4"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_4"), 25);
             dialogueicon = 26;
             typing_speed = 1;
             break;
@@ -111,7 +111,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_5"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_5"), 25);
             dialogueicon = 17;
             typing_speed = 1;
             break;
@@ -122,7 +122,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_6"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_6"), 25);
             dialogueicon = 10;
             typing_speed = 1;
             break;
@@ -133,7 +133,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_7"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_7"), 25);
             dialogueicon = 9;
             typing_speed = 1;
             break;
@@ -144,7 +144,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_8"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_8"), 25);
             dialogueicon = 2;
             typing_speed = 1;
             break;
@@ -155,7 +155,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_9"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_9"), 25);
             dialogueicon = 26;
             typing_speed = 1;
             
@@ -170,7 +170,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_10"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_10"), 25);
             dialogueicon = 5;
             typing_speed = 1;
             SUSIE.sprite_index = sSusieWalkDown;
@@ -186,7 +186,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_11"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_11"), 25);
             dialogueicon = 5;
             typing_speed = 1;
             SUSIE.sprite_index = sSusieWalkLeft;
@@ -202,7 +202,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_12"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_12"), 25);
             dialogueicon = 22;
             typing_speed = 1;
             
@@ -217,7 +217,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_13"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_13"), 25);
             dialogueicon = 7;
             typing_speed = 1;
             
@@ -232,7 +232,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_14"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_14"), 25);
             dialogueicon = 25;
             typing_speed = 1;
             SUSIE.sprite_index = sSusieWalkRight;
@@ -248,7 +248,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_15"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_15"), 25);
             dialogueicon = 21;
             typing_speed = 1;
             
@@ -263,7 +263,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_16"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_16"), 25);
             dialogueicon = 15;
             typing_speed = 0.5;
             endcasespeed = dialogue;
@@ -280,7 +280,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_17"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_17"), 25);
             dialogueicon = 27;
             typing_speed = 1;
             break;
@@ -291,7 +291,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_18"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_18"), 25);
             dialogueicon = 24;
             typing_speed = 1;
             break;
@@ -302,7 +302,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_19"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_19"), 25);
             dialogueicon = 25;
             typing_speed = 1;
             break;
@@ -313,7 +313,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_20"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_20"), 25);
             dialogueicon = 3;
             typing_speed = 1;
             SUSIE.sprite_index = sSusieWalkRightUpset;
@@ -325,7 +325,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_21"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_21"), 25);
             dialogueicon = 2;
             typing_speed = 1;
             break;
@@ -336,7 +336,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_22"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_22"), 25);
             dialogueicon = 13;
             typing_speed = 1;
             SUSIE.sprite_index = sSusieWalkDownUpset;
@@ -348,7 +348,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_23"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_23"), 25);
             dialogueicon = 21;
             typing_speed = 1;
             SUSIE.sprite_index = sSusieWalkLeft;
@@ -361,7 +361,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_24"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_24"), 25);
             dialogueicon = 9;
             typing_speed = 1;
             break;
@@ -372,7 +372,7 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_25"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_25"), 25);
             dialogueicon = 5;
             typing_speed = 1;
             break;
@@ -383,13 +383,13 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(lang("obj_tower_text_Draw_73_26"), 25);
+            current_dialogue = format_text(get_lang_string("gml_Object_obj_tower_text_Draw_73_26"), 25);
             dialogueicon = 26;
             typing_speed = 1;
             endcasefinal = dialogue;
             break;
         default:
-            current_dialogue = lang("obj_tower_text_Draw_73_27");
+            current_dialogue = "";
             break;
     }
     
@@ -412,7 +412,7 @@ if (talking)
             if (letter_index < string_length(current_dialogue))
             {
                 var next_char = string_char_at(current_dialogue, letter_index + 1);
-                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : lang("obj_tower_text_Draw_73_28");
+                var following_char = ((letter_index + 2) <= string_length(current_dialogue)) ? string_char_at(current_dialogue, letter_index + 2) : "";
                 
                 if (next_char == " " && following_char == " ")
                 {

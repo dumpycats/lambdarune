@@ -142,13 +142,13 @@ if (timer == 1)
     target_instances = [];
     
     if (kris)
-        array_push(active_members, lang("obj_attack_sof_Draw_73_0"));
+        array_push(active_members, "kris");
     
     if (susie)
-        array_push(active_members, lang("obj_attack_sof_Draw_73_1"));
+        array_push(active_members, "susie");
     
     if (ralsei)
-        array_push(active_members, lang("obj_attack_sof_Draw_73_2"));
+        array_push(active_members, "ralsei");
     
     var used_indices = [];
     

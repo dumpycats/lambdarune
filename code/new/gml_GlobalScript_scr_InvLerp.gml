@@ -26,8 +26,8 @@ function CRTParameters() constructor
 
 function GameStateCreate() constructor
 {
-    Name = lang("scr_InvLerp_0");
-    Version = lang("scr_InvLerp_1");
+    Name = "CRT Shader";
+    Version = "0.0.0.1";
     CRT = new CRTParameters();
 }
 
@@ -41,16 +41,16 @@ function InvLerp(arg0, arg1, arg2)
 
 function Log()
 {
-    var _msg = lang("scr_InvLerp_2");
+    var _msg = "LOG: ";
     
     for (var _i = 0; _i < argument_count; _i++)
     {
         var _arg = argument[_i];
         
         if (is_string(_arg))
-            _msg += (_arg + lang("scr_InvLerp_3"));
+            _msg += (_arg + " ");
         else
-            _msg += (string(_arg) + lang("scr_InvLerp_4"));
+            _msg += (string(_arg) + " ");
     }
     
     show_debug_message(_msg);

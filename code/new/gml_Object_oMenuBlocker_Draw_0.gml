@@ -1,9 +1,9 @@
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
     if (global.midnightcrewoption)
-        text = lang("oMenuBlocker_Draw_0_0");
+        text = get_lang_string("gml_Object_oMenuBlocker_Draw_0_0");
     else
-        text = lang("oMenuBlocker_Draw_0_1");
+        text = "";
     
     var text_x = 58;
     var text_y = 260;
@@ -19,7 +19,7 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == lang("oMenuBlocker_Draw_0_2"))
+        if (current_char == "\n")
         {
             text_x = 58;
             text_y += (string_height(current_char) + leading);
@@ -36,9 +36,9 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
     if (global.revengeoption)
-        text2 = lang("oMenuBlocker_Draw_0_3");
+        text2 = get_lang_string("gml_Object_oMenuBlocker_Draw_0_1");
     else
-        text2 = lang("oMenuBlocker_Draw_0_4");
+        text2 = "";
     
     var text_x2 = 58;
     var text_y2 = 300;
@@ -54,7 +54,7 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
     {
         var current_char2 = string_char_at(text2, i);
         
-        if (current_char2 == lang("oMenuBlocker_Draw_0_5"))
+        if (current_char2 == "\n")
         {
             text_x2 = 58;
             text_y2 += (string_height(current_char2) + leading2);
@@ -71,9 +71,9 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
     if (global.cathodecrewoption)
-        text3 = lang("oMenuBlocker_Draw_0_6");
+        text3 = get_lang_string("gml_Object_oMenuBlocker_Draw_0_2");
     else
-        text3 = lang("oMenuBlocker_Draw_0_7");
+        text3 = "";
     
     var text_x3 = 58;
     var text_y3 = 380;
@@ -89,7 +89,7 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
     {
         var current_char3 = string_char_at(text3, i);
         
-        if (current_char3 == lang("oMenuBlocker_Draw_0_8"))
+        if (current_char3 == "\n")
         {
             text_x3 = 58;
             text_y3 += (string_height(current_char3) + leading3);

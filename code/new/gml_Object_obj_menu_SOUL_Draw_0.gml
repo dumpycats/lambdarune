@@ -33,8 +33,8 @@ if (room == rm_ch3_spacechannel_2)
         
         if (options == 0)
         {
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_0"), 16777215, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_1"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_0"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_1"), 16777215, tracking, leading);
             
             if (left_pressed)
                 options = 1;
@@ -47,8 +47,8 @@ if (room == rm_ch3_spacechannel_2)
         {
             pos_x = cam_x + 69;
             pos_y = cam_y + 387;
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_2"), 65535, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_3"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_2"), 65535, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_3"), 16777215, tracking, leading);
             
             if (right_pressed)
                 options = 2;
@@ -64,8 +64,8 @@ if (room == rm_ch3_spacechannel_2)
         {
             pos_x = cam_x + 477;
             pos_y = cam_y + 387;
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_4"), 16777215, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_5"), 65535, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_4"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_5"), 65535, tracking, leading);
             
             if (left_pressed)
                 options = 1;
@@ -90,8 +90,8 @@ if (room == rm_ch3_spacechannel_2)
         
         if (options == 0)
         {
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_6"), 16777215, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_7"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_6"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_7"), 16777215, tracking, leading);
             
             if (left_pressed)
                 options = 1;
@@ -104,8 +104,8 @@ if (room == rm_ch3_spacechannel_2)
         {
             pos_x = cam_x + 69;
             pos_y = cam_y + 387;
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_8"), 65535, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_9"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_8"), 65535, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_9"), 16777215, tracking, leading);
             
             if (right_pressed)
                 options = 2;
@@ -123,8 +123,8 @@ if (room == rm_ch3_spacechannel_2)
         {
             pos_x = cam_x + 477;
             pos_y = cam_y + 387;
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_10"), 16777215, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_11"), 65535, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_10"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_11"), 65535, tracking, leading);
             
             if (left_pressed)
                 options = 1;
@@ -150,8 +150,8 @@ if (room == rm_ch3_foaneend)
     
     if (options == 0)
     {
-        draw_text_with_tracking(cam_x + 90, cam_y + 60, lang("obj_menu_SOUL_Draw_0_12"), 16777215, tracking, leading);
-        draw_text_with_tracking(cam_x + 498, cam_y + 60, lang("obj_menu_SOUL_Draw_0_13"), 16777215, tracking, leading);
+        draw_text_with_tracking(cam_x + 90, cam_y + 60, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_12"), 16777215, tracking, leading);
+        draw_text_with_tracking(cam_x + 498, cam_y + 60, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_13"), 16777215, tracking, leading);
         
         if (left_pressed)
             options = 1;
@@ -164,8 +164,8 @@ if (room == rm_ch3_foaneend)
     {
         pos_x = cam_x + 69;
         pos_y = cam_y + 79;
-        draw_text_with_tracking(cam_x + 90, cam_y + 60, lang("obj_menu_SOUL_Draw_0_14"), 65535, tracking, leading);
-        draw_text_with_tracking(cam_x + 498, cam_y + 60, lang("obj_menu_SOUL_Draw_0_15"), 16777215, tracking, leading);
+        draw_text_with_tracking(cam_x + 90, cam_y + 60, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_14"), 65535, tracking, leading);
+        draw_text_with_tracking(cam_x + 498, cam_y + 60, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_15"), 16777215, tracking, leading);
         
         if (right_pressed)
             options = 2;
@@ -187,8 +187,8 @@ if (room == rm_ch3_foaneend)
     {
         pos_x = cam_x + 477;
         pos_y = cam_y + 79;
-        draw_text_with_tracking(cam_x + 90, cam_y + 60, lang("obj_menu_SOUL_Draw_0_16"), 16777215, tracking, leading);
-        draw_text_with_tracking(cam_x + 498, cam_y + 60, lang("obj_menu_SOUL_Draw_0_17"), 65535, tracking, leading);
+        draw_text_with_tracking(cam_x + 90, cam_y + 60, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_16"), 16777215, tracking, leading);
+        draw_text_with_tracking(cam_x + 498, cam_y + 60, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_17"), 65535, tracking, leading);
         
         if (left_pressed)
             options = 1;
@@ -216,8 +216,8 @@ if (room == rm_ch3_cathodetower_aftermath)
         
         if (options == 0)
         {
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_18"), 16777215, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_19"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_18"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_19"), 16777215, tracking, leading);
             
             if (left_pressed)
                 options = 1;
@@ -230,8 +230,8 @@ if (room == rm_ch3_cathodetower_aftermath)
         {
             pos_x = cam_x + 69;
             pos_y = cam_y + 387;
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_20"), 65535, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_21"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_20"), 65535, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_21"), 16777215, tracking, leading);
             
             if (right_pressed)
                 options = 2;
@@ -254,8 +254,8 @@ if (room == rm_ch3_cathodetower_aftermath)
         {
             pos_x = cam_x + 477;
             pos_y = cam_y + 387;
-            draw_text_with_tracking(cam_x + 90, cam_y + 368, lang("obj_menu_SOUL_Draw_0_22"), 16777215, tracking, leading);
-            draw_text_with_tracking(cam_x + 498, cam_y + 368, lang("obj_menu_SOUL_Draw_0_23"), 65535, tracking, leading);
+            draw_text_with_tracking(cam_x + 90, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_22"), 16777215, tracking, leading);
+            draw_text_with_tracking(cam_x + 498, cam_y + 368, get_lang_string("gml_Object_obj_menu_SOUL_Draw_0_23"), 65535, tracking, leading);
             
             if (left_pressed)
                 options = 1;

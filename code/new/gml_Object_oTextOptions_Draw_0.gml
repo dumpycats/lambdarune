@@ -4,7 +4,7 @@ draw_set_halign(fa_left);
 
 if (global.shopmainmenu)
 {
-    var text = lang("oTextOptions_Draw_0_0");
+    var text = get_lang_string("gml_Object_oTextOptions_Draw_0_0");
     var text_x = 478;
     var text_y = 260;
     var shadow_color = 8192771;
@@ -15,7 +15,7 @@ if (global.shopmainmenu)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == lang("oTextOptions_Draw_0_1"))
+        if (current_char == "\n")
         {
             text_x = 478;
             text_y += (string_height(current_char) + leading);
@@ -31,7 +31,7 @@ if (global.shopmainmenu)
 
 if (global.shopbuymenu)
 {
-    var text = lang("oTextOptions_Draw_0_2");
+    var text = get_lang_string("gml_Object_oTextOptions_Draw_0_1");
     var text_x = 58;
     var text_y = 260;
     var shadow_color = 8192771;
@@ -42,7 +42,7 @@ if (global.shopbuymenu)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == lang("oTextOptions_Draw_0_3"))
+        if (current_char == "\n")
         {
             text_x = 58;
             text_y += (string_height(current_char) + leading);
@@ -55,7 +55,7 @@ if (global.shopbuymenu)
         }
     }
     
-    var text2 = lang("oTextOptions_Draw_0_4");
+    var text2 = get_lang_string("gml_Object_oTextOptions_Draw_0_2");
     var text_x2 = 298;
     var text_y2 = 260;
     var tracking2 = -1;
@@ -65,7 +65,7 @@ if (global.shopbuymenu)
     {
         var current_char2 = string_char_at(text2, i);
         
-        if (current_char2 == lang("oTextOptions_Draw_0_5"))
+        if (current_char2 == "\n")
         {
             text_x2 = 298;
             text_y2 += (string_height(current_char2) + leading2);
@@ -81,7 +81,7 @@ if (global.shopbuymenu)
 
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
-    var text = lang("oTextOptions_Draw_0_6");
+    var text = get_lang_string("gml_Object_oTextOptions_Draw_0_3");
     var text_x = 58;
     var text_y = 260;
     var shadow_color = 8192771;
@@ -93,7 +93,7 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
     {
         var current_char = string_char_at(text, i);
         
-        if (current_char == lang("oTextOptions_Draw_0_7"))
+        if (current_char == "\n")
         {
             text_x = 58;
             text_y += (string_height(current_char) + leading);

@@ -1,4 +1,4 @@
-global.current_dialogue = lang("oTextC3R6_Create_0_0");
+global.current_dialogue = "";
 global.displayed_text = "";
 global.letter_index = 0;
 global.sound_playing = false;

@@ -10,7 +10,7 @@ for (var i = 1; i <= string_length(global.displayed_text); i++)
 {
     var current_char = string_char_at(global.displayed_text, i);
     
-    if (current_char == lang("oTextGameOverC3_Draw_73_0"))
+    if (current_char == "\n")
     {
         text_x = 146;
         text_y += (string_height(current_char) + leading);
