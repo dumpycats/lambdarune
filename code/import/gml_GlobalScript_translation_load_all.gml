@@ -1,7 +1,8 @@
 function translation_load_all()
 {
-    global.lang = "ru";
-    translation_load_lang();
+    ini_open("lang.ini");
+    global.lang = ini_read_string("Lang", "lang", "ru");
+    ini_close();
+    translation_load_strings();
     translation_load_sprites();
 }
- 

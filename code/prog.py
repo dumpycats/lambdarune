@@ -72,7 +72,7 @@ for root, _, files in os.walk(TARGET_DIR):
 
                 localization[key] = original
 
-                replacement = f'get_lang_string("{key}")'
+                replacement = f'translation_get_string("{key}")'
                 new_line = (
                     new_line[:start + offset] +
                     replacement +

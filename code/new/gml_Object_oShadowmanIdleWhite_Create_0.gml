@@ -9,4 +9,4 @@ percent3 = 0;
 timer = 0;
 image_alpha = 0;
 audio_play_sound(snd_spare, 1, false);
-window_set_caption(get_lang_string("oShadowmanIdleWhite_Create_0_0"));
+window_set_caption(translation_get_string("oShadowmanIdleWhite_Create_0_0"));

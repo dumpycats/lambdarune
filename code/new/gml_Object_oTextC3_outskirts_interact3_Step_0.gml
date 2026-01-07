@@ -11,9 +11,9 @@ switch (dialogue)
         global.susietalk = true;
         
         if (!global.morehungry)
-            current_dialogue = get_lang_string("oTextC3_outskirts_interact3_Step_0_0");
+            current_dialogue = translation_get_string("oTextC3_outskirts_interact3_Step_0_0");
         else
-            current_dialogue = get_lang_string("oTextC3_outskirts_interact3_Step_0_1");
+            current_dialogue = translation_get_string("oTextC3_outskirts_interact3_Step_0_1");
         
         typing_speed = 1;
         
@@ -34,20 +34,20 @@ switch (dialogue)
         if (global.morehungry)
             destroy = true;
         
-        current_dialogue = get_lang_string("oTextC3_outskirts_interact3_Step_0_2");
+        current_dialogue = translation_get_string("oTextC3_outskirts_interact3_Step_0_2");
         typing_speed = 1;
         oDialogueSprite.image_index = 10;
         break;
     case 3:
         global.susietalk = true;
-        current_dialogue = get_lang_string("oTextC3_outskirts_interact3_Step_0_3");
+        current_dialogue = translation_get_string("oTextC3_outskirts_interact3_Step_0_3");
         typing_speed = 1;
         oDialogueSprite.image_index = 20;
         oSusieC3.sprite_index = sSusieWalkRightUpset;
         break;
     case 4:
         global.susietalk = true;
-        current_dialogue = get_lang_string("oTextC3_outskirts_interact3_Step_0_4");
+        current_dialogue = translation_get_string("oTextC3_outskirts_interact3_Step_0_4");
         typing_speed = 1;
         oDialogueSprite.image_index = 17;
         oSusieC3.sprite_index = sSusieWalkDown;

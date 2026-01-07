@@ -1,4 +1,4 @@
-window_set_caption(get_lang_string("oGlobalC3Room_spacechannel2_Create_0_0"));
+window_set_caption(translation_get_string("oGlobalC3Room_spacechannel2_Create_0_0"));
 audio_sound_gain(snd_foane, 0.4, 0);
 audio_sound_gain(snd_mike, 0.6, 0);
 audio_play_sound(mus_outofbounds, 1, true);

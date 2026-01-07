@@ -17,10 +17,10 @@ function file_text_read_all(path)
         
         file_text_close(file);
     }
-    else if argument_count > 1
+    else if (argument_count > 1)
     {
         return argument[1];
     }
-
+    
     return text;
 }

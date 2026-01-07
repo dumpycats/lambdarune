@@ -53,7 +53,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_0"), 25);
             typing_speed = 1;
             break;
         case 2:
@@ -61,7 +61,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_1"), 25);
             typing_speed = 1;
             break;
         case 3:
@@ -69,7 +69,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_2"), 25);
             typing_speed = 1;
             break;
         case 4:
@@ -77,7 +77,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_3"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_3"), 25);
             typing_speed = 1;
             break;
         case 5:
@@ -85,7 +85,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_4"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_4"), 25);
             typing_speed = 1;
             break;
         case 6:
@@ -93,7 +93,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_5"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_5"), 25);
             typing_speed = 1;
             break;
         case 7:
@@ -101,7 +101,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_6"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_6"), 25);
             typing_speed = 1;
             break;
         case 8:
@@ -109,7 +109,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 20;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_7"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_7"), 25);
             typing_speed = 1;
             break;
         case 9:
@@ -117,7 +117,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_8"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_8"), 25);
             typing_speed = 1;
             break;
         case 10:
@@ -125,7 +125,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 7;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_9"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_9"), 25);
             typing_speed = 1;
             break;
         case 11:
@@ -133,7 +133,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_10"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_10"), 25);
             typing_speed = 1;
             break;
         case 12:
@@ -141,7 +141,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_11"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_11"), 25);
             typing_speed = 1;
             break;
         case 13:
@@ -150,13 +150,13 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_12"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_12"), 31);
             typing_speed = 1;
             d13timer++;
             
             if (d13timer == 0)
             {
-                window_set_caption(get_lang_string("obj_sio_text_postbattle_Draw_73_13"));
+                window_set_caption(translation_get_string("obj_sio_text_postbattle_Draw_73_13"));
                 obj_maximike_battle.aura = true;
                 audio_play_sound(snd_rocket_long, 1, false);
                 audio_play_sound(snd_closet_impact, 1, false);
@@ -171,7 +171,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_14"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_14"), 25);
             typing_speed = 1;
             break;
         case 15:
@@ -179,7 +179,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_15"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_15"), 25);
             typing_speed = 1;
             break;
         case 16:
@@ -187,7 +187,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_16"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_16"), 25);
             typing_speed = 1;
             break;
         case 17:
@@ -195,7 +195,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_17"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_17"), 25);
             typing_speed = 1;
             break;
         case 18:
@@ -203,7 +203,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_18"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_18"), 25);
             typing_speed = 1;
             break;
         case 19:
@@ -211,7 +211,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_19"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_19"), 25);
             typing_speed = 1;
             break;
         case 20:
@@ -220,7 +220,7 @@ if (talking)
             charactertalking = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_20"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_20"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkRightUpset;
             obj_ralsei_sio.sprite_index = sRalseiWalkRight;
@@ -231,7 +231,7 @@ if (talking)
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
             charactertalking = true;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_21"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_21"), 25);
             typing_speed = 1;
             break;
         case 22:
@@ -239,7 +239,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_22"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_22"), 25);
             typing_speed = 1;
             break;
         case 23:
@@ -247,7 +247,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_23"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_23"), 31);
             typing_speed = 1;
             charactertalking = false;
             audio_stop_sound(snd_deep_noise);
@@ -258,7 +258,7 @@ if (talking)
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_24"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_24"), 31);
             typing_speed = 1;
             break;
         case 25:
@@ -267,7 +267,7 @@ if (talking)
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
             charactertalking = true;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_25"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_25"), 25);
             typing_speed = 1;
             break;
         case 26:
@@ -276,7 +276,7 @@ if (talking)
             charactertalking = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_26"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_26"), 31);
             typing_speed = 1;
             break;
         case 27:
@@ -284,7 +284,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_27"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_27"), 31);
             typing_speed = 1;
             break;
         case 28:
@@ -292,7 +292,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_28"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_28"), 31);
             typing_speed = 1;
             break;
         case 29:
@@ -301,7 +301,7 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 1;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_29"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_29"), 25);
             typing_speed = 1;
             break;
         case 30:
@@ -311,7 +311,7 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 6;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_30"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_30"), 25);
             typing_speed = 1;
             break;
         case 31:
@@ -320,7 +320,7 @@ if (talking)
             susietalk = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_31"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_31"), 25);
             typing_speed = 1;
             break;
         case 32:
@@ -328,7 +328,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_32"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_32"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.sprite_index = spr_mike_spin;
             obj_mike_sio_aftermath.image_index = 6;
@@ -338,7 +338,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 6;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_33"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_33"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 10;
             break;
@@ -347,7 +347,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_34"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_34"), 25);
             typing_speed = 1;
             break;
         case 35:
@@ -355,7 +355,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 8;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_35"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_35"), 25);
             typing_speed = 1;
             obj_tenna_sio_aftermath.image_index = 5;
             break;
@@ -364,7 +364,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 10;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_36"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_36"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 1;
             break;
@@ -373,7 +373,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_37"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_37"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 2;
             break;
@@ -382,7 +382,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 7;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_38"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_38"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 1;
             break;
@@ -391,7 +391,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 12;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_39"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_39"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 2;
             break;
@@ -400,7 +400,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 12;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_40"), 26);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_40"), 26);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 7;
             break;
@@ -409,7 +409,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_41"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_41"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 6;
             break;
@@ -418,7 +418,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_42"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_42"), 25);
             typing_speed = 1;
             obj_tenna_sio_aftermath.image_index = 4;
             break;
@@ -427,7 +427,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 8;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_43"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_43"), 25);
             typing_speed = 1;
             break;
         case 44:
@@ -437,7 +437,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_44"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_44"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 0;
             break;
@@ -448,7 +448,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_45"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_45"), 25);
             typing_speed = 1;
             break;
         case 46:
@@ -458,7 +458,7 @@ if (talking)
             tennatalk = true;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_46"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_46"), 25);
             typing_speed = 1;
             break;
         case 47:
@@ -468,7 +468,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 25;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_47"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_47"), 25);
             typing_speed = 1;
             break;
         case 48:
@@ -478,7 +478,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 12;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_48"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_48"), 25);
             typing_speed = 1;
             break;
         case 49:
@@ -488,7 +488,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 10;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_49"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_49"), 25);
             typing_speed = 1;
             break;
         case 50:
@@ -498,7 +498,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 13;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_50"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_50"), 25);
             typing_speed = 1;
             break;
         case 51:
@@ -508,7 +508,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_51"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_51"), 25);
             typing_speed = 1;
             break;
         case 52:
@@ -518,7 +518,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_52"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_52"), 25);
             typing_speed = 1;
             break;
         case 53:
@@ -528,7 +528,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_53"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_53"), 25);
             typing_speed = 1;
             break;
         case 54:
@@ -538,7 +538,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_54"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_54"), 25);
             typing_speed = 1;
             obj_susie_sio.sprite_index = sSusieWalkDown;
             break;
@@ -549,7 +549,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 13;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_55"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_55"), 25);
             typing_speed = 1;
             obj_ralsei_sio.sprite_index = sRalseiWalkUp;
             break;
@@ -560,7 +560,7 @@ if (talking)
             tennatalk = false;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 17;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_56"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_56"), 25);
             typing_speed = 1;
             break;
         case 57:
@@ -568,7 +568,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_57"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_57"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 0;
             obj_susie_sio.sprite_index = sSusieWalkRight;
@@ -579,7 +579,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_58"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_58"), 25);
             typing_speed = 1;
             obj_tenna_sio_aftermath.image_index = 6;
             break;
@@ -588,7 +588,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_59"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_59"), 25);
             typing_speed = 1;
             break;
         case 60:
@@ -596,7 +596,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 4;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_60"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_60"), 25);
             typing_speed = 1;
             obj_tenna_sio_aftermath.sprite_index = spr_tenna_neutral;
             obj_tenna_sio_aftermath.image_index = 0;
@@ -606,7 +606,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 26;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_61"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_61"), 25);
             typing_speed = 1;
             break;
         case 62:
@@ -614,7 +614,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 2;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_62"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_62"), 25);
             typing_speed = 1;
             break;
         case 63:
@@ -622,19 +622,19 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_63"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_63"), 25);
             typing_speed = 1;
             break;
         case 64:
             quip = true;
-            quipstring = get_lang_string("obj_sio_text_postbattle_Draw_73_64");
+            quipstring = translation_get_string("obj_sio_text_postbattle_Draw_73_64");
             quipicon = sSusieDialogueSprite;
             quipindex = 12;
             tennatalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_65"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_65"), 25);
             typing_speed = 1;
             break;
         case 65:
@@ -643,7 +643,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_66"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_66"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_index = 6;
             break;
@@ -652,7 +652,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 0;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_67"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_67"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.sprite_index = spr_mike_happiest;
             obj_mike_sio_aftermath.image_index = 6;
@@ -665,7 +665,7 @@ if (talking)
             miketalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_68"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_68"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.image_speed = 0;
             break;
@@ -674,7 +674,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 10;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_69"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_69"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.sprite_index = spr_mike_spin;
             obj_mike_sio_aftermath.image_index = 0;
@@ -686,7 +686,7 @@ if (talking)
             charactertalking = false;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_70"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_70"), 31);
             typing_speed = 1;
             obj_mike_sio_aftermath.sprite_index = spr_mike_spin;
             obj_mike_sio_aftermath.image_index = 2;
@@ -696,7 +696,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_71"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_71"), 31);
             typing_speed = 1;
             endcase3end = dialogue;
             break;
@@ -705,7 +705,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_72"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_72"), 25);
             typing_speed = 1;
             break;
         case 72:
@@ -713,7 +713,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_73"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_73"), 31);
             typing_speed = 1;
             break;
         case 73:
@@ -721,7 +721,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_74"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_74"), 31);
             typing_speed = 1;
             break;
         case 74:
@@ -729,7 +729,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_75"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_75"), 31);
             typing_speed = 1;
             break;
         case 75:
@@ -737,7 +737,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_76"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_76"), 31);
             typing_speed = 1;
             break;
         case 76:
@@ -745,7 +745,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_77"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_77"), 31);
             typing_speed = 1;
             break;
         case 77:
@@ -753,7 +753,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_78"), 31);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_78"), 31);
             typing_speed = 1;
             break;
         case 78:
@@ -762,7 +762,7 @@ if (talking)
             dialogueiconchoice = mikedialoguesprite;
             charactertalking = true;
             dialogueicon = 1;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_79"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_79"), 25);
             typing_speed = 1;
             mikeshake = true;
             obj_mike_sio_aftermath.sprite_index = spr_mike_happiest;
@@ -773,7 +773,7 @@ if (talking)
             miketalk = true;
             dialogueiconchoice = mikedialoguesprite;
             dialogueicon = 5;
-            current_dialogue = format_text(get_lang_string("obj_sio_text_postbattle_Draw_73_80"), 25);
+            current_dialogue = format_text(translation_get_string("obj_sio_text_postbattle_Draw_73_80"), 25);
             typing_speed = 1;
             obj_mike_sio_aftermath.sprite_index = spr_mike_spin;
             obj_mike_sio_aftermath.image_index = 3;
@@ -1001,7 +1001,7 @@ if (d28trigger)
     {
         audio_play_sound(snd_grab, 1, false);
         obj_maximike_battle.eject = true;
-        window_set_caption(get_lang_string("obj_sio_text_postbattle_Draw_73_81"));
+        window_set_caption(translation_get_string("obj_sio_text_postbattle_Draw_73_81"));
     }
     
     if (d28timer == 30)

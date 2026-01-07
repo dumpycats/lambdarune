@@ -4,7 +4,7 @@ draw_set_halign(fa_left);
 
 if (global.shopbuymenu == true)
 {
-    var text = get_lang_string("oTextSpace_Draw_0_0") + string(global.space);
+    var text = translation_get_string("oTextSpace_Draw_0_0") + string(global.space);
     var text_x = 521;
     var text_y = 430;
     var shadow_color = 8192771;

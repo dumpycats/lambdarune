@@ -1,7 +1,7 @@
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
     if (global.midnightcrewoption)
-        text = get_lang_string("oMenuBlocker_Draw_0_0");
+        text = translation_get_string("oMenuBlocker_Draw_0_0");
     else
         text = "";
     
@@ -36,7 +36,7 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
     if (global.revengeoption)
-        text2 = get_lang_string("oMenuBlocker_Draw_0_1");
+        text2 = translation_get_string("oMenuBlocker_Draw_0_1");
     else
         text2 = "";
     
@@ -71,7 +71,7 @@ if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 if (global.shoptalkmenu && !global.shopmainmenu && !global.shopbuymenu)
 {
     if (global.cathodecrewoption)
-        text3 = get_lang_string("oMenuBlocker_Draw_0_2");
+        text3 = translation_get_string("oMenuBlocker_Draw_0_2");
     else
         text3 = "";
     

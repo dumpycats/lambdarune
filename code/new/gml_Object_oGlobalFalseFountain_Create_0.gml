@@ -1,4 +1,4 @@
-window_set_caption(get_lang_string("oGlobalFalseFountain_Create_0_0"));
+window_set_caption(translation_get_string("oGlobalFalseFountain_Create_0_0"));
 sprite_prefetch(sDialogueBox);
 sprite_prefetch(spr_foanetv_enter);
 sprite_prefetch(spr_foanetv_feighline);

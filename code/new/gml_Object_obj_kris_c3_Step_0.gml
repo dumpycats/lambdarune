@@ -337,7 +337,7 @@ if (room == rm_ch3_kreidfight || room == rm_ch3_kreidfight_skip)
             audio_sound_pitch(mus_kreidfight, 1);
             instance_create_depth(cx + 320, cy + 240, depth - 6, obj_battle_kf);
             instance_create_depth(cx + 320, cy + 240, -67, obj_tpbar);
-            window_set_caption(get_lang_string("obj_kris_c3_Step_0_0"));
+            window_set_caption(translation_get_string("obj_kris_c3_Step_0_0"));
         }
     }
 }

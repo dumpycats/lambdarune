@@ -1,4 +1,4 @@
-window_set_caption(get_lang_string("oGlobalShadowBar_Create_0_0"));
+window_set_caption(translation_get_string("oGlobalShadowBar_Create_0_0"));
 global.getnew = false;
 global.timer = 0;
 global.soulmove = true;

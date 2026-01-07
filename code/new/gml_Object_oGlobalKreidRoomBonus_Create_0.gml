@@ -7,4 +7,4 @@ global.emptytalk = false;
 global.chairieltalk = false;
 global.dialoguebottom = true;
 timer = 0;
-window_set_caption(get_lang_string("oGlobalKreidRoomBonus_Create_0_0"));
+window_set_caption(translation_get_string("oGlobalKreidRoomBonus_Create_0_0"));

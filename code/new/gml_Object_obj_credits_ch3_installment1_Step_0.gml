@@ -9,7 +9,7 @@ if (percent1 == 0.00022222222222222223)
 {
 }
 
-var advance_held = keyboard_check_direct(vk_enter) || keyboard_check_direct(ord("Z")) || (keyboard_check_direct(vk_shift) || keyboard_check_direct(ord(get_lang_string("obj_credits_ch3_installment1_Step_0_0"))));
+var advance_held = keyboard_check_direct(vk_enter) || keyboard_check_direct(ord("Z")) || (keyboard_check_direct(vk_shift) || keyboard_check_direct(ord(translation_get_string("obj_credits_ch3_installment1_Step_0_0"))));
 
 if (percent1 < 0.9333333333333333)
 {

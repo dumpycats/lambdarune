@@ -46,11 +46,11 @@ if (talking)
             dialogueiconchoice = sSusieDialogueSprite;
             global.playermove = false;
             dialogueicon = 11;
-            current_dialogue = format_text(get_lang_string("obj_planegate_text_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("obj_planegate_text_Draw_73_0"), 25);
             typing_speed = 1;
             break;
         case 2:
-            current_dialogue = format_text(get_lang_string("obj_planegate_text_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("obj_planegate_text_Draw_73_1"), 25);
             typing_speed = 1;
             dialogueicon = 12;
             audio_stop_sound(mus_greenroom);
@@ -59,12 +59,12 @@ if (talking)
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_planegate_text_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("obj_planegate_text_Draw_73_2"), 25);
             dialogueicon = 9;
             typing_speed = 1;
             break;
         case 4:
-            current_dialogue = format_text(get_lang_string("obj_planegate_text_Draw_73_3"), 25);
+            current_dialogue = format_text(translation_get_string("obj_planegate_text_Draw_73_3"), 25);
             typing_speed = 1;
             dialogueicon = 10;
             break;
@@ -73,12 +73,12 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 3;
-            current_dialogue = format_text(get_lang_string("obj_planegate_text_Draw_73_4"), 25);
+            current_dialogue = format_text(translation_get_string("obj_planegate_text_Draw_73_4"), 25);
             typing_speed = 1;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("obj_planegate_text_Draw_73_5"), 31);
+            current_dialogue = format_text(translation_get_string("obj_planegate_text_Draw_73_5"), 31);
             typing_speed = 1;
             break;
         case 7:

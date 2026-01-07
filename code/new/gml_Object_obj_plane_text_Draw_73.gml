@@ -53,12 +53,12 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 9;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_0"), 25);
             typing_speed = 1;
             break;
         case 2:
             quip = false;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_1"), 25);
             typing_speed = 1;
             dialogueicon = 5;
             break;
@@ -66,12 +66,12 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_2"), 25);
             dialogueicon = 0;
             typing_speed = 1;
             break;
         case 4:
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_3"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_3"), 25);
             typing_speed = 1;
             dialogueicon = 10;
             break;
@@ -80,7 +80,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 20;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_4"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_4"), 25);
             typing_speed = 1;
             
             if (text_complete)
@@ -91,7 +91,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_5"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_5"), 25);
             dialogueicon = 7;
             typing_speed = 1;
             break;
@@ -100,14 +100,14 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 22;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_6"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_6"), 25);
             typing_speed = 1;
             break;
         case 8:
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_7"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_7"), 25);
             dialogueicon = 15;
             typing_speed = 1;
             break;
@@ -116,7 +116,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_8"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_8"), 25);
             typing_speed = 1;
             obj_susie_plane.image_index = 1;
             obj_ralsei_plane.image_index = 1;
@@ -125,7 +125,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_9"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_9"), 25);
             dialogueicon = 5;
             typing_speed = 1;
             break;
@@ -137,20 +137,20 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_10"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_10"), 25);
             dialogueicon = 11;
             typing_speed = 1;
             break;
         case 12:
             quip = true;
-            quipstring = get_lang_string("obj_plane_text_Draw_73_11");
+            quipstring = translation_get_string("obj_plane_text_Draw_73_11");
             quipicon = sSusieDialogueSprite;
             quipindex = 4;
             kreidtalk = false;
             susietalk = false;
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_12"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_12"), 25);
             dialogueicon = 12;
             typing_speed = 1;
             break;
@@ -161,7 +161,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_13"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_13"), 25);
             dialogueicon = 12;
             typing_speed = 1;
             break;
@@ -171,7 +171,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_14"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_14"), 25);
             dialogueicon = 8;
             typing_speed = 1;
             break;
@@ -181,7 +181,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_15"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_15"), 25);
             dialogueicon = 13;
             typing_speed = 1;
             break;
@@ -191,7 +191,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_16"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_16"), 25);
             dialogueicon = 12;
             typing_speed = 1;
             break;
@@ -201,7 +201,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_17"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_17"), 25);
             dialogueicon = 2;
             typing_speed = 1;
             break;
@@ -212,7 +212,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_18"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_18"), 25);
             dialogueicon = 9;
             typing_speed = 1;
             
@@ -227,7 +227,7 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 18;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_19"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_19"), 25);
             typing_speed = 1;
             blockprogress = true;
             d19timer++;
@@ -246,7 +246,7 @@ if (talking)
             ralseitalk = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 30;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_20"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_20"), 25);
             typing_speed = 1;
             blockprogress = true;
             d20timer++;
@@ -266,7 +266,7 @@ if (talking)
             texttalk = true;
             ralseitalk = false;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_21"), 31);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_21"), 31);
             typing_speed = 1;
             blockprogress = false;
             
@@ -280,7 +280,7 @@ if (talking)
             texttalk = true;
             ralseitalk = false;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_22"), 31);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_22"), 31);
             typing_speed = 1;
             blockprogress = false;
             
@@ -296,7 +296,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_23"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_23"), 25);
             dialogueicon = 1;
             typing_speed = 1;
             audio_sound_gain(mus_midnightmeeting, 0, 2500);
@@ -308,7 +308,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_24"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_24"), 25);
             dialogueicon = 10;
             typing_speed = 1;
             break;
@@ -319,7 +319,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_25"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_25"), 25);
             dialogueicon = 9;
             typing_speed = 1;
             
@@ -334,7 +334,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_26"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_26"), 25);
             dialogueicon = 14;
             typing_speed = 1;
             
@@ -349,7 +349,7 @@ if (talking)
             susietalk = false;
             ralseitalk = false;
             dialogueiconchoice = sKreidDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_plane_text_Draw_73_27"), 25);
+            current_dialogue = format_text(translation_get_string("obj_plane_text_Draw_73_27"), 25);
             dialogueicon = 15;
             typing_speed = 1;
             
@@ -478,7 +478,7 @@ if (talking)
                     obj_plane_shadowman.image_speed = 1;
                     audio_play_sound(snd_grab, 1, false);
                     reveal = true;
-                    window_set_caption(get_lang_string("obj_plane_text_Draw_73_28"));
+                    window_set_caption(translation_get_string("obj_plane_text_Draw_73_28"));
                 }
                 
                 if (array_contains(kreidspawncase, dialogue))

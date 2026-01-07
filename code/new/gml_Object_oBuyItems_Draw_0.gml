@@ -7,16 +7,16 @@ if (global.itemhover)
     var text;
     
     if (global.buyitems == 1)
-        text = get_lang_string("oBuyItems_Draw_0_0");
+        text = translation_get_string("oBuyItems_Draw_0_0");
     
     if (global.buyitems == 2)
-        text = get_lang_string("oBuyItems_Draw_0_1");
+        text = translation_get_string("oBuyItems_Draw_0_1");
     
     if (global.buyitems == 3)
-        text = get_lang_string("oBuyItems_Draw_0_2");
+        text = translation_get_string("oBuyItems_Draw_0_2");
     
     if (global.buyitems == 4)
-        text = get_lang_string("oBuyItems_Draw_0_3");
+        text = translation_get_string("oBuyItems_Draw_0_3");
     
     var text_x = 448;
     var text_y = 260;
@@ -44,7 +44,7 @@ if (global.itemhover)
 
 if (global.itemhover)
 {
-    var text2 = get_lang_string("oBuyItems_Draw_0_4");
+    var text2 = translation_get_string("oBuyItems_Draw_0_4");
     var text_x2 = 480;
     var text_y2 = 344;
     var shadow_color2 = 8192771;

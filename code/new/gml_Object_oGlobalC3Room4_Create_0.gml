@@ -1,4 +1,4 @@
-window_set_caption(get_lang_string("oGlobalC3Room4_Create_0_0"));
+window_set_caption(translation_get_string("oGlobalC3Room4_Create_0_0"));
 sprite_prefetch(sSusieDialogueSprite);
 sprite_prefetch(sDialogueBox);
 timer = 0;

@@ -9,19 +9,19 @@ switch (dialogue)
 {
     case 1:
         global.susietalk = true;
-        current_dialogue = get_lang_string("oTextC3_outskirts_interact2_Step_0_0");
+        current_dialogue = translation_get_string("oTextC3_outskirts_interact2_Step_0_0");
         typing_speed = 1;
         oDialogueSprite.image_index = 14;
         break;
     case 2:
         global.susietalk = true;
-        current_dialogue = get_lang_string("oTextC3_outskirts_interact2_Step_0_1");
+        current_dialogue = translation_get_string("oTextC3_outskirts_interact2_Step_0_1");
         typing_speed = 1;
         oDialogueSprite.image_index = 21;
         break;
     case 3:
         global.susietalk = true;
-        current_dialogue = get_lang_string("oTextC3_outskirts_interact2_Step_0_2");
+        current_dialogue = translation_get_string("oTextC3_outskirts_interact2_Step_0_2");
         typing_speed = 1;
         oDialogueSprite.image_index = 26;
         break;

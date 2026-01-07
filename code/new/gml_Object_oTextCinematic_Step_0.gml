@@ -3,18 +3,18 @@ switch (global.cinematicdialogue)
     case 1:
         global.emptytalk = true;
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_0");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_0");
         global.typing_speed = 0.5;
         break;
     case 2:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_1");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_1");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 3:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_2");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_2");
         global.typing_speed = 1;
         global.shoptalkmenu = false;
         break;
@@ -26,19 +26,19 @@ switch (global.cinematicdialogue)
         break;
     case 5:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_3");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_3");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 6:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_4");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_4");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 7:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_5");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_5");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
@@ -50,13 +50,13 @@ switch (global.cinematicdialogue)
         break;
     case 9:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_6");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_6");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;
     case 10:
         global.charactertalking = true;
-        global.current_dialogue = get_lang_string("oTextCinematic_Step_0_7");
+        global.current_dialogue = translation_get_string("oTextCinematic_Step_0_7");
         global.typing_speed = 0.5;
         global.shoptalkmenu = false;
         break;

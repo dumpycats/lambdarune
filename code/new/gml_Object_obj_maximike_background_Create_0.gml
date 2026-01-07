@@ -26,13 +26,13 @@ audio_frame = 0;
 frame_accumulator = 0;
 frequency_data = [];
 current_frame = 0;
-var file = file_text_open_read(get_lang_string("obj_maximike_background_Create_0_0"));
+var file = file_text_open_read(translation_get_string("obj_maximike_background_Create_0_0"));
 frequency_data = [];
 
 while (!file_text_eof(file))
 {
     var line = file_text_readln(file);
-    var values = string_split(line, get_lang_string("obj_maximike_background_Create_0_1"));
+    var values = string_split(line, translation_get_string("obj_maximike_background_Create_0_1"));
     var row = [];
     
     for (var i = 0; i < array_length(values); i++)

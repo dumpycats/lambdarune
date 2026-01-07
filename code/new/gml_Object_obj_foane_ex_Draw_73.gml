@@ -54,56 +54,56 @@ if (talking)
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 18;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_0"), 25);
             typing_speed = 1;
             break;
         case 2:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_1"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_1"), 31);
             typing_speed = 1;
             break;
         case 3:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_2"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_2"), 31);
             typing_speed = 1;
             break;
         case 4:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_3"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_4"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_4"), 31);
             typing_speed = 1;
             break;
         case 6:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_5"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_5"), 31);
             typing_speed = 1;
             break;
         case 7:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_6"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_6"), 31);
             typing_speed = 1;
             break;
         case 8:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_7"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_7"), 31);
             typing_speed = 1;
             break;
         case 9:
@@ -112,14 +112,14 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 27;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_8"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_8"), 25);
             typing_speed = 1;
             break;
         case 10:
             susietalk = false;
             emptytalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_9"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_9"), 31);
             typing_speed = 1/3;
             
             if (text_complete)
@@ -131,21 +131,21 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_10"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_10"), 31);
             typing_speed = 1;
             break;
         case 12:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_11"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_11"), 31);
             typing_speed = 1;
             break;
         case 13:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_12"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_12"), 31);
             typing_speed = 1;
             sprite_index = spr_foane_ex_raise;
             image_index = 0;
@@ -154,14 +154,14 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_13"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_13"), 31);
             typing_speed = 1;
             break;
         case 15:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_14"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_14"), 31);
             typing_speed = 1;
             sprite_index = spr_foane_ex_down;
             image_index = 2;
@@ -170,7 +170,7 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = get_lang_string("obj_foane_ex_Draw_73_15");
+            current_dialogue = translation_get_string("obj_foane_ex_Draw_73_15");
             typing_speed = 1;
             break;
         case 17:
@@ -179,7 +179,7 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 19;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_16"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_16"), 25);
             typing_speed = 1;
             break;
         case 18:
@@ -188,7 +188,7 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 35;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_17"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_17"), 25);
             typing_speed = 1;
             break;
         case 19:
@@ -197,7 +197,7 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 18;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_18"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_18"), 25);
             typing_speed = 1;
             image_index = 2;
             break;
@@ -205,21 +205,21 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_19"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_19"), 31);
             typing_speed = 1;
             break;
         case 21:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_20"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_20"), 31);
             typing_speed = 1;
             break;
         case 22:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_21"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_21"), 31);
             typing_speed = 1;
             image_index = 0;
             break;
@@ -227,14 +227,14 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_22"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_22"), 31);
             typing_speed = 1;
             break;
         case 24:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_23"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_23"), 31);
             typing_speed = 1;
             image_index = 2;
             break;
@@ -242,7 +242,7 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_24"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_24"), 31);
             typing_speed = 1;
             image_index = 0;
             break;
@@ -250,14 +250,14 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_25"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_25"), 31);
             typing_speed = 1;
             break;
         case 27:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_26"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_26"), 31);
             typing_speed = 1;
             image_index = 0;
             sprite_index = spr_foane_ex_laugh_2;
@@ -266,21 +266,21 @@ if (talking)
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_27"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_27"), 31);
             typing_speed = 1;
             break;
         case 29:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_28"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_28"), 31);
             typing_speed = 1;
             break;
         case 30:
             susietalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_29"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_29"), 31);
             typing_speed = 1;
             image_index = 0;
             break;
@@ -290,28 +290,28 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 34;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_30"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_30"), 25);
             typing_speed = 1;
             break;
         case 32:
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_31"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_31"), 31);
             typing_speed = 1;
             break;
         case 33:
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_32"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_32"), 31);
             typing_speed = 1;
             break;
         case 34:
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_33"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_33"), 31);
             typing_speed = 1;
             sprite_index = spr_foane_ex_raise;
             image_index = 3;
@@ -320,7 +320,7 @@ if (talking)
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_34"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_34"), 31);
             typing_speed = 1;
             audio_stop_sound(mus_revolution);
             sprite_index = spr_foane_ex_down;
@@ -330,14 +330,14 @@ if (talking)
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_35"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_35"), 31);
             typing_speed = 1;
             break;
         case 37:
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_36"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_36"), 31);
             typing_speed = 1;
             break;
         case 38:
@@ -346,14 +346,14 @@ if (talking)
             charactertalking = true;
             dialogueiconchoice = sRalseiDialogueSprite;
             dialogueicon = 35;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_37"), 25);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_37"), 25);
             typing_speed = 1;
             break;
         case 39:
             ralseitalk = false;
             foanetalk = true;
             charactertalking = false;
-            current_dialogue = format_text(get_lang_string("obj_foane_ex_Draw_73_38"), 31);
+            current_dialogue = format_text(translation_get_string("obj_foane_ex_Draw_73_38"), 31);
             typing_speed = 1;
             obj_pathway_sof.image_index = 1;
             obj_pathway_sof.sprite_index = spr_screenroom_shatter;
@@ -436,7 +436,7 @@ if (talking)
     
     if (dialogue == 4)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_ex_Draw_73_39"));
+        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_39"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -517,7 +517,7 @@ if (talking)
     
     if (dialogue == 12)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_ex_Draw_73_40"));
+        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_40"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -598,7 +598,7 @@ if (talking)
     
     if (dialogue == 16)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_ex_Draw_73_41"));
+        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_41"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -658,7 +658,7 @@ if (talking)
     
     if (dialogue == 23)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_ex_Draw_73_42"));
+        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_42"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -739,7 +739,7 @@ if (talking)
     
     if (dialogue == 26)
     {
-        var text_parts = string_split(current_dialogue, get_lang_string("obj_foane_ex_Draw_73_43"));
+        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_43"));
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;

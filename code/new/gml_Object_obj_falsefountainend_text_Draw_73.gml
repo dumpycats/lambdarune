@@ -73,7 +73,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_falsefountainend_text_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("obj_falsefountainend_text_Draw_73_0"), 25);
             dialogueicon = 34;
             typing_speed = 1;
             break;
@@ -81,7 +81,7 @@ if (talking)
             susietalk = true;
             ralseitalk = false;
             dialogueiconchoice = sSusieDialogueSprite;
-            current_dialogue = format_text(get_lang_string("obj_falsefountainend_text_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("obj_falsefountainend_text_Draw_73_1"), 25);
             dialogueicon = 28;
             typing_speed = 1;
             break;

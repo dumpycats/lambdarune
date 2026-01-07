@@ -9,3 +9,5 @@ memoview = false;
 memotimer = 0;
 memoleave = false;
 memoleavetimer = 0;
+translation_switch_sprite = translation_get_sprite("spr_translation_switch");
+translation_switch_color = c_white;

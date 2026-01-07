@@ -38,31 +38,31 @@ if (talking)
     {
         case 1:
             texttalk = true;
-            current_dialogue = get_lang_string("obj_angrytunes_Draw_73_0");
+            current_dialogue = translation_get_string("obj_angrytunes_Draw_73_0");
             typing_speed = 1;
             break;
         case 2:
-            current_dialogue = get_lang_string("obj_angrytunes_Draw_73_1");
+            current_dialogue = translation_get_string("obj_angrytunes_Draw_73_1");
             typing_speed = 1;
             break;
         case 3:
             texttalk = true;
-            current_dialogue = get_lang_string("obj_angrytunes_Draw_73_2");
+            current_dialogue = translation_get_string("obj_angrytunes_Draw_73_2");
             typing_speed = 1;
             break;
         case 4:
             texttalk = true;
-            current_dialogue = get_lang_string("obj_angrytunes_Draw_73_3");
+            current_dialogue = translation_get_string("obj_angrytunes_Draw_73_3");
             typing_speed = 1;
             break;
         case 5:
             texttalk = true;
-            current_dialogue = get_lang_string("obj_angrytunes_Draw_73_4");
+            current_dialogue = translation_get_string("obj_angrytunes_Draw_73_4");
             typing_speed = 1;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = get_lang_string("obj_angrytunes_Draw_73_5");
+            current_dialogue = translation_get_string("obj_angrytunes_Draw_73_5");
             typing_speed = 1;
             break;
         case 7:

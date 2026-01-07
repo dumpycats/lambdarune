@@ -60,96 +60,96 @@ if (talking)
         case 1:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_0"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_0"), 31);
             typing_speed = 2/3;
             break;
         case 2:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_1"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_1"), 31);
             typing_speed = 2/3;
             sprite_index = spr_alvin_down;
             break;
         case 3:
             texttalk = false;
             cloaktalk = true;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_2"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_2"), 31);
             typing_speed = 2/3;
             break;
         case 4:
             texttalk = false;
             cloaktalk = true;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_3"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_3"), 31);
             typing_speed = 2/3;
             sprite_index = spr_alvin_stress;
             break;
         case 5:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_4"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_4"), 31);
             typing_speed = 2/3;
             sprite_index = spr_alvin_backshot;
             break;
         case 6:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_5"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_5"), 31);
             typing_speed = 2/3;
             break;
         case 7:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_6"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_6"), 31);
             typing_speed = 2/3;
             break;
         case 8:
             texttalk = false;
             cloaktalk = true;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_7"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_7"), 31);
             typing_speed = 2/3;
             break;
         case 9:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_8"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_8"), 31);
             typing_speed = 2/3;
             image_index = 1;
             break;
         case 10:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_9"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_9"), 31);
             typing_speed = 2/3;
             break;
         case 11:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_10"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_10"), 31);
             typing_speed = 2/3;
             break;
         case 12:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_11"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_11"), 31);
             typing_speed = 2/3;
             break;
         case 13:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_12"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_12"), 31);
             typing_speed = 2/3;
             sprite_index = spr_alvin_stress;
             break;
         case 14:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_13"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_13"), 31);
             typing_speed = 2/3;
             break;
         case 15:
             texttalk = true;
             cloaktalk = false;
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_14"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_14"), 31);
             typing_speed = 2/3;
             sprite_index = spr_alvin_down;
             audio_sound_gain(mus_church_knight, 0, 100);
@@ -183,7 +183,7 @@ if (talking)
                 }
             }
             
-            current_dialogue = format_text(get_lang_string("obj_alvin_c3_Draw_73_15"), 31);
+            current_dialogue = format_text(translation_get_string("obj_alvin_c3_Draw_73_15"), 31);
             typing_speed = 0.5;
             window_set_caption("");
             break;

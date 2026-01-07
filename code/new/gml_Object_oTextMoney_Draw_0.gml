@@ -1,7 +1,7 @@
 draw_set_font(fDeterminationMW);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
-var text = get_lang_string("oTextMoney_Draw_0_0") + string(global.money);
+var text = translation_get_string("oTextMoney_Draw_0_0") + string(global.money);
 var text_x = 438;
 var text_y = 419;
 

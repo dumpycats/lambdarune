@@ -23,7 +23,7 @@ if (place_meeting(x, y, obj_SOUL_promo))
     image_yscale = _start2 + (_distance2 * position2);
     
     if (global.accessible && advance_pressed)
-        url_open(get_lang_string("obj_icon_youtube_Step_0_0"));
+        url_open(translation_get_string("obj_icon_youtube_Step_0_0"));
 }
 else
 {

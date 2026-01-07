@@ -43,33 +43,33 @@ if (talking)
         case 1:
             kreidtalk = true;
             dialogueicon = 1;
-            current_dialogue = format_text(get_lang_string("obj_kreid_c3_Draw_73_0"), 25);
+            current_dialogue = format_text(translation_get_string("obj_kreid_c3_Draw_73_0"), 25);
             typing_speed = 1;
             break;
         case 2:
-            current_dialogue = format_text(get_lang_string("obj_kreid_c3_Draw_73_1"), 25);
+            current_dialogue = format_text(translation_get_string("obj_kreid_c3_Draw_73_1"), 25);
             typing_speed = 1;
             dialogueicon = 14;
             break;
         case 3:
             audio_sound_gain(mus_wind, 0, 0);
             audio_sound_pitch(mus_wind, 1);
-            current_dialogue = format_text(get_lang_string("obj_kreid_c3_Draw_73_2"), 25);
+            current_dialogue = format_text(translation_get_string("obj_kreid_c3_Draw_73_2"), 25);
             dialogueicon = 9;
             typing_speed = 1;
             break;
         case 4:
-            current_dialogue = format_text(get_lang_string("obj_kreid_c3_Draw_73_3"), 31);
+            current_dialogue = format_text(translation_get_string("obj_kreid_c3_Draw_73_3"), 31);
             typing_speed = 1;
             break;
         case 5:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("obj_kreid_c3_Draw_73_4"), 31);
+            current_dialogue = format_text(translation_get_string("obj_kreid_c3_Draw_73_4"), 31);
             typing_speed = 1;
             break;
         case 6:
             texttalk = true;
-            current_dialogue = format_text(get_lang_string("obj_kreid_c3_Draw_73_5"), 31);
+            current_dialogue = format_text(translation_get_string("obj_kreid_c3_Draw_73_5"), 31);
             typing_speed = 1;
             break;
         case 7:
@@ -237,14 +237,14 @@ if (textenemy)
             kreidtalk = true;
             texttalk = false;
             dialogueicon = 1;
-            current_dialogue = format_text_battle(get_lang_string("obj_kreid_c3_Draw_73_6"), 17);
+            current_dialogue = format_text_battle(translation_get_string("obj_kreid_c3_Draw_73_6"), 17);
             typing_speed = 1;
             break;
         case 2:
             kreidtalk = true;
             texttalk = false;
             dialogueicon = 1;
-            current_dialogue = format_text_battle(get_lang_string("obj_kreid_c3_Draw_73_7"), 17);
+            current_dialogue = format_text_battle(translation_get_string("obj_kreid_c3_Draw_73_7"), 17);
             typing_speed = 1;
             break;
         default:

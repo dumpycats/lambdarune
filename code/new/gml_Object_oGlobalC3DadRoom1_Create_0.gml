@@ -1,4 +1,4 @@
-window_set_caption(get_lang_string("oGlobalC3DadRoom1_Create_0_0"));
+window_set_caption(translation_get_string("oGlobalC3DadRoom1_Create_0_0"));
 timer = 0;
 spawntimer = 0;
 whiteouttimer = 0;

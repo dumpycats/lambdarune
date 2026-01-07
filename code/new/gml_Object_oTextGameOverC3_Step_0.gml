@@ -20,9 +20,9 @@ switch (global.dialogue)
         global.charactertalking = true;
         
         if (value == 1)
-            global.current_dialogue = get_lang_string("oTextGameOverC3_Step_0_0");
+            global.current_dialogue = translation_get_string("oTextGameOverC3_Step_0_0");
         else if (value == 2)
-            global.current_dialogue = get_lang_string("oTextGameOverC3_Step_0_1");
+            global.current_dialogue = translation_get_string("oTextGameOverC3_Step_0_1");
         
         if (d1timer == 1)
             global.typing_speed = 0.5;
@@ -39,9 +39,9 @@ switch (global.dialogue)
         global.charactertalking = true;
         
         if (value == 1)
-            global.current_dialogue = get_lang_string("oTextGameOverC3_Step_0_2");
+            global.current_dialogue = translation_get_string("oTextGameOverC3_Step_0_2");
         else if (value == 2)
-            global.current_dialogue = get_lang_string("oTextGameOverC3_Step_0_3");
+            global.current_dialogue = translation_get_string("oTextGameOverC3_Step_0_3");
         
         if (d2timer == 1)
             global.typing_speed = 0.5;

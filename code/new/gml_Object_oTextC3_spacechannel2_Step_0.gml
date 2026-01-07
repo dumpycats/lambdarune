@@ -11,7 +11,7 @@ switch (global.dialogue)
         global.foanetalk = false;
         global.feighlinetalk = true;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel2_Step_0_0");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel2_Step_0_0");
         global.typing_speed = 1;
         pitchtimer++;
         
@@ -23,7 +23,7 @@ switch (global.dialogue)
         global.foanetalk = true;
         global.feighlinetalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel2_Step_0_1");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel2_Step_0_1");
         global.typing_speed = 1;
         pitchtimer = 0;
         break;
@@ -31,7 +31,7 @@ switch (global.dialogue)
         global.foanetalk = false;
         global.feighlinetalk = true;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel2_Step_0_2");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel2_Step_0_2");
         global.typing_speed = 1;
         pitchtimer++;
         
@@ -43,7 +43,7 @@ switch (global.dialogue)
         global.foanetalk = true;
         global.feighlinetalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel2_Step_0_3");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel2_Step_0_3");
         global.typing_speed = 1;
         audio_sound_pitch(snd_foane, 1);
         break;
@@ -51,14 +51,14 @@ switch (global.dialogue)
         global.foanetalk = true;
         global.feighlinetalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel2_Step_0_4");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel2_Step_0_4");
         global.typing_speed = 1;
         break;
     case 6:
         global.foanetalk = true;
         global.feighlinetalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel2_Step_0_5");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel2_Step_0_5");
         global.typing_speed = 1;
         break;
     case 7:

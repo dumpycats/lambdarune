@@ -1,6 +1,6 @@
 function format_text_battle(arg0, arg1)
 {
-    var words = string_split(arg0, get_lang_string("format_text_battle_0"));
+    var words = string_split(arg0, translation_get_string("format_text_battle_0"));
     var formatted_text = "";
     var current_length = 0;
     
@@ -17,7 +17,7 @@ function format_text_battle(arg0, arg1)
         {
             if (current_length > 0)
             {
-                formatted_text += get_lang_string("format_text_battle_1");
+                formatted_text += translation_get_string("format_text_battle_1");
                 current_length += 1;
             }
             

@@ -38,42 +38,42 @@ switch (dialogue)
         global.foanetalk = false;
         global.texttalk = true;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel1_screen3_Step_0_0");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel1_screen3_Step_0_0");
         global.typing_speed = 1;
         break;
     case 2:
         global.foanetalk = true;
         global.texttalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel1_screen3_Step_0_1");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel1_screen3_Step_0_1");
         global.typing_speed = 1;
         break;
     case 3:
         global.foanetalk = false;
         global.texttalk = true;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel1_screen3_Step_0_2");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel1_screen3_Step_0_2");
         global.typing_speed = 1;
         break;
     case 4:
         global.susietalk = true;
         global.texttalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel1_screen3_Step_0_3");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel1_screen3_Step_0_3");
         global.typing_speed = 1;
         break;
     case 5:
         global.susietalk = true;
         global.texttalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel1_screen3_Step_0_4");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel1_screen3_Step_0_4");
         global.typing_speed = 1;
         break;
     case 6:
         global.susietalk = true;
         global.texttalk = false;
         global.charactertalking = false;
-        global.current_dialogue = get_lang_string("oTextC3_spacechannel1_screen3_Step_0_5");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel1_screen3_Step_0_5");
         global.typing_speed = 1;
         break;
     case 7:
