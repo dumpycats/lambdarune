@@ -2,7 +2,7 @@
 
 
 
-TEXT = """Switch to Russian"""
+TEXT = """Мировая Премьера"""
 
 
 
@@ -27,10 +27,17 @@ from PIL import Image
 import csv, subprocess, os, sys
 import io
 
-path = "/home/yartom/Загрузки/lambdarune-tests/"
+path = "../"
 
-CSV_FILE = path + "/fonts_align_background/glyphs_fDeterminationMW_2.csv"
-FONT_IMAGE_FILE = path + "fonts_align_background/fDeterminationMW_2.png"
+bg = True
+
+if bg:
+    CSV_FILE = path + "/fonts_align_background/glyphs_fDeterminationMW_2.csv"
+    FONT_IMAGE_FILE = path + "fonts_align_background/fDeterminationMW_2.png"
+else:
+    CSV_FILE = path + "/fonts_align/glyphs_fDeterminationMW.csv"
+    FONT_IMAGE_FILE = path + "fonts_align/fDeterminationMW.png"
+
 
 LINE_SPACING = 0
 CHAR_SPACING = 0
@@ -147,7 +154,6 @@ if __name__ == "__main__":
 
     result = render_text(TEXT, glyphs, font_img)
 
-    result.save("out.png")
     print("Создано out.png")
 
     copy_to_clipboard(result)
