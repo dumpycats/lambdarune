@@ -23,9 +23,6 @@ if (!global.intro_done)
 }
 else
 {
-    if (ds_list_size(heavy_sprites_to_load) == 0)
-        exit;
-
     if (ds_list_size(sprites_to_load) > 0)
     {
         for (var i = 0; i < ds_list_size(sprites_to_load); i++)
@@ -33,11 +30,21 @@ else
             ds_list_add(heavy_sprites_to_load, ds_list_find_value(sprites_to_load, i));
         }
     }
+    ds_list_destroy(sprites_to_load);
 
     log("Started loading large sprites. Remaining: " + string(heavy_sprites_to_load))
 
-    for (var i = 0; i < ds_list_size(heavy_sprites_to_load); i++) 
+    while true
     {
+        if (ds_list_size(heavy_sprites_to_load) == 0)
+        {
+            global.translation_sprites_loaded = true;
+            ds_list_destroy(heavy_sprites_to_load);
+            instance_destroy();
+            log("All sprites loaded.");
+            break;
+        }
+
         log("Started loading large sprite. " + string(ds_list_size(heavy_sprites_to_load)) + " remaining.");
 
         var file = ds_list_find_value(heavy_sprites_to_load, 0);
@@ -56,14 +63,5 @@ else
         }
 
         ds_list_delete(heavy_sprites_to_load, 0);
-        
-        if (ds_list_size(heavy_sprites_to_load) == 0)
-        {
-            global.translation_sprites_loaded = true;
-            ds_list_destroy(heavy_sprites_to_load);
-            ds_list_destroy(sprites_to_load);
-            instance_destroy();
-            log("All sprites loaded.");
-        }
     }
 }
