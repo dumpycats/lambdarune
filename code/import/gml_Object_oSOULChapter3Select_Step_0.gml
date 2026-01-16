@@ -185,8 +185,7 @@ if (selectoption == 6)
             ini_write_string("Lang", "lang", "ru");
         
         ini_close();
-        translation_load_all();
-        translation_switch_sprite = translation_get_sprite("spr_translation_switch");
+        game_restart();
     }
 }
 
