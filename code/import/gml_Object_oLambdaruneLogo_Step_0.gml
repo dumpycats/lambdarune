@@ -9,11 +9,13 @@ if (timer == 1)
 
 if (timer == 375)
 {
+    global.intro_done = true;
+
     if (room == rLambdaruneLogo)
         room_goto(rChapterSelect);
     
     if (room == rLambdaruneLogoToC3)
-        room_goto(rChapter3Menu);
+        room_goto(rChapter3Menu);    
 }
 
 if (!fadeout)
@@ -32,12 +34,14 @@ if (fadeout)
     
     if (fadetimer == 60)
     {
+        global.intro_done = true;
+
         audio_stop_sound(AUDIO_INTRONOISE);
         
         if (room == rLambdaruneLogo)
             room_goto(rChapterSelect);
         
         if (room == rLambdaruneLogoToC3)
-            room_goto(rChapter3Menu);
+            room_goto(rChapter3Menu);        
     }
 }

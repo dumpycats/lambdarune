@@ -2158,5 +2158,6 @@
     "oShopMenu2_Draw_0_0": "ITEM\nKreid-shaped\nDonut that\nheals 140 HP",
     "oShopMenu2_Draw_0_1": "ITEM\nBootleg\nKrispy Kreid\nthat heals 70\nHP",
     "oShopMenu2_Draw_0_2": "ITEM\nNot for kids.\nHeals ??? HP",
-    "oShopMenu2_Draw_0_3": "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP"
+    "oShopMenu2_Draw_0_3": "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP",
+    "oLambdaruneLogo_Draw_0_0": "Loading localization..."
 }
