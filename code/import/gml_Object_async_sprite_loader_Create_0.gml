@@ -34,3 +34,4 @@ while (file != "")
 }
 
 global.intro_done = false;
+loading_frame = true;

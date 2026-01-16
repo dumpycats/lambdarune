@@ -21,6 +21,10 @@ if (!global.intro_done)
 
     ds_list_delete(sprites_to_load, 0);
 }
+else if (loading_frame)
+{
+    loading_frame = false;
+}
 else
 {
     if (ds_list_size(sprites_to_load) > 0)
