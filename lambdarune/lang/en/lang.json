@@ -658,12 +658,13 @@
     "obj_ch3_epilogue_text_Draw_73_161": "does",
     "obj_ch3_epilogue_text_Draw_73_162": "that",
     "oTextC3_spacechannel5_Step_0_0": "* in the meantime...",
-    "oTextC3_spacechannel5_Step_0_1": "* (The Cell Phone was updated@)",
-    "oTextC3_spacechannel5_Step_0_2": "* WHAT WAS THAT FOR, MEW?!",
-    "oTextC3_spacechannel5_Step_0_3": "* we're leaving, furball.",
-    "oTextC3_spacechannel5_Step_0_4": "* BUT KRIS JUST GOT HERE!",
-    "oTextC3_spacechannel5_Step_0_5": "* then say\n  goodbyebyebyebyebyebye",
-    "oTextC3_spacechannel5_Step_0_6": "* AWWWW... BYE, KRIS!",
+    "oTextC3_spacechannel5_Step_0_1": "* ...i see@ in case we meet\n  again...",
+    "oTextC3_spacechannel5_Step_0_2": "* (The Cell Phone was updated@)",
+    "oTextC3_spacechannel5_Step_0_3": "* WHAT WAS THAT FOR, MEW?!",
+    "oTextC3_spacechannel5_Step_0_4": "* we're leaving, furball.",
+    "oTextC3_spacechannel5_Step_0_5": "* BUT KRIS JUST GOT HERE!",
+    "oTextC3_spacechannel5_Step_0_6": "* then say\n  goodbyebyebyebyebyebye",
+    "oTextC3_spacechannel5_Step_0_7": "* AWWWW... BYE, KRIS!",
     "obj_kf_specialtrigger_Draw_0_0": "Press R to RESTART\nPress N to NO HIT",
     "obj_kf_specialtrigger_Draw_0_1": "Press R to RESTART\nPress N to NO HIT",
     "obj_kf_specialtrigger_Draw_0_2": "Press R to RESTART\nPress N to NO HIT",
@@ -2157,5 +2158,6 @@
     "oShopMenu2_Draw_0_0": "ITEM\nKreid-shaped\nDonut that\nheals 140 HP",
     "oShopMenu2_Draw_0_1": "ITEM\nBootleg\nKrispy Kreid\nthat heals 70\nHP",
     "oShopMenu2_Draw_0_2": "ITEM\nNot for kids.\nHeals ??? HP",
-    "oShopMenu2_Draw_0_3": "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP"
+    "oShopMenu2_Draw_0_3": "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP",
+    "oLambdaruneLogo_Draw_0_0": "Loading localization..."
 }

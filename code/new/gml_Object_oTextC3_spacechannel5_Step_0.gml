@@ -27,7 +27,7 @@ switch (global.dialogue)
         if (!global.missedopportunity)
             global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_0");
         else
-            global.current_dialogue = "* ...i see@ in case we meet\n  again...";
+            global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_1");
         
         global.typing_speed = 1;
         audio_sound_pitch(snd_foane, 1);
@@ -38,7 +38,7 @@ switch (global.dialogue)
         global.foanetalk = false;
         global.texttalk = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_1");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_2");
         global.typing_speed = 1;
         obj_foane_spacechannel.image_index = 2;
         d2timer++;
@@ -73,7 +73,7 @@ switch (global.dialogue)
         fe = true;
         fo = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_2");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_3");
         global.typing_speed = 1;
         
         if (!global.text_complete)
@@ -91,7 +91,7 @@ switch (global.dialogue)
         fe = false;
         fo = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_3");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_4");
         global.typing_speed = 1;
         audio_sound_pitch(snd_foane, 1);
         obj_foane_spacechannel.image_index = 0;
@@ -102,7 +102,7 @@ switch (global.dialogue)
         fe = true;
         fo = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_4");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_5");
         global.typing_speed = 1;
         
         if (!global.text_complete)
@@ -120,7 +120,7 @@ switch (global.dialogue)
         fe = false;
         fo = true;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_5");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_6");
         global.typing_speed = 1;
         obj_foane_spacechannel.image_index = 0;
         obj_foane_spacechannel.image_speed = 0;
@@ -129,7 +129,7 @@ switch (global.dialogue)
         fe = true;
         fo = false;
         global.charactertalking = false;
-        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_6");
+        global.current_dialogue = translation_get_string("oTextC3_spacechannel5_Step_0_7");
         global.typing_speed = 1;
         
         if (!global.text_complete)
@@ -226,7 +226,7 @@ if (!global.text_complete && !global.pause_for_punctuation)
 if (timer > 2)
 {
     if (!global.pause_for_punctuation && advance_pressed && !blockprogress)
-    {
+    { 
         if (global.text_complete)
         {
             pitchtimer = 0;
