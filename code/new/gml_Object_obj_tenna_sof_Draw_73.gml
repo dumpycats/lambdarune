@@ -126,21 +126,21 @@ if (talking)
             break;
         case 13:
             texttalk = true;
-            current_dialogue = format_text("Apparently, that's no longer the case.", 25);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_12"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 1;
             break;
         case 14:
             texttalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_12"), 25);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_13"), 25);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 6;
             break;
         case 15:
             texttalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_13"), 25);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_14"), 25);
             typing_speed = 1;
             dialogueiconchoice = sSusieDialogueSprite;
             dialogueicon = 13;
@@ -148,28 +148,28 @@ if (talking)
         case 16:
             charactertalking = false;
             texttalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_14"), 31);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_15"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
             break;
         case 17:
             texttalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_15"), 31);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_16"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
             break;
         case 18:
             texttalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_16"), 31);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_17"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
             break;
         case 19:
             texttalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_17"), 31);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_18"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
@@ -178,7 +178,7 @@ if (talking)
         case 20:
             texttalk = false;
             emptytalk = true;
-            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_18"), 31);
+            current_dialogue = format_text(translation_get_string("obj_tenna_sof_Draw_73_19"), 31);
             typing_speed = 1;
             dialogueiconchoice = sTennaDialogueSprite;
             dialogueicon = 9;
