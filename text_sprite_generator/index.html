@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор текста</title>
+</head>
+<body style="font-family: monospace;">
+    <div style="display: flex; gap: 20px; padding: 20px;">
+        <!-- Левая панель - управление -->
+        <div style="width: 300px;">
+            <h3>Генератор текста</h3>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Текст:</label><br>
+                <textarea id="textInput" rows="5" style="width: 100%; font-family: monospace;" oninput="scheduleGenerate()">Мировая Премьера</textarea>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Выравнивание:</label><br>
+                <select id="alignSelect" onchange="scheduleGenerate()">
+                    <option value="left">По левому краю</option>
+                    <option value="center" selected>По центру</option>
+                    <option value="right">По правому краю</option>
+                </select>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Межстрочный интервал (px):</label><br>
+                <input type="number" id="lineSpacing" value="0" min="0" max="50" style="width: 80px;" oninput="scheduleGenerate()">
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Макс. ширина строки (px):</label><br>
+                <input type="number" id="maxLineLength" value="600" min="100" max="1200" style="width: 80px;" oninput="scheduleGenerate()">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <button onclick="copyImage()" style="padding: 8px 16px;">📋 Копировать</button>
+                <button onclick="downloadImage()" style="padding: 8px 16px;">💾 Скачать PNG</button>
+            </div>
+        </div>
+        
+        <!-- Правая панель - превью -->
+        <div style="flex-grow: 1;">
+            <h3>Превью:</h3>
+            <div id="previewContainer" style="border: 1px dashed #ccc; padding: 10px; display: inline-block;">
+                <canvas id="previewCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ========== ПУТИ К ФАЙЛАМ ШРИФТОВ ==========
+        const FONT_PATHS = {
+            // С ФОНОМ
+            BG_CSV: '../fonts_align_background/glyphs_fDeterminationMW_2.csv',
+            BG_PNG: '../fonts_align_background/fDeterminationMW_2.png',
+            // БЕЗ ФОНА
+            CSV: '../fonts_align/glyphs_fDeterminationMW.csv',
+            PNG: '../fonts_align/fDeterminationMW.png'
+        };
+        // ===========================================
+
+        // Текущий режим (true = с фоном, false = без фона)
+        let useBackground = true;
+        
+        // Данные шрифта
+        let glyphs = {};
+        let fontImage = null;
+        let fontImageLoaded = false;
+        let csvLoaded = false;
+
+        // Текущее сгенерированное изображение
+        let currentImageData = null;
+        
+        // Таймер для debounce
+        let generateTimer = null;
+
+        // Загружаем шрифт при старте
+        loadFont(useBackground);
+
+        // Загрузка шрифта
+        async function loadFont(bg) {
+            const csvPath = bg ? FONT_PATHS.BG_CSV : FONT_PATHS.CSV;
+            const pngPath = bg ? FONT_PATHS.BG_PNG : FONT_PATHS.PNG;
+            
+            try {
+                // Загружаем CSV
+                const csvResponse = await fetch(csvPath);
+                const csvText = await csvResponse.text();
+                parseCSV(csvText);
+                csvLoaded = true;
+                
+                // Загружаем PNG
+                fontImage = new Image();
+                fontImage.onload = () => {
+                    fontImageLoaded = true;
+                    generateImage();
+                };
+                fontImage.src = pngPath;
+            } catch (e) {
+                console.error('Ошибка загрузки шрифта:', e);
+            }
+        }
+
+        // Парсинг CSV
+        function parseCSV(csvText) {
+            glyphs = {};
+            const lines = csvText.split('\n');
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (!line) continue;
+                
+                const parts = line.split(';');
+                if (parts.length < 7) continue;
+                
+                const code = parseInt(parts[0]);
+                glyphs[code] = {
+                    code: code,
+                    x: parseInt(parts[1]),
+                    y: parseInt(parts[2]),
+                    w: parseInt(parts[3]),
+                    h: parseInt(parts[4]),
+                    xoff: parseInt(parts[5]),
+                    yoff: parseInt(parts[6])
+                };
+            }
+        }
+
+        // Планирование генерации с debounce
+        function scheduleGenerate() {
+            if (!fontImageLoaded || !csvLoaded) return;
+            
+            if (generateTimer) clearTimeout(generateTimer);
+            generateTimer = setTimeout(() => {
+                generateImage();
+            }, 50);
+        }
+
+        // Отрисовка строки
+        function renderLine(text) {
+            if (!fontImageLoaded || !csvLoaded) return null;
+            
+            // Считаем ширину и высоту
+            let width = 0;
+            let maxH = 0;
+            let minY = 0;
+            
+            for (let ch of text) {
+                const code = ch.charCodeAt(0);
+                if (!glyphs[code]) {
+                    width += 8;
+                    continue;
+                }
+                const g = glyphs[code];
+                width += g.xoff;
+                maxH = Math.max(maxH, g.h);
+                minY = Math.min(minY, g.yoff);
+            }
+            
+            if (width === 0) return null;
+            
+            // Высота с учетом offset
+            const height = maxH - minY;
+            
+            // Создаем канвас для строки
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            
+            // Рисуем символы
+            let curX = 0;
+            for (let ch of text) {
+                const code = ch.charCodeAt(0);
+                if (!glyphs[code]) {
+                    curX += 8;
+                    continue;
+                }
+                const g = glyphs[code];
+                
+                ctx.drawImage(
+                    fontImage,
+                    g.x, g.y, g.xoff, g.h,
+                    curX, g.yoff - minY, g.xoff, g.h
+                );
+                
+                curX += g.xoff;
+            }
+            
+            return canvas;
+        }
+
+        // Перенос строк
+        function wrapLines(text, maxWidth) {
+            const lines = text.split('\n');
+            const wrapped = [];
+            
+            for (let line of lines) {
+                if (line === '') {
+                    wrapped.push('');
+                    continue;
+                }
+                
+                const words = line.split(' ');
+                let curLine = '';
+                
+                for (let word of words) {
+                    const testLine = curLine === '' ? word : curLine + ' ' + word;
+                    const testCanvas = renderLine(testLine);
+                    
+                    if (testCanvas && testCanvas.width <= maxWidth) {
+                        curLine = testLine;
+                    } else {
+                        if (curLine !== '') wrapped.push(curLine);
+                        curLine = word;
+                    }
+                }
+                if (curLine !== '') wrapped.push(curLine);
+            }
+            
+            return wrapped;
+        }
+
+        // Основная генерация
+        function generateImage() {
+            if (!fontImageLoaded || !csvLoaded) return;
+            
+            const text = document.getElementById('textInput').value;
+            const align = document.getElementById('alignSelect').value;
+            const lineSpacing = parseInt(document.getElementById('lineSpacing').value) || 0;
+            const maxLineLength = parseInt(document.getElementById('maxLineLength').value) || 600;
+            
+            // Перенос строк
+            const lines = wrapLines(text, maxLineLength);
+            
+            // Рендерим каждую строку
+            const renderedLines = [];
+            let maxWidth = 0;
+            
+            for (let line of lines) {
+                if (line === '') {
+                    renderedLines.push(null);
+                    continue;
+                }
+                const canvas = renderLine(line);
+                if (canvas) {
+                    renderedLines.push(canvas);
+                    maxWidth = Math.max(maxWidth, canvas.width);
+                }
+            }
+            
+            if (renderedLines.length === 0) return;
+            
+            // Считаем высоту пустых строк
+            let totalHeight = 0;
+            for (let i = 0; i < renderedLines.length; i++) {
+                const line = renderedLines[i];
+                if (line === null) {
+                    totalHeight += 20; // Высота пустой строки
+                } else {
+                    totalHeight += line.height;
+                }
+                if (i < renderedLines.length - 1) totalHeight += lineSpacing;
+            }
+            
+            // Финальный канвас
+            const finalCanvas = document.createElement('canvas');
+            finalCanvas.width = maxWidth;
+            finalCanvas.height = totalHeight;
+            const finalCtx = finalCanvas.getContext('2d');
+            
+            // Вставляем строки с pixel-perfect выравниванием
+            let curY = 0;
+            for (let i = 0; i < renderedLines.length; i++) {
+                const lineCanvas = renderedLines[i];
+                
+                if (lineCanvas === null) {
+                    curY += 20 + lineSpacing;
+                    continue;
+                }
+                
+                let x = 0;
+                if (align === 'center') {
+                    // Pixel-perfect выравнивание по центру
+                    x = Math.floor((maxWidth - lineCanvas.width) / 2);
+                }
+                if (align === 'right') {
+                    x = maxWidth - lineCanvas.width;
+                }
+                
+                finalCtx.drawImage(lineCanvas, x, curY);
+                curY += lineCanvas.height + lineSpacing;
+            }
+            
+            // Показываем результат
+            const previewCanvas = document.getElementById('previewCanvas');
+            previewCanvas.width = finalCanvas.width;
+            previewCanvas.height = finalCanvas.height;
+            const previewCtx = previewCanvas.getContext('2d');
+            previewCtx.drawImage(finalCanvas, 0, 0);
+            
+            // Сохраняем данные
+            currentImageData = finalCanvas;
+        }
+
+        // Копирование в буфер
+        function copyImage() {
+            if (!currentImageData) return;
+            
+            currentImageData.toBlob(blob => {
+                try {
+                    navigator.clipboard.write([
+                        new ClipboardItem({
+                            'image/png': blob
+                        })
+                    ]).catch(() => {});
+                } catch (e) {}
+            });
+        }
+
+        // Скачивание PNG
+        function downloadImage() {
+            if (!currentImageData) return;
+            
+            const link = document.createElement('a');
+            link.download = 'text-image.png';
+            currentImageData.toBlob(blob => {
+                link.href = URL.createObjectURL(blob);
+                link.click();
+                URL.revokeObjectURL(link.href);
+            });
+        }
+
+        // Генерируем при загрузке
+        window.onload = () => {
+            // Ждем загрузки шрифта
+            const checkLoaded = setInterval(() => {
+                if (fontImageLoaded && csvLoaded) {
+                    clearInterval(checkLoaded);
+                    generateImage();
+                }
+            }, 10);
+        };
+    </script>
+</body>
+</html>
