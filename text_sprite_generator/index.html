@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор текста</title>
+</head>
+<body style="font-family: monospace;">
+    <div style="display: flex; gap: 20px; padding: 20px;">
+        <div style="width: 300px;">
+            <h3>Генератор текста</h3>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Текст:</label><br>
+                <textarea id="textInput" rows="5" style="width: 100%; font-family: monospace;" oninput="scheduleGenerate()">Мировая Премьера</textarea>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Выравнивание:</label><br>
+                <select id="alignSelect" onchange="scheduleGenerate()">
+                    <option value="left">По левому краю</option>
+                    <option value="center" selected>По центру</option>
+                    <option value="right">По правому краю</option>
+                </select>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Межстрочный интервал (px):</label><br>
+                <input type="number" id="lineSpacing" value="0" min="0" max="50" style="width: 80px;" oninput="scheduleGenerate()">
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label>Макс. ширина строки (px):</label><br>
+                <input type="number" id="maxLineLength" value="600" min="100" max="1200" style="width: 80px;" oninput="scheduleGenerate()">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <button onclick="copyImage()" style="padding: 8px 16px;">📋 Копировать</button>
+                <button onclick="downloadImage()" style="padding: 8px 16px;">💾 Скачать PNG</button>
+            </div>
+        </div>
+        
+        <div style="flex-grow: 1;">
+            <h3>Превью:</h3>
+            <div id="previewContainer" style="border: 1px dashed #ccc; padding: 10px; display: inline-block;">
+                <canvas id="previewCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const FONT_DATA = {
+            BG_PNG: 'data:image/png;base64,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',
+            BG_CSV: `"8bitoperator JVE";24;False;False;1;0;1;1
+32;260;138;9;32;8;0
+33;202;138;7;32;14;2
+34;110;138;9;32;14;0
+35;146;2;13;32;18;0
+36;128;104;11;32;16;0
+37;128;2;13;32;18;0
+38;92;2;13;32;18;0
+39;272;138;3;32;8;0
+40;178;138;7;32;12;0
+41;166;138;7;32;12;0
+42;0;2;15;32;20;0
+43;112;104;11;32;16;0
+44;252;138;3;32;8;0
+45;95;104;12;32;17;0
+46;244;138;4;32;9;0
+47;64;104;11;32;16;0
+48;48;104;11;32;16;0
+49;32;104;11;32;16;0
+50;80;138;11;32;16;0
+51;144;104;11;32;16;0
+52;224;70;11;32;16;0
+53;240;70;11;32;16;0
+54;256;70;11;32;16;0
+55;272;70;11;32;16;0
+56;0;104;11;32;16;0
+57;208;70;11;32;16;0
+58;0;172;3;32;8;0
+59;236;138;4;32;9;0
+60;138;138;9;32;14;0
+61;80;104;11;32;16;0
+62;152;138;9;32;14;0
+63;160;104;11;32;16;0
+64;176;104;11;32;16;0
+65;192;104;11;32;16;0
+66;208;104;11;32;16;0
+67;224;104;11;32;16;0
+68;240;104;11;32;16;0
+69;256;104;11;32;16;0
+70;272;104;11;32;16;0
+71;0;138;11;32;16;0
+72;16;138;11;32;16;0
+73;32;138;11;32;16;0
+74;48;138;11;32;16;0
+75;64;138;11;32;16;0
+76;16;104;11;32;16;0
+77;110;2;13;32;18;0
+78;128;70;11;32;16;0
+79;192;70;11;32;16;0
+80;128;36;11;32;16;0
+81;112;36;11;32;16;0
+82;96;36;11;32;16;0
+83;80;36;11;32;16;0
+84;64;36;11;32;16;0
+85;48;36;11;32;16;0
+86;32;36;11;32;16;0
+87;38;2;13;32;18;0
+88;0;36;11;32;16;0
+89;260;2;11;32;16;0
+90;244;2;11;32;16;0
+91;214;138;7;32;12;0
+92;228;2;11;32;16;0
+93;190;138;7;32;12;0
+94;212;2;11;32;16;0
+95;294;138;7;32;12;0
+96;226;138;5;32;10;0
+97;196;2;11;32;16;0
+98;180;2;11;32;16;0
+99;164;2;11;32;16;0
+100;144;36;11;32;16;0
+101;176;36;11;32;16;0
+102;160;70;11;32;16;0
+103;192;36;11;32;16;0
+104;144;70;11;32;16;0
+105;176;70;11;32;16;0
+106;112;70;11;32;16;0
+107;96;70;11;32;16;0
+108;80;70;11;32;16;0
+109;56;2;13;32;18;0
+110;48;70;11;32;16;0
+111;32;70;11;32;16;0
+112;16;70;11;32;16;0
+113;0;70;11;32;16;0
+114;272;36;11;32;16;0
+115;256;36;11;32;16;0
+116;240;36;11;32;16;0
+117;224;36;11;32;16;0
+118;208;36;11;32;16;0
+119;74;2;13;32;18;0
+120;160;36;11;32;16;0
+121;64;70;11;32;16;0
+122;16;36;11;32;16;0
+123;96;138;9;32;14;0
+124;280;138;3;32;8;0
+125;124;138;9;32;14;0
+126;20;2;13;32;18;0
+1025;8;173;11;32;16;0
+1040;24;173;11;32;16;0
+1041;40;173;11;32;16;0
+1042;56;173;11;32;16;0
+1043;72;173;11;32;16;0
+1044;88;173;15;32;20;0
+1045;108;173;11;32;16;0
+1046;124;173;19;32;24;0
+1047;148;173;11;32;16;0
+1048;164;173;11;32;16;0
+1049;180;173;11;32;16;0
+1050;196;173;11;32;16;0
+1051;212;173;13;32;18;0
+1052;230;173;13;32;18;0
+1053;246;173;11;32;16;0
+1054;262;173;11;32;16;0
+1055;278;173;11;32;16;0
+1056;294;173;11;32;16;0
+1057;310;173;11;32;16;0
+1058;326;173;11;32;16;0
+1059;0;205;11;32;16;0
+1060;16;205;19;32;24;0
+1061;40;205;11;32;16;0
+1062;56;205;13;32;18;0
+1063;76;205;11;32;16;0
+1064;94;205;19;32;24;0
+1065;118;205;21;32;26;0
+1066;144;205;15;32;20;0
+1067;164;205;17;32;22;0
+1068;186;205;11;32;16;0
+1069;202;205;11;32;16;0
+1070;218;205;17;32;22;0
+1071;240;205;11;32;16;0
+1072;256;205;11;32;16;0
+1073;272;205;11;32;16;0
+1074;288;205;11;32;16;0
+1075;304;205;11;32;14;0
+1076;318;205;15;32;20;0
+1077;0;237;11;32;16;0
+1078;16;237;19;32;24;0
+1079;40;237;11;32;16;0
+1080;56;237;11;32;16;0
+1081;72;237;11;32;16;0
+1082;88;237;11;32;16;0
+1083;104;237;13;32;18;0
+1084;124;237;13;32;18;0
+1085;144;237;11;32;16;0
+1086;160;237;11;32;16;0
+1087;176;237;11;32;16;0
+1088;192;237;11;32;16;0
+1089;208;237;11;32;16;0
+1090;224;237;11;32;16;0
+1091;240;237;11;32;16;0
+1092;256;237;19;32;24;0
+1093;280;237;11;32;16;0
+1094;296;237;13;32;18;0
+1095;314;237;11;32;16;0
+1096;0;269;19;32;24;0
+1097;24;269;21;32;26;0
+1098;50;269;13;32;18;0
+1099;68;269;17;32;22;0
+1100;90;269;11;32;16;0
+1101;106;269;11;32;16;0
+1102;122;269;17;32;22;0
+1103;144;269;11;32;16;0
+1105;160;269;11;32;16;0
+1122;175;269;14;32;19;0
+1123;194;269;13;32;18;0
+10084;210;269;15;31;20;0`,
+            PNG: '',
+            CSV: ''
+        };
+
+        let currentStyle = 'bg';
+        let glyphs = {};
+        let fontImage = null;
+        let fontImageLoaded = false;
+        let csvLoaded = false;
+        let currentImageData = null;
+        let generateTimer = null;
+
+        async function loadFont(style) {
+            try {
+                const csvText = style === 'bg' ? FONT_DATA.BG_CSV : FONT_DATA.CSV;
+                parseCSV(csvText);
+                csvLoaded = true;
+                
+                fontImage = new Image();
+                fontImage.onload = () => {
+                    fontImageLoaded = true;
+                    generateImage();
+                };
+                fontImage.src = style === 'bg' ? FONT_DATA.BG_PNG : FONT_DATA.PNG;
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function changeStyle() {
+            const select = document.getElementById('styleSelect');
+            currentStyle = select.value;
+            fontImageLoaded = false;
+            csvLoaded = false;
+            loadFont(currentStyle);
+        }
+
+        function parseCSV(csvText) {
+            glyphs = {};
+            const lines = csvText.split('\n');
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (!line) continue;
+                const parts = line.split(';');
+                if (parts.length < 7) continue;
+                const code = parseInt(parts[0]);
+                glyphs[code] = {
+                    code: code,
+                    x: parseInt(parts[1]),
+                    y: parseInt(parts[2]),
+                    w: parseInt(parts[3]),
+                    h: parseInt(parts[4]),
+                    xoff: parseInt(parts[5]),
+                    yoff: parseInt(parts[6])
+                };
+            }
+        }
+
+        function scheduleGenerate() {
+            if (!fontImageLoaded || !csvLoaded) return;
+            if (generateTimer) clearTimeout(generateTimer);
+            generateTimer = setTimeout(() => {
+                generateImage();
+            }, 50);
+        }
+
+        function renderLine(text) {
+            if (!fontImageLoaded || !csvLoaded) return null;
+            
+            let width = 0;
+            let maxH = 0;
+            let minY = 0;
+            
+            for (let ch of text) {
+                const code = ch.charCodeAt(0);
+                if (!glyphs[code]) {
+                    width += 8;
+                    continue;
+                }
+                const g = glyphs[code];
+                width += g.xoff;
+                maxH = Math.max(maxH, g.h);
+                minY = Math.min(minY, g.yoff);
+            }
+            
+            if (width === 0) return null;
+            
+            const height = maxH - minY;
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            
+            let curX = 0;
+            for (let ch of text) {
+                const code = ch.charCodeAt(0);
+                if (!glyphs[code]) {
+                    curX += 8;
+                    continue;
+                }
+                const g = glyphs[code];
+                ctx.drawImage(
+                    fontImage,
+                    g.x, g.y, g.xoff, g.h,
+                    curX, g.yoff - minY, g.xoff, g.h
+                );
+                curX += g.xoff;
+            }
+            
+            return canvas;
+        }
+
+        function wrapLines(text, maxWidth) {
+            const lines = text.split('\n');
+            const wrapped = [];
+            
+            for (let line of lines) {
+                if (line === '') {
+                    wrapped.push('');
+                    continue;
+                }
+                
+                const words = line.split(' ');
+                let curLine = '';
+                
+                for (let word of words) {
+                    const testLine = curLine === '' ? word : curLine + ' ' + word;
+                    const testCanvas = renderLine(testLine);
+                    
+                    if (testCanvas && testCanvas.width <= maxWidth) {
+                        curLine = testLine;
+                    } else {
+                        if (curLine !== '') wrapped.push(curLine);
+                        curLine = word;
+                    }
+                }
+                if (curLine !== '') wrapped.push(curLine);
+            }
+            
+            return wrapped;
+        }
+
+        function generateImage() {
+            if (!fontImageLoaded || !csvLoaded) return;
+            
+            const text = document.getElementById('textInput').value;
+            const align = document.getElementById('alignSelect').value;
+            const lineSpacing = parseInt(document.getElementById('lineSpacing').value) || 0;
+            const maxLineLength = parseInt(document.getElementById('maxLineLength').value) || 600;
+            
+            const lines = wrapLines(text, maxLineLength);
+            const renderedLines = [];
+            let maxWidth = 0;
+            
+            for (let line of lines) {
+                if (line === '') {
+                    renderedLines.push(null);
+                    continue;
+                }
+                const canvas = renderLine(line);
+                if (canvas) {
+                    renderedLines.push(canvas);
+                    maxWidth = Math.max(maxWidth, canvas.width);
+                }
+            }
+            
+            if (renderedLines.length === 0) return;
+            
+            let totalHeight = 0;
+            for (let i = 0; i < renderedLines.length; i++) {
+                const line = renderedLines[i];
+                if (line === null) {
+                    totalHeight += 20;
+                } else {
+                    totalHeight += line.height;
+                }
+                if (i < renderedLines.length - 1) totalHeight += lineSpacing;
+            }
+            
+            const finalCanvas = document.createElement('canvas');
+            finalCanvas.width = maxWidth;
+            finalCanvas.height = totalHeight;
+            const finalCtx = finalCanvas.getContext('2d');
+            
+            let curY = 0;
+            for (let i = 0; i < renderedLines.length; i++) {
+                const lineCanvas = renderedLines[i];
+                
+                if (lineCanvas === null) {
+                    curY += 20 + lineSpacing;
+                    continue;
+                }
+                
+                let x = 0;
+                if (align === 'center') {
+                    x = Math.floor((maxWidth - lineCanvas.width) / 2);
+                }
+                if (align === 'right') {
+                    x = maxWidth - lineCanvas.width;
+                }
+                
+                finalCtx.drawImage(lineCanvas, x, curY);
+                curY += lineCanvas.height + lineSpacing;
+            }
+            
+            const previewCanvas = document.getElementById('previewCanvas');
+            previewCanvas.width = finalCanvas.width;
+            previewCanvas.height = finalCanvas.height;
+            const previewCtx = previewCanvas.getContext('2d');
+            previewCtx.drawImage(finalCanvas, 0, 0);
+            
+            currentImageData = finalCanvas;
+        }
+
+        function copyImage() {
+            if (!currentImageData) return;
+            currentImageData.toBlob(blob => {
+                try {
+                    navigator.clipboard.write([
+                        new ClipboardItem({ 'image/png': blob })
+                    ]).catch(() => {});
+                } catch (e) {}
+            });
+        }
+
+        function downloadImage() {
+            if (!currentImageData) return;
+            const link = document.createElement('a');
+            link.download = 'text-image.png';
+            currentImageData.toBlob(blob => {
+                link.href = URL.createObjectURL(blob);
+                link.click();
+                URL.revokeObjectURL(link.href);
+            });
+        }
+
+        window.onload = () => {
+            loadFont(currentStyle);
+            const checkLoaded = setInterval(() => {
+                if (fontImageLoaded && csvLoaded) {
+                    clearInterval(checkLoaded);
+                    generateImage();
+                }
+            }, 10);
+        };
+    </script>
+</body>
+</html>
