@@ -188,7 +188,7 @@ if (menuoutrotimer == 90)
     if (image_index == 4)
     {
         sprite_prefetch(sDepthsDim);
-        sprite_prefetch(sLambdaruneBlackLogoOut);
+        sprite_prefetch(global.sLambdaruneBlackLogoOut);
         sprite_prefetch(sBackgroundChapter3Menu);
         sprite_prefetch(sBackgroundChapter3Menu2);
         

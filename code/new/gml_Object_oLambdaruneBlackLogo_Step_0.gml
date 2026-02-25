@@ -4,7 +4,7 @@ if (global.c3outskirtscompleted)
     
     if (timer == 155)
     {
-        sprite_index = sLambdaruneBlackLogoOut;
+        sprite_index = global.sLambdaruneBlackLogoOut;
         image_xscale = 1;
         image_yscale = 1;
     }

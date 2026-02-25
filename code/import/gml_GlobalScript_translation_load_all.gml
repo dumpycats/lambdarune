@@ -6,4 +6,9 @@ function translation_load_all()
     translation_load_strings();
     var loader = instance_create_layer(0, 0, "Instances", async_sprite_loader);
     loader.persistent = true;
+
+    global.sLambdaruneLogo = (global.lang == "ru") ? sLambdaruneLogo_ru : sLambdaruneLogo;
+    global.sLambdaruneBlackLogoOut = (global.lang == "ru") ? sLambdaruneBlackLogoOut_ru : sLambdaruneBlackLogoOut;
+    global.sLambdaruneBlackLogoMid2 = (global.lang == "ru") ? sLambdaruneBlackLogoMid2_ru : sLambdaruneBlackLogoMid2;
+    global.sLambdaruneBlackLogoMid = (global.lang == "ru") ? sLambdaruneBlackLogoMid_ru : sLambdaruneBlackLogoMid;
 }

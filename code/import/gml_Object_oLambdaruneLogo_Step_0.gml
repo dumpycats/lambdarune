@@ -1,4 +1,4 @@
-sprite_prefetch(sLambdaruneLogo);
+sprite_prefetch(global.sLambdaruneLogo);
 timer += 1;
 
 if (timer == 1)

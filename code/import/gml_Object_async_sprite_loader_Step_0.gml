@@ -36,7 +36,7 @@ else
     }
     ds_list_destroy(sprites_to_load);
 
-    log("Started loading large sprites. Remaining: " + string(ds_list_size(heavy_sprites_to_load))))
+    log("Started loading large sprites. Remaining: " + string(ds_list_size(heavy_sprites_to_load)))
 
     while true
     {
