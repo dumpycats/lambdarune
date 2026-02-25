@@ -1,6 +1,0 @@
-source_tex, atlas_tex, x, y, width, height
-/home/yartom/Downloads/lambdarune/fonts/fDeterminationSans.png, /home/yartom/Downloads/lambdarune/Packager/atlas000.png, 0, 0, 350, 300
-/home/yartom/Downloads/lambdarune/fonts/fDeterminationMW.png, /home/yartom/Downloads/lambdarune/Packager/atlas000.png, 352, 0, 350, 300
-/home/yartom/Downloads/lambdarune/fonts/fFight.png, /home/yartom/Downloads/lambdarune/Packager/atlas000.png, 0, 302, 190, 200
-/home/yartom/Downloads/lambdarune/fonts/fDeterminationMW_small.png, /home/yartom/Downloads/lambdarune/Packager/atlas000.png, 704, 0, 180, 180
-/home/yartom/Downloads/lambdarune/fonts/fDeterminationSans_quip.png, /home/yartom/Downloads/lambdarune/Packager/atlas000.png, 192, 302, 180, 180
