@@ -2160,5 +2160,21 @@
     "oShopMenu2_Draw_0_1": "ITEM\nBootleg\nKrispy Kreid\nthat heals 70\nHP",
     "oShopMenu2_Draw_0_2": "ITEM\nNot for kids.\nHeals ??? HP",
     "oShopMenu2_Draw_0_3": "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP",
-    "oLambdaruneLogo_Draw_0_0": "Loading localization..."
+    "oLambdaruneLogo_Draw_0_0": "Loading localization...",
+    "obj_battle_kf_Draw_0_6": "KKreid",
+    "obj_battle_kf_Draw_0_7": "SDonut",
+    "obj_battle_kf_Draw_0_8": "Adult Soda",
+    "obj_battle_kf_Draw_0_9": "ShotGlass",
+    "obj_battle_kf_Draw_0_10": "PPastry",
+    "obj_battle_kf_Draw_0_11": "Spincake",
+    "obj_battle_kf_Draw_0_12": "RottenTea",
+    "obj_battle_kf_Draw_0_13": "CraftyGlue",
+    "obj_battle_kf_Draw_0_14": "Heals\n140HP",
+    "obj_battle_kf_Draw_0_15": "Heals\n70HP",
+    "obj_battle_kf_Draw_0_16": "Heals\nrandom\nHP",
+    "obj_battle_kf_Draw_0_17": "Heals\n60HP",
+    "obj_battle_kf_Draw_0_18": "Heals\nteam\n90HP",
+    "obj_battle_kf_Draw_0_19": "Heals\nteam\n140HP",
+    "obj_battle_kf_Draw_0_20": "Heals\n10HP",
+    "obj_battle_kf_Draw_0_21": "Heals\n60HP"
 }
