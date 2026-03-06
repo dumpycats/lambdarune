@@ -8,10 +8,10 @@ Mike - Майк
 Kreid - Крейд
 Foane - Телефа
 FeignLine - Телефязь
-Loomi Neus - Луче Зарна
+Loomi Neus - Лучи Зарна
 PrimFlower - Нарцисса
 Heinrike - Генриха
-Shadow Woman - Теневая дама
+Shadow Woman - Сумрочная дама
 Chairiel - Стуриэль
 
 Еда:
@@ -39,7 +39,7 @@ Outskirts - Окраина
 
 Названия:
 
-Cathode Crew - Катодный союз
+Cathode Crew - Союз Катодов
 Midnight Crew - Полуночный союз
 Anode Crew - Анодный союз
 Luminous Guards - Лучезарные стражи
@@ -61,7 +61,7 @@ Curtain Call - Занавес
 
 Rude Buster - Ярый взмах
 Pacify - Усмирение
-BadassHeal - Шик. Лечение
-Heal Prayer - Лечущее заклинание
+BadassHeal - КрутоеИсцеление, КрутЛеч (от контекста)
+Heal Prayer - Молитва Исцеления
 
 здесь был нбд
