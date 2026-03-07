@@ -3,7 +3,7 @@ function translation_load_all()
     global.translation_logging_enabled = false;
 
     ini_open("lang.ini");
-    global.lang = ini_read_string("Lang", "lang", "ru");
+    global.lang = ini_read_string("Lang", "lang", os_get_language());
     ini_close();
     global.translation_folder = working_directory + "lang/" + global.lang + "/";
 
