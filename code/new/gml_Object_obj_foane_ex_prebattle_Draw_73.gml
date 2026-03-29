@@ -179,7 +179,9 @@ if (talking)
     
     if (dialogue == 7)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_prebattle_Draw_73_8"));
+        var separator = translation_get_string("obj_foane_ex_prebattle_Draw_73_8");
+        var text_parts = string_split(current_dialogue, separator);
+        var gradient_len = string_length(separator);
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -210,7 +212,7 @@ if (talking)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 4);
+                var remaining = string_copy(current_displayed, 1, gradient_len);
                 var color;
                 
                 switch (i + 1)

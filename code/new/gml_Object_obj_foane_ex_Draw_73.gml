@@ -436,7 +436,9 @@ if (talking)
     
     if (dialogue == 4)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_39"));
+        var separator = translation_get_string("obj_foane_ex_Draw_73_39");
+        var text_parts = string_split(current_dialogue, separator);
+        var gradient_len = string_length(separator);
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -467,7 +469,7 @@ if (talking)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 3);
+                var remaining = string_copy(current_displayed, 1, gradient_len);
                 var color;
                 
                 switch (i + 1)
@@ -517,7 +519,9 @@ if (talking)
     
     if (dialogue == 12)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_40"));
+        var separator = translation_get_string("obj_foane_ex_Draw_73_40");
+        var text_parts = string_split(current_dialogue, separator);
+        var gradient_len = string_length(separator);
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -548,7 +552,7 @@ if (talking)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 4);
+                var remaining = string_copy(current_displayed, 1, gradient_len);
                 var color;
                 
                 switch (i + 1)
@@ -598,7 +602,9 @@ if (talking)
     
     if (dialogue == 16)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_41"));
+        var separator = translation_get_string("obj_foane_ex_Draw_73_41");
+        var text_parts = string_split(current_dialogue, separator);
+        var gradient_len = string_length(separator);
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -629,7 +635,7 @@ if (talking)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 5);
+                var remaining = string_copy(current_displayed, 1, gradient_len);
                 var color;
                 
                 switch (i + 1)
@@ -658,7 +664,9 @@ if (talking)
     
     if (dialogue == 23)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_42"));
+        var separator = translation_get_string("obj_foane_ex_Draw_73_42");
+        var text_parts = string_split(current_dialogue, separator);
+        var gradient_len = string_length(separator);
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -689,7 +697,7 @@ if (talking)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 3);
+                var remaining = string_copy(current_displayed, 1, gradient_len);
                 var color;
                 
                 switch (i + 1)
@@ -739,7 +747,9 @@ if (talking)
     
     if (dialogue == 26)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_foane_ex_Draw_73_43"));
+        var separator = translation_get_string("obj_foane_ex_Draw_73_43");
+        var text_parts = string_split(current_dialogue, separator);
+        var gradient_len = string_length(separator);
         var x_offset = text_x;
         var y_offset = text_y;
         var current_displayed = displayed_text;
@@ -770,7 +780,7 @@ if (talking)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 4);
+                var remaining = string_copy(current_displayed, 1, gradient_len);
                 var color;
                 
                 switch (i + 1)
