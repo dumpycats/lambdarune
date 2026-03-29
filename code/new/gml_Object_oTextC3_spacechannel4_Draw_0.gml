@@ -19,7 +19,9 @@ draw_text_color(text_x + 1, text_y + 1, global.displayed_text, shadow_color1, sh
 
 if (global.dialogue == 2)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_0"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_0");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -51,7 +53,7 @@ if (global.dialogue == 2)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 3);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -120,7 +122,9 @@ if (global.dialogue == 2)
 
 if (global.dialogue == 5)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_1"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_1");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -152,7 +156,7 @@ if (global.dialogue == 5)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 2);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -208,7 +212,9 @@ if (global.dialogue == 5)
 
 if (global.dialogue == 18)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_2"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_2");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -240,7 +246,7 @@ if (global.dialogue == 18)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 7);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -307,7 +313,9 @@ if (global.dialogue == 18)
 
 if (global.dialogue == 20)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_3"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_3");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -339,7 +347,7 @@ if (global.dialogue == 20)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 5);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -408,7 +416,9 @@ if (global.dialogue == 20)
 
 if (global.dialogue == 22)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_4"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_4");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -440,7 +450,7 @@ if (global.dialogue == 22)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 3);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -500,7 +510,9 @@ if (global.dialogue == 22)
 
 if (global.dialogue == 27)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_5"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_5");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -532,7 +544,7 @@ if (global.dialogue == 27)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 3);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -588,7 +600,9 @@ if (global.dialogue == 27)
 
 if (global.dialogue == 36)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_6"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_6");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -620,7 +634,7 @@ if (global.dialogue == 36)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 3);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
@@ -680,7 +694,9 @@ if (global.dialogue == 36)
 
 if (global.dialogue == 39)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel4_Draw_0_7"));
+    var separator = translation_get_string("oTextC3_spacechannel4_Draw_0_7");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var gradient_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -712,7 +728,7 @@ if (global.dialogue == 39)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 3);
+            var remaining = string_copy(current_displayed, 1, gradient_len);
             var color;
             
             switch (i + 1)
