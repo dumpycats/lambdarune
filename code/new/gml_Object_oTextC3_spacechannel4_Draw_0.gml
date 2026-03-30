@@ -644,23 +644,23 @@ if (global.dialogue == 36)
                     audio_sound_pitch(snd_foane, 1);
                     break;
                 case 2:
-                    color = color1;
+                    color = (global.lang == "en" ? color1 : color2);
                     audio_sound_pitch(snd_foane, 1);
                     break;
                 case 3:
-                    color = color2;
+                    color = (global.lang == "en" ? color2 : color3);
                     audio_sound_pitch(snd_foane, 0.995);
                     break;
                 case 4:
-                    color = color3;
+                    color = (global.lang == "en" ? color3 : color4);
                     audio_sound_pitch(snd_foane, 0.99);
                     break;
                 case 5:
-                    color = color4;
+                    color = (global.lang == "en" ? color4 : color5);
                     audio_sound_pitch(snd_foane, 0.985);
                     break;
                 case 6:
-                    color = color5;
+                    color = (global.lang == "en" ? color5 : color6);
                     audio_sound_pitch(snd_foane, 0.98);
                     break;
                 case 7:
@@ -738,23 +738,23 @@ if (global.dialogue == 39)
                     audio_sound_pitch(snd_foane, 1);
                     break;
                 case 2:
-                    color = color1;
+                    color = (global.lang == "en" ? color1 : color2);
                     audio_sound_pitch(snd_foane, 1);
                     break;
                 case 3:
-                    color = color2;
+                    color = (global.lang == "en" ? color2 : color3);
                     audio_sound_pitch(snd_foane, 0.995);
                     break;
                 case 4:
-                    color = color3;
+                    color = (global.lang == "en" ? color3 : color4);
                     audio_sound_pitch(snd_foane, 0.99);
                     break;
                 case 5:
-                    color = color4;
+                    color = (global.lang == "en" ? color4 : color5);
                     audio_sound_pitch(snd_foane, 0.985);
                     break;
                 case 6:
-                    color = color5;
+                    color = (global.lang == "en" ? color5 : color6);
                     audio_sound_pitch(snd_foane, 0.98);
                     break;
                 case 7:
