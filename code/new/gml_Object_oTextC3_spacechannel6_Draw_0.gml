@@ -19,7 +19,9 @@ draw_text_color(text_x + 1, text_y + 1, global.displayed_text, shadow_color1, sh
 
 if (dialogue == 3)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel6_Draw_0_0"));
+    var separator = translation_get_string("oTextC3_spacechannel6_Draw_0_0");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var color_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -51,7 +53,7 @@ if (dialogue == 3)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 3);
+            var remaining = string_copy(current_displayed, 1, color_len);
             var color;
             
             switch (i + 1)
@@ -120,7 +122,9 @@ if (dialogue == 3)
 
 if (dialogue == 9)
 {
-    var text_parts = string_split(global.current_dialogue, translation_get_string("oTextC3_spacechannel6_Draw_0_1"));
+    var separator = translation_get_string("oTextC3_spacechannel6_Draw_0_1");
+    var text_parts = string_split(global.current_dialogue, separator);
+    var color_len = string_length(separator);
     var x_offset = text_x;
     var y_offset = text_y;
     var current_displayed = global.displayed_text;
@@ -152,7 +156,7 @@ if (dialogue == 9)
         
         if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
         {
-            var remaining = string_copy(current_displayed, 1, 5);
+            var remaining = string_copy(current_displayed, 1, color_len);
             var color;
             
             switch (i + 1)

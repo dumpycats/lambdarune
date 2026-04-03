@@ -4371,7 +4371,9 @@ if (textact)
     
     if (actdialogue == 1 && (krismercy || susiemercy || ralseimercy))
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_battle_sof_Draw_73_139"));
+        var separator = translation_get_string("obj_battle_sof_Draw_73_139");
+        var text_parts = string_split(current_dialogue, separator);
+        var color_len = string_length(separator);
         var x_offset = textx;
         var y_offset = texty;
         var current_displayed = displayed_text;
@@ -4403,7 +4405,7 @@ if (textact)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 6);
+                var remaining = string_copy(current_displayed, 1, color_len);
                 
                 switch (i + 1)
                 {
@@ -4430,7 +4432,9 @@ if (textact)
     }
     else if (ralseiactoptions == 0)
     {
-        var text_parts = string_split(current_dialogue, translation_get_string("obj_battle_sof_Draw_73_140"));
+        var separator = translation_get_string("obj_battle_sof_Draw_73_140");
+        var text_parts = string_split(current_dialogue, separator);
+        var color_len = string_length(separator);
         var x_offset = textx;
         var y_offset = texty;
         var current_displayed = displayed_text;
@@ -4462,7 +4466,7 @@ if (textact)
             
             if (i < (array_length(text_parts) - 1) && string_length(current_displayed) > 0)
             {
-                var remaining = string_copy(current_displayed, 1, 5);
+                var remaining = string_copy(current_displayed, 1, color_len);
                 var color;
                 
                 switch (i + 1)
