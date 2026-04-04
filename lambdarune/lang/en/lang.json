@@ -2160,7 +2160,7 @@
     "oShopMenu2_Draw_0_1": "ITEM\nBootleg\nKrispy Kreid\nthat heals 70\nHP",
     "oShopMenu2_Draw_0_2": "ITEM\nNot for kids.\nHeals ??? HP",
     "oShopMenu2_Draw_0_3": "ITEM\nGlass of\nunknown\nproperties.\nHeals 60 HP",
-    "oLambdaruneLogo_Draw_0_0": "Loading localization...",
+    "oLambdaruneLogo_Draw_0_0": "Loading   localization...",
     "obj_battle_kf_Draw_0_6": "KKreid",
     "obj_battle_kf_Draw_0_7": "SDonut",
     "obj_battle_kf_Draw_0_8": "Adult Soda",
