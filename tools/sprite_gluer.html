@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Multi-Sprite Strip Builder for GameMaker</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background: #1e2a2e;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .card {
+            max-width: 1100px;
+            width: 100%;
+            background: #fef9e8;
+            background: linear-gradient(145deg, #fff7ed 0%, #fef3e2 100%);
+            border-radius: 2.5rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.6);
+            padding: 2rem 2rem 2.2rem;
+            transition: all 0.2s;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #2c3e2f;
+            margin: 0 0 0.35rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        h1 small {
+            font-size: 0.85rem;
+            font-weight: normal;
+            background: #e9e0cf;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            color: #4a5b3c;
+        }
+
+        .sub {
+            color: #5e6b4b;
+            border-left: 3px solid #c7b28b;
+            padding-left: 1rem;
+            margin: 0.75rem 0 1.5rem 0;
+            font-weight: 450;
+        }
+
+        .upload-area {
+            background: #f5ede1;
+            border: 2px dashed #bc9a6c;
+            border-radius: 2rem;
+            padding: 2rem 1.2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+            margin-bottom: 2rem;
+        }
+
+        .upload-area:hover {
+            background: #fdf5ea;
+            border-color: #9b7b54;
+        }
+
+        .upload-area.drag-over {
+            background: #f5e8d4;
+            border-color: #e2a526;
+            box-shadow: 0 0 0 3px rgba(226,165,38,0.2);
+        }
+
+        .file-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #4a6741;
+            color: white;
+            padding: 0.7rem 1.6rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .file-label:hover {
+            background: #2f4d2d;
+            transform: scale(0.98);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .info-panel {
+            background: #f0e7da;
+            border-radius: 1.5rem;
+            padding: 0.9rem 1.2rem;
+            margin-bottom: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .badge {
+            background: #d9c8ae;
+            border-radius: 60px;
+            padding: 0.3rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #2c3a1f;
+        }
+
+        .group-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 1.8rem 0 2rem;
+            max-height: 460px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .sprite-group {
+            background: #ffffffcc;
+            backdrop-filter: blur(2px);
+            background: #fefaf5;
+            border-radius: 1.5rem;
+            border: 1px solid #e5d5bd;
+            padding: 1.2rem 1.4rem;
+            transition: 0.1s;
+            box-shadow: 0 6px 12px -8px rgba(0,0,0,0.1);
+        }
+
+        .group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px dotted #e3cfb0;
+            padding-bottom: 0.6rem;
+        }
+
+        .group-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: monospace;
+            letter-spacing: -0.5px;
+            background: #e7dcc8;
+            padding: 0.1rem 0.8rem;
+            border-radius: 50px;
+            color: #2d4427;
+        }
+
+        .frame-count {
+            background: #cbbf9a;
+            padding: 0.2rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1e2a1c;
+        }
+
+        .btn-group-download {
+            background: #2b5e2f;
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            color: white;
+            font-weight: bold;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: 0.15s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-group-download:hover {
+            background: #1f4522;
+            transform: scale(0.97);
+        }
+
+        .file-list {
+            font-size: 0.75rem;
+            font-family: monospace;
+            margin-top: 0.6rem;
+            color: #5b4c34;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            max-height: 70px;
+            overflow-y: auto;
+        }
+
+        .file-chip {
+            background: #f1e7da;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+        }
+
+        .warning {
+            color: #bb6b2e;
+            background: #fff0e0;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 0.4rem;
+        }
+
+        .footer-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        hr {
+            border-color: #e3cfae;
+            margin: 1rem 0;
+        }
+
+        .empty-message {
+            text-align: center;
+            color: #8f7a5a;
+            padding: 1.5rem;
+            font-style: italic;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ebdfce;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b3926c;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>
+        🧩 PNG Strip Builder
+        <small>GameMaker multi-set</small>
+    </h1>
+    <div class="sub">
+        📁 Загрузите все кадры разных спрайтов разом → автоматическая группировка по префиксу (например img_0, img_1 → "img", col_0,col_1 → "col")<br>
+        → каждая группа сохранится как отдельный горизонтальный стрип с оригинальным именем (например "img.png", "col.png")
+    </div>
+
+    <div class="upload-area" id="dropZone">
+        <label class="file-label">
+            📂 Выбрать PNG-файлы
+            <input type="file" id="fileInput" multiple accept="image/png">
+        </label>
+        <div style="margin-top: 12px; font-size: 0.8rem; color: #7a6233;">
+            или перетащите файлы сюда (PNG)
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <span class="badge" id="totalFilesBadge">📄 Файлов: 0</span>
+        <span class="badge" id="groupsBadge">🧩 Групп: 0</span>
+        <span style="font-size:0.75rem;">⚠️ Высота кадров внутри группы должна совпадать (разные высоты → предупреждение)</span>
+    </div>
+
+    <div id="groupsContainer" class="group-container">
+        <div class="empty-message">✨ Нет загруженных изображений. Выберите PNG-файлы с числовыми суффиксами (например hero_0, hero_1, enemy_0 ...)</div>
+    </div>
+
+    <div class="footer-actions">
+        <button id="downloadAllBtn" class="btn-group-download" style="background:#856c45;" disabled>💾 Скачать ВСЕ группы</button>
+    </div>
+</div>
+
+<script>
+    // ---------- UTILS ----------
+    function extractPrefixAndNumber(filename) {
+        // Ищем имя без расширения .png (регистр не важен)
+        const base = filename.replace(/\.png$/i, '');
+        // Пытаемся найти в конце числа: ищем последнюю группу цифр в конце строки
+        // Паттерн: любые символы, заканчивающиеся на цифры (необязательно подчеркивание)
+        // Например: "img_0" → prefix "img", num 0; "col_12" → prefix "col", num 12; "walk5" → prefix "walk", num 5
+        let match = base.match(/^(.*?)(\d+)$/);
+        if (match) {
+            let rawPrefix = match[1];
+            // удаляем подчеркивание, точку или тире в конце префикса (чтобы img_ → img, but сохраняем читаемость)
+            let cleanPrefix = rawPrefix.replace(/[._-]+$/, '');
+            if (cleanPrefix === "") cleanPrefix = rawPrefix; // если только цифры, берем как есть, но такого почти не бывает
+            return { prefix: cleanPrefix, number: parseInt(match[2], 10) };
+        }
+        // если нет чисел в конце, то считаем всю базовую часть как префикс, номер 0 (но такой файл будет один)
+        return { prefix: base, number: 0 };
+    }
+
+    function sortFramesByNumber(framesArray) {
+        // framesArray: массив объектов { img, file, naturalWidth, naturalHeight }
+        return framesArray.sort((a, b) => a.number - b.number);
+    }
+
+    // Группировка загруженных изображений по префиксу
+    function groupImagesByPrefix(loadedImages) {
+        const groups = new Map(); // key: prefix, value: массив { img, file, number, width, height }
+        for (let item of loadedImages) {
+            const { prefix, number } = extractPrefixAndNumber(item.file);
+            if (!groups.has(prefix)) {
+                groups.set(prefix, []);
+            }
+            groups.get(prefix).push({
+                img: item.img,
+                file: item.file,
+                number: number,
+                width: item.img.naturalWidth,
+                height: item.img.naturalHeight
+            });
+        }
+        // в каждой группе сортируем по номеру кадра
+        for (let [prefix, frames] of groups.entries()) {
+            groups.set(prefix, sortFramesByNumber(frames));
+        }
+        return groups;
+    }
+
+    // Создать горизонтальный strip для группы фреймов, вернуть blob и предупреждения о разной высоте
+    function buildStripForGroup(frames, groupPrefix) {
+        return new Promise((resolve) => {
+            if (!frames.length) {
+                resolve({ blob: null, warnings: [], width: 0, height: 0 });
+                return;
+            }
+
+            const firstHeight = frames[0].height;
+            let hasDifferentSizes = false;
+            let sizeWarnings = [];
+
+            for (let i = 0; i < frames.length; i++) {
+                const h = frames[i].height;
+                if (h !== firstHeight) {
+                    hasDifferentSizes = true;
+                    sizeWarnings.push(`  ⚠️ Frame ${i} (${frames[i].file}): height ${h}px (expected ${firstHeight}px)`);
+                }
+            }
+
+            const totalWidth = frames.reduce((sum, f) => sum + f.width, 0);
+            const canvas = document.createElement('canvas');
+            canvas.width = totalWidth;
+            canvas.height = firstHeight;
+            const ctx = canvas.getContext('2d');
+
+            let currentX = 0;
+            for (let frame of frames) {
+                ctx.drawImage(frame.img, currentX, 0);
+                currentX += frame.width;
+            }
+
+            canvas.toBlob((blob) => {
+                resolve({
+                    blob: blob,
+                    warnings: sizeWarnings,
+                    width: totalWidth,
+                    height: firstHeight,
+                    hasSizeMismatch: hasDifferentSizes
+                });
+            }, 'image/png');
+        });
+    }
+
+    // Скачать blob под именем fileName
+    function downloadBlob(blob, fileName) {
+        if (!blob) return;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    // Основной рендеринг интерфейса и управление
+    class MultiSpriteBuilder {
+        constructor() {
+            this.rawImages = []; // храним загруженные { img, file }
+            this.groupsMap = new Map(); // prefix -> frames[]
+            this.groupStripBlobs = new Map(); // prefix -> { blob, warnings, heightMismatch }
+            this.fileInput = document.getElementById('fileInput');
+            this.dropZone = document.getElementById('dropZone');
+            this.groupsContainer = document.getElementById('groupsContainer');
+            this.totalFilesBadge = document.getElementById('totalFilesBadge');
+            this.groupsBadge = document.getElementById('groupsBadge');
+            this.downloadAllBtn = document.getElementById('downloadAllBtn');
+
+            this.initEventListeners();
+        }
+
+        initEventListeners() {
+            this.fileInput.addEventListener('change', (e) => this.handleFiles(e.target.files));
+            // Drag & drop
+            this.dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                this.dropZone.classList.add('drag-over');
+            });
+            this.dropZone.addEventListener('dragleave', () => {
+                this.dropZone.classList.remove('drag-over');
+            });
+            this.dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                this.dropZone.classList.remove('drag-over');
+                const files = e.dataTransfer.files;
+                if (files.length) this.handleFiles(files);
+            });
+            this.downloadAllBtn.addEventListener('click', () => this.downloadAllGroups());
+        }
+
+        async handleFiles(fileList) {
+            const files = Array.from(fileList).filter(f => f.type === 'image/png');
+            if (files.length === 0) {
+                alert('Не найдено PNG-файлов. Пожалуйста, выберите изображения в формате PNG.');
+                return;
+            }
+
+            // Сортируем файлы по имени (глобально не обязательно, группировка сделает по префиксам)
+            // Но для стабильности загрузим все
+            const loadingPromises = files.map(file => {
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = () => resolve({ img, file: file.name });
+                    img.onerror = () => {
+                        console.warn(`Ошибка загрузки ${file.name}`);
+                        resolve(null); // пропускаем битые
+                    };
+                    img.src = URL.createObjectURL(file);
+                });
+            });
+
+            const loadedResults = await Promise.all(loadingPromises);
+            this.rawImages = loadedResults.filter(r => r !== null);
+            if (this.rawImages.length === 0) {
+                alert('Не удалось загрузить ни одного корректного PNG.');
+                return;
+            }
+
+            // группируем по префиксу
+            this.groupsMap = groupImagesByPrefix(this.rawImages);
+            await this.precomputeStrips();
+            this.renderUI();
+        }
+
+        async precomputeStrips() {
+            // Предварительно строим стрипы для всех групп (чтобы показать превью и подготовить blob)
+            this.groupStripBlobs.clear();
+            for (let [prefix, frames] of this.groupsMap.entries()) {
+                if (frames.length === 0) continue;
+                const stripResult = await buildStripForGroup(frames, prefix);
+                this.groupStripBlobs.set(prefix, stripResult);
+            }
+        }
+
+        renderUI() {
+            const totalFiles = this.rawImages.length;
+            const groupsCount = this.groupsMap.size;
+            this.totalFilesBadge.innerText = `📄 Файлов: ${totalFiles}`;
+            this.groupsBadge.innerText = `🧩 Групп: ${groupsCount}`;
+
+            if (groupsCount === 0) {
+                this.groupsContainer.innerHTML = `<div class="empty-message">📭 Нет групп. Загрузите изображения с числовым суффиксом (например "walk_0.png", "walk_1.png")</div>`;
+                this.downloadAllBtn.disabled = true;
+                return;
+            }
+
+            this.downloadAllBtn.disabled = false;
+            let html = '';
+            for (let [prefix, frames] of this.groupsMap.entries()) {
+                const stripData = this.groupStripBlobs.get(prefix);
+                const warningMsg = (stripData && stripData.hasSizeMismatch) ? stripData.warnings : [];
+                const hasWarnings = warningMsg.length > 0;
+                // Список имён файлов (для наглядности)
+                const fileNames = frames.map(f => f.file).join(', ');
+                // Общая ширина и высота
+                const totalW = stripData ? stripData.width : '?';
+                const heightVal = stripData ? stripData.height : '?';
+                html += `
+                    <div class="sprite-group" data-prefix="${prefix}">
+                        <div class="group-header">
+                            <span class="group-name">🎨 ${escapeHtml(prefix)}</span>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <span class="frame-count">${frames.length} кадр(ов)  |  ${totalW}×${heightVal}</span>
+                                <button class="btn-group-download download-single" data-prefix="${prefix}">⬇️ Скачать ${escapeHtml(prefix)}.png</button>
+                            </div>
+                        </div>
+                        <div class="file-list">
+                            ${frames.map(f => `<span class="file-chip">📷 ${escapeHtml(f.file)} (${f.width}x${f.height})</span>`).join('')}
+                        </div>
+                        ${hasWarnings ? `<div class="warning">⚠️ ВНИМАНИЕ: разная высота кадров!<br>${warningMsg.slice(0, 3).join('<br>')}${warningMsg.length > 3 ? '...' : ''}</div>` : ''}
+                    </div>
+                `;
+            }
+            this.groupsContainer.innerHTML = html;
+
+            // добавить обработчики на кнопки скачивания отдельных групп
+            const singleDownloadBtns = document.querySelectorAll('.download-single');
+            singleDownloadBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const prefix = btn.getAttribute('data-prefix');
+                    if (prefix && this.groupStripBlobs.has(prefix)) {
+                        const strip = this.groupStripBlobs.get(prefix);
+                        if (strip && strip.blob) {
+                            const fileName = `${prefix}.png`;
+                            downloadBlob(strip.blob, fileName);
+                        } else {
+                            alert(`Не удалось сгенерировать стрип для "${prefix}"`);
+                        }
+                    }
+                });
+            });
+        }
+
+        async downloadAllGroups() {
+            if (this.groupsMap.size === 0) return;
+            // Скачиваем все группы последовательно (браузер может спросить несколько раз, но это лучше, чем zip)
+            // Чтобы не наваливать много blob'ов одновременно, делаем по очереди с задержкой
+            for (let [prefix, frames] of this.groupsMap.entries()) {
+                let stripData = this.groupStripBlobs.get(prefix);
+                // если по какой-то причине blob отсутствует, пересоздадим на лету
+                if (!stripData || !stripData.blob) {
+                    // пересоздаем
+                    const newStrip = await buildStripForGroup(frames, prefix);
+                    this.groupStripBlobs.set(prefix, newStrip);
+                    stripData = newStrip;
+                }
+                if (stripData && stripData.blob) {
+                    const fileName = `${prefix}.png`;
+                    downloadBlob(stripData.blob, fileName);
+                    // небольшая пауза между скачиваниями, чтобы браузер не блокировал множественные загрузки
+                    await new Promise(r => setTimeout(r, 300));
+                }
+            }
+        }
+    }
+
+    // helper для экранирования
+    function escapeHtml(str) {
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    // запуск приложения
+    const app = new MultiSpriteBuilder();
+</script>
+</body>
+</html>
