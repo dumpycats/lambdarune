@@ -16,6 +16,11 @@ function translation_load_all()
     global.sLambdaruneBlackLogoMid2 = (global.lang == "ru") ? sLambdaruneBlackLogoMid2_ru : sLambdaruneBlackLogoMid2;
     global.sLambdaruneBlackLogoMid = (global.lang == "ru") ? sLambdaruneBlackLogoMid_ru : sLambdaruneBlackLogoMid;
 
+    sprite_set_offset(sLambdaruneLogo_ru, 300, 120);
+    sprite_set_offset(sLambdaruneBlackLogoMid_ru, 320, 70);
+    sprite_set_offset(sLambdaruneBlackLogoMid2_ru, 320, 70);
+    sprite_set_offset(sLambdaruneBlackLogoOut_ru, 320, 70);
+
     var layer_id;
     if (!layer_exists("translation_layer"))
         layer_id = layer_create(0, "translation_layer");
@@ -23,5 +28,5 @@ function translation_load_all()
         layer_id = layer_get_id("translation_layer");
 
     if (!instance_exists(obj_room_sprite_spawner))
-        instance_create_layer(0, 0, layer_id, obj_room_sprite_spawner);
+        instance_create_layer(0, 0, layer_id, obj_room_sprite_spawner);    
 }
