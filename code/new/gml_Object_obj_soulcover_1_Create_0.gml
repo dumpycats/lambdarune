@@ -1,9 +1,0 @@
-purplecolor = 14235093;
-image_speed = 0;
-flashalpha = 0.3;
-flashcolor = 16777215;
-flashpercent = 0;
-targetflash = purplecolor;
-timer = -1;
-audio_play_sound(snd_great_shine, 1, false);
-audio_play_sound(snd_screenshake, 1, false);

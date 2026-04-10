@@ -1,9 +1,0 @@
-timer = -1;
-image_alpha = obj_rudebuster.image_alpha;
-image_angle = obj_rudebuster.image_angle;
-image_xscale = obj_rudebuster.image_xscale;
-image_yscale = obj_rudebuster.image_yscale;
-x = obj_rudebuster.x;
-y = obj_rudebuster.y;
-scale = 2;
-alpha = 1;

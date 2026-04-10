@@ -1,9 +1,0 @@
-yy = y;
-extalpha = 1;
-image_alpha = 0.95;
-image_index = 2;
-percentextfade = 0;
-curvelinear = animcurve_get_channel(Curve, "acLinear");
-curveease = animcurve_get_channel(Curve, "acEase");
-curveslower = animcurve_get_channel(Curve, "acSlower");
-curvefaster = animcurve_get_channel(Curve, "acFaster");

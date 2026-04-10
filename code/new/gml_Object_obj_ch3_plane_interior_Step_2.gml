@@ -1,1 +1,0 @@
-y = yy + global.yoffset;

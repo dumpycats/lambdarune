@@ -1,9 +1,0 @@
-cx = camera_get_view_x(view_camera[0]);
-cy = camera_get_view_y(view_camera[0]);
-timer = -1;
-shoottimer = 1;
-y = round((sin((timer * pi) / 25) * 75) + (cy + 210));
-image_xscale = 2;
-image_yscale = 2;
-image_alpha = 0;
-image_speed = 0;

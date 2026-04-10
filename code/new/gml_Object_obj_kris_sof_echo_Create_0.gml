@@ -1,9 +1,0 @@
-image_alpha = 0.5;
-image_speed = 0;
-TARGET = obj_kris_sof;
-x = TARGET.x;
-y = TARGET.y;
-image_xscale = TARGET.image_xscale;
-image_yscale = TARGET.image_yscale;
-image_index = TARGET.image_index;
-sprite_index = TARGET.sprite_index;

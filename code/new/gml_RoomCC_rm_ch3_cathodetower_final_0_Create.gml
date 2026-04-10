@@ -1,3 +1,0 @@
-image_alpha = 0;
-roomchanging = true;
-roomtarget = rm_ch3_cathodetower_aftermath_1;

@@ -1,9 +1,0 @@
-timer = -1;
-hit = false;
-tptimer = 0;
-speed = -6;
-yoffset = 0;
-yy = y;
-collision = false;
-image_xscale = 2;
-image_yscale = 2;
