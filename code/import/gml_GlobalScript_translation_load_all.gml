@@ -2,9 +2,11 @@ function translation_load_all()
 {
     global.translation_logging_enabled = false;
 
-    var default_lang = os_get_language();
-    if (default_lang != "en" && default_lang != "ru")
-        default_lang = "en";
+    var system_lang = os_get_language();
+
+    var default_lang = "en";
+    if (system_lang == "ru" or system_lang == "uk" or system_lang == "be" or system_lang == "kk")
+        default_lang = "ru";
 
     ini_open("lang.ini");
     global.lang = ini_read_string("Lang", "lang", default_lang);
