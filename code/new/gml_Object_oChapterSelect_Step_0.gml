@@ -282,5 +282,10 @@ if (menuoutrotimer == 92)
 if (image_index == 3)
 {
     if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")))
-        game_end();
+    {
+        if (os_type == os_android)
+            room_goto(room_customize);
+        else
+            game_end();
+    }
 }

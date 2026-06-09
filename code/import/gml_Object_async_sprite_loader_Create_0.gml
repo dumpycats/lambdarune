@@ -26,14 +26,17 @@ if variable_global_exists("translation_sprites_loaded") or global.lang != "en"
     {
         if (os_type == os_android)
         {
-            //по какой-то причине на андроиде file_bin_size не работает
-            ds_list_add(heavy_sprites_to_load, file);
+            //for some reason, file_find_first on Android doesnt work
+            if file == "spr_translation_switch.png" or file == "s@p@z@o@e@t@s.png"
+                ds_list_add(sprites_to_load, file);
+            else
+                ds_list_add(heavy_sprites_to_load, file);            
         }
         else
         {
             var bin = file_bin_open(directory + file, );
 
-            if (file_bin_size(bin) > 10240) // 10 KB
+            if (file_bin_size(bin) > 10240) and file != "spr_translation_switch.png" and file != "s@p@z@o@e@t@s.png"
                 ds_list_add(heavy_sprites_to_load, file);
             else
                 ds_list_add(sprites_to_load, file);
